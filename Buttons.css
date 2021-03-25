@@ -78,6 +78,7 @@
         font-family: 'Roboto', sans-serif;
         
       }
+      
     
     .vl{
     border-right: 4px solid whit;
@@ -219,24 +220,28 @@
             rgba(255, 255, 255, 0.3)
           );
           color: black;
-                transform: translateY(-1px);
+          transform: translateY(-1px);
     }
     
     
                     .dropdown2 {
-                        position: absolute;
+                        position: relative;
                         float: right;
-                        margin-right: 160px;
+                        margin-left: 880px;
                         margin-top: 75px;
                       }
                     
                       .dropdown-content2 {
                         display: none;
                         position: absolute;
-                        background: linear-gradient(to right, #7d7e7d 0%,#0e0e0e 100%);
+                        background: linear-gradient(
+                    to right bottom,
+                    rgba(255, 255, 255, 0.7),
+                    rgba(255, 255, 255, 0.3)
+                  );
                         
                         min-width: 160px;
-                        box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2);
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                         z-index: 1;
                       }
                     
@@ -252,6 +257,26 @@
                         to right bottom,
                         rgba(255, 255, 255, 0.7),
                         rgba(255, 255, 255, 0.3)
-
                       );}
                       .show2 {display:block;}
+
+                      .LektierBut{
+                        height: 20px;
+                        width: 20px;
+                        background-color: inherit;
+                        border-radius: 50%;
+                        border: 1px; 
+                        border-color: white;
+                        border-style: solid;
+                        margin-top: auto;
+                        position: relative;
+                        font-size: 10px;
+                        cursor: pointer;
+                        color: black;
+                        
+                        font-family: 'Roboto', sans-serif;
+                        }
+
+                        .LektierBut:hover{
+                          background-color: white;
+                        }

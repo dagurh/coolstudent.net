@@ -1,0 +1,307 @@
+.M{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 2;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.T{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 3;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+      
+    
+}
+.O{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 4;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    
+    
+}
+.T1{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 5;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+.F{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 6;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.S{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 7;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.S1{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 8;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.t1{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 2 / 2;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t2{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 3 / 3;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.t3{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 4 / 4; 
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+.t4{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 5 / 5;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t5{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 6 / 6;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t6{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 7 / 7;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t7{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 8 / 8;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t8{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 9 / 9;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.Z{
+    
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    background: inherit;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.Uge{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 1;
+    grid-row: 1 / 1;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ExSys{
+    border: 1px;
+    border-style: solid;
+    border-color: white; 
+    grid-column: 4;
+    grid-row: 4 / 4;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
