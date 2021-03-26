@@ -2,31 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Mock.css">
-    <link rel="stylesheet" href="Buttons.css">
-    <link rel="stylesheet" href="Calendar.css">
-    <link rel="stylesheet" href="CalendarGridItems.css">
-    <link rel="stylesheet" href="Popup.css">
-    <link rel="stylesheet" href="blabla.css">
-
+    <link rel="stylesheet" type="text/css" href="Mock.css">
+    <link rel="stylesheet" type="text/css" href="Buttons.css">
+    <link rel="stylesheet" type="text/css" href="Calendar.css">
+    <link rel="stylesheet" type="text/css" href="CalendarGridItems.css">
+    <link rel="stylesheet" type="text/css" href="Popup.css">
+    <script defer src="Javascript.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
 
-   
-    <div id=Main>
-     
-    <div id=Toolbar>
+    
+    <div id="Main">
+    <div id="Toolbar">
     
         <div class="dropdown">
-        <button class="button1" type="button" onclick="Heyho()">+</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#">Add/Create Group</a>
-            <a href="#">Add/Create Comittee</a>
+            <button onclick="addGroup()" class="button1">+</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Add/Create Group</a>
+              <a href="#">Add/Create Comittee</a>
+            </div>
           </div>
-        </div>
 
         <button class="button2" type="button" onclick="andenFunktion()">Studiegruppe</button>
 
@@ -34,19 +32,17 @@
         <button class="button4" type="button1" onclick="andenFunktion()">ComArk</button>
         <button class="button5" type="button1" onclick="andenFunktion()">STAT</button>
 
-        
-        <button class="button6" type="button" onclick="Heyho2()">_-_</button>
+        <button onclick="settings()" class="button6">+</button>
         <div class="dropdown2">
             <div id="myDropdown2" class="dropdown-content2">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-              </div>
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
             </div>
+          </div>
 
     </div>
 
@@ -141,30 +137,21 @@
 
 
 
-<div id=Others>
+<div id="Others">
 </div>
 
-<div id=Chat>
+<div id="Chat">
 </div>
-<div id=Chat1>
+<div id="Chat1">
 </div>
-<div id=Chat2>
+<div id="Chat2">
 </div>
 
-<div id=ChatAdd>
+<div id="ChatAdd">
     <button class="ChatButton" type="button" onclick="ChatFunction()">+</button>
 </div>
 
 </div>
-
-
-    <script> function Heyho() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    } </script>
-
-<script> function Heyho2() {
-    document.getElementById("myDropdown2").classList.toggle("show2");
-    } </script>
     
 
 
