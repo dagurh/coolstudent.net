@@ -1,19 +1,21 @@
 body {
 background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 width: 100%;
-height: 100%;
-margin: 0%;
-padding: 0%;
+height: 768px;
 font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+position: relative; 
+margin: 0;
+
+
 
 }
 
 div#Main{
-margin-top: 3%;
 background: white;
-position: absolute;    
+position: relative;    
 box-sizing: border-box;
-height: 90%;
+height: 740px;
 width: 90%;
 align-self: center;
 background: linear-gradient(
@@ -21,26 +23,25 @@ background: linear-gradient(
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
-  z-index: -1;
   backdrop-filter: blur(2rem);
 border-radius: 25px;
-display: flex;
+display: block;
 backdrop-filter: blur(2rem);
-margin-left: 5%;
-margin-bottom: 2%;
+left: 5%;
+right: 5%;
+top: 5%;
+bottom: 5%;
+z-index: 2;
+
 
 }
 
-.logo{
-margin-left: 400px;
-
-}
 
 div#Toolbar{
     
     position: relative;    
     box-sizing: border-box;
-    height: 10%;
+    height: 80px;
     width: 100%;
     align-self: center;
     background: linear-gradient(
@@ -51,21 +52,21 @@ div#Toolbar{
     
     backdrop-filter: blur(2rem);
     border-radius: 25px;
-    display: flex;
-    margin-bottom: 680px;
+    display: inline-block;
     z-index: 2;
+    top: 0%;
     
     
      }
 
      div#Calendar{
-      position: absolute;
+      position: relative;
       height: 70%;  
       width: 90%;
      
       border-radius: 25px;
-      top: 100px;
-      left: 1%;
+    
+      
       
      }
 
@@ -93,7 +94,6 @@ div#Toolbar{
       box-sizing: border-box;
       height: 20%;
       width: 100%;
-      align-self: center;
       background: linear-gradient(
           to right bottom,
           rgba(255, 255, 255, 0.7),
@@ -101,68 +101,10 @@ div#Toolbar{
         );
       backdrop-filter: blur(2rem);
       border-radius: 25px;
-      margin-top: 303px;
       z-index: 2;
-      display: inline;
+      display: inline-block;
+      top: 80%;
        }
 
-    div#Chat{
-      border-radius: 50px;
-      border: 1px;
-      
-      height:40px;
-      width: 40px;
-      position: absolute;
-      margin-bottom: 30%;
-      margin-left: 93%;
-      margin-top: 10%;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-      background-size: cover; 
-      background-image: url(Bilder/Chat.png);
-    }
-
-    div#Chat1{
-      border-radius: 50px;
-      border: 1px;
-      
-      height:40px;
-      width: 40px;
-      position: absolute;
-      margin-bottom: 30%;
-      margin-left: 93%;
-      margin-top: 14%;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-      background-size: cover; 
-      background-image: url(Bilder/Chat1.png);
-    }
-
-    div#Chat2{
-      border-radius: 50px;
-      border: 1px;
-    
-      height:40px;
-      width: 40px;
-      position: absolute;
-      margin-bottom: 30%;
-      margin-left: 93%;
-      margin-top: 18%;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-      background-size: cover; 
-      background-image: url(Bilder/Chat2.png);
-    }
-
-    div#ChatAdd{
-      border-radius: 50px;
-      border: 1px;
-    
-      height:40px;
-      width: 40px;
-      position: absolute;
-      margin-bottom: 30%;
-      margin-left: 93%;
-      margin-top: 22%;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-      background-size: cover; 
-      text-align: center;
-      vertical-align: middle;
-    }
+  
+   
