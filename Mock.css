@@ -15,7 +15,7 @@ body {
   background: white;
   position: relative;    
   box-sizing: border-box;
-  height: 740px;
+  height: 95%;
   width: 90%;
   align-self: center;
   background: linear-gradient(
@@ -55,6 +55,7 @@ body {
       display: inline-block;
       z-index: 2;
       top: 0%;
+      
       
       
        }
@@ -105,5 +106,14 @@ body {
         display: inline-block;
         top: 80%;
          }
+
+         div#Others p{
+        display:inline-block;
+        margin: 0px;
+        margin-left: 1%;
+        margin-top: 1%;
+        font-family: 'Roboto', sans-serif;
+         }
+
   
    

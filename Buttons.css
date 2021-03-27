@@ -280,32 +280,70 @@ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
           }
 
           .UgeBut{
-           border: solid black;
+           border-color: rgb(14, 78, 67) ;
+           opacity: 0.8;
            border-width: 0 3px 3px 0;
            display: inline-block;
            padding: 3px;
           background-color: inherit;
            transform: rotate(-45deg);
-           left: 140px;
+           left: 12%;
            top: 18px;
            position: absolute;
           }
           .UgeBut1{
-            border: solid black;
+            border-color: rgb(14, 78, 67);
+            opacity: 0.8;
             border-width: 0 3px 3px 0;
             display: inline-block;
             padding: 3px;
            background-color: inherit;
             transform: rotate(135deg);
-            left: 50px;
+            left: 4.5%;
             top: 18px;
             position: absolute;
           }
 
 
+.ChatButton:hover{
+  cursor: pointer;
+  transform: translateY(-2%);
+}
+
+div#Chat:hover{cursor: pointer;
+  transform: translateY(-2%);}
+div#Chat1:hover{cursor: pointer;
+  transform: translateY(-2%);}
+div#Chat2:hover{cursor: pointer;
+  transform: translateY(-2%);}
+div#ChatAdd:hover{cursor: pointer;
+  transform: translateY(-2%);}
+
+
 .UgeBut:hover{
 cursor: pointer;
+border-color: white;
 }
 .UgeBut1:hover{
   cursor: pointer;
+  border-color: white;
 }
+
+.Lektierbut{
+border-radius: 25%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

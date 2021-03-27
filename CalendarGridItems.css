@@ -3,18 +3,22 @@
 .M{
     border: 1px;
     border-style: solid;
-    border-color: white; 
+    border-color: white;
+    border-top: 0px; 
     grid-column: 2;
     background: linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+      
+      color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 .T{
     border: 1px;
@@ -26,11 +30,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
       
     
 }
@@ -44,11 +50,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
     
     
 }
@@ -62,11 +70,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
    
 }
 .F{
@@ -79,11 +89,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+      color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 .S{
     border: 1px;
@@ -95,11 +107,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+      color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 .S1{
     border: 1px;
@@ -111,11 +125,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+      color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 
 .t1{
@@ -129,11 +145,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 .t2{
     border: 1px;
@@ -146,11 +164,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 
 }
 
@@ -165,11 +185,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+  opacity: 0.8;
     
 }
 .t4{
@@ -183,11 +205,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 .t5{
     border: 1px;
@@ -200,11 +224,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 .t6{
     border: 1px;
@@ -217,11 +243,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 .t7{
     border: 1px;
@@ -234,11 +262,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 .t8{
     border: 1px;
@@ -251,11 +281,13 @@
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.3)
       );
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
       font-family: 'Roboto', sans-serif;
       display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(54, 159, 167) ;
+      opacity: 0.8;
 }
 
 
@@ -265,6 +297,7 @@
     border: 1px;
     border-style: solid;
     border-color: white;
+    
     background: inherit;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -285,8 +318,13 @@
       );
       font-family: 'Roboto', sans-serif;
       display: flex;
+      color: rgb(54, 159, 167) ;
+      opacity: 0.8;
+     
+      
   justify-content: center;
   align-items: center;
+  opacity: 0.7;
 }
 
 
@@ -303,7 +341,98 @@
       );
       font-family: 'Roboto', sans-serif;
       display: flex;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
   justify-content: center;
   align-items: center;
- 
+  height: 100%;
+  font-size: 10px;
+}
+.ExSys1{
+  border: 1px;
+  border-style: solid;
+  border-color: white; 
+  grid-column: 2;
+  grid-row: 3 / 4;
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
+justify-content: center;
+align-items: center;
+height: 100%;
+font-size: 10px;
+}
+.ExSys2{
+  border: 1px;
+  border-style: solid;
+  border-color: white; 
+  grid-column: 5;
+  grid-row: 5 / 6;
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
+justify-content: center;
+align-items: center;
+height: 100%;
+font-size: 10px;
+}
+.ExSys3{
+  border: 1px;
+  border-style: solid;
+  border-color: white; 
+  grid-column: 6;
+  grid-row: 4 / 4;
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
+justify-content: center;
+align-items: center;
+height: 100%;
+font-size: 10px;
+}
+
+.Aflevering{
+  border: 1px;
+  border-style: solid;
+  border-color: white; 
+  grid-column: 6;
+  grid-row: 9 / 9;
+  background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
+justify-content: center;
+align-items: center;
+height: 100%;
+font-size: 10px;
+}
+
+.Møde{
+  border: 1px;
+  border-style: solid;
+  border-color: white; 
+  grid-column: 3;
+  grid-row: 7 / 7;
+  background: linear-gradient(to bottom, #ffd65e 0%,#febf04 100%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
+justify-content: center;
+align-items: center;
+height: 100%;
+font-size: 10px;
 }
