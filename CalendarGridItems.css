@@ -16,6 +16,12 @@ color: rgb(54, 159, 167) ;
 opacity: 0.8;
 }
 
+.ugePlan{
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
 .M{
 border-top: 0px; 
 grid-column: 2;
