@@ -21,6 +21,11 @@ border-top: 0px;
 grid-column: 2;
 }
 
+.deadlines{
+  grid-column: 5;
+  grid-row: 1 / 5;
+}
+
 .T{
 grid-column: 3;
 }
