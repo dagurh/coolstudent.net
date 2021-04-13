@@ -18,6 +18,14 @@ cursor: pointer;
 transform: translateY(-2%);
 }
 
+.butto{
+  left: 50%;
+  top: 20%;
+  height: 60%;
+  width: 8%;
+  background-color: lightpink;
+}
+
 .button1{
 left: 2%;
 top: 20%;
