@@ -76,19 +76,47 @@
                 </div>
 
                 <div class="calSkel UgeForelæsning">
-
-                    <button class="basicbutton">Prototyping</button>
+                    <!--Trigger/Open prototyping-->
+                    <button id="protobutton" class="basicbutton">Prototyping</button>
+                    <!--Zoom-->
                     <button class="ZoomBut"></button>
                 </div>
 
+
+                <!--The modal-->
+                <div id="protomodal" class="modal">
+                    <!--Content in the modal-->
+                    <div class="modal-content">
+                        <span id="protoclose" class="close">&times;</span>
+                        <p>Important information about prototyping</p>
+                    </div>
+                </div>
+
+
                 <div class="calSkel UgeForelæsning">
-                    <button class="basicbutton">Concurrency</button>
+                    <button id="conbutton" class="basicbutton">Concurrency</button>
                     <button class="ZoomBut"></button>
                 </div>
 
+                <div id="conmodal" class="modal">
+                    <!--Content in the modal-->
+                    <div class="modal-content">
+                        <span id="conclose" class="close">&times;</span>
+                        <p>Important information about concurrency</p>
+                    </div>
+                </div>
+
                 <div class="calSkel UgeForelæsning">
-                    <button class="basicbutton">Normalfordeling</button>
+                    <button id="normbutton" class="basicbutton">Normalfordeling</button>
                     <button class="ZoomBut"></button>
+                </div>
+
+                <div id="normmodal" class="modal">
+                    <!--Content in the modal-->
+                    <div class="modal-content">
+                        <span id="normclose" class="close">&times;</span>
+                        <p>Important information about Normalfordeling</p>
+                    </div>
                 </div>
 
                 <div class="calSkel deadlines">
@@ -107,6 +135,8 @@
                     <button class="basicbutton">Øvelser</button>
                     <button class="ZoomBut"></button>
                 </div>
+
+
 
                 <div class="calSkel UgeTØ">
                     <button class="basicbutton">Øvelser</button>
@@ -204,12 +234,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
 </body>
 
 </html>
