@@ -3,13 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="Mock.css">
-    <link rel="stylesheet" type="text/css" href="Buttons.css">
-    <link rel="stylesheet" type="text/css" href="Calendar.css">
-    <link rel="stylesheet" type="text/css" href="CalendarGridItems.css">
-    <link rel="stylesheet" type="text/css" href="Popup.css">
-    <link rel="stylesheet" type="text/css" href="blabla.css">
-    <link rel="stylesheet" type="text/css" href="Relevant-Buttons.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
     <script defer src="Javascript.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,219 +11,97 @@
 </head>
 
 <body>
-    <div id="Main">
-        <div id="Toolbar">
+    <div class="container">
+        <button class="home"></button>
+        <button class="exsys" onclick="andenFunktion()">ExSys</button>
+        <button class="comark" onclick="andenFunktion()">ComArk</button>
+        <button class="stat" onclick="andenFunktion()">STAT</button>
+        <div class="hul"></div>
+        <a href="kalender.html">
+            <button class="kalender"></button>
+        </a>
 
-            <div class="dropdown">
-                <button onclick="addGroup()" class="button button1">+</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Add/Create Group</a>
-                    <a href="#">Add/Create Comittee</a>
-                </div>
+        <div class="dropdown2">
+            <button onclick="settings()" class="button button6">_-_</button>
+            <div id="myDropdown2" class="dropdown-content2">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
             </div>
-
-            <button class="button button2" onclick="andenFunktion()">Studiegruppe</button>
-            <div class="circe statan"></div>
-            <div class="circe statha"></div>
-            <div class="circe exsysan"></div>
-            <div class="circe exsysha"></div>
-            <div class="circe coman"></div>
-            <div class="circe comha"></div>
-
-            <a href="kalender.html">
-                <button class="button butto">Kalender</button>
-            </a>
-            <button class="button button3" onclick="andenFunktion()">ExSys</button>
-
-
-            <button class="button button4" onclick="andenFunktion()">ComArk</button>
-            <button class="button button5" onclick="andenFunktion()">STAT</button>
-
-
-            <div class="dropdown2">
-                <button onclick="settings()" class="button button6">_-_</button>
-                <div id="myDropdown2" class="dropdown-content2">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                </div>
-            </div>
-
         </div>
 
-        <div id="Ugeplan">
-            <div class="gridWeek">
-                <div class="ugePlan M">Exsys</div>
-                <div class="ugePlan T">ComArk</div>
-                <div class="ugePlan O">Statistik</div>
+        <div class="to">tø</div>
 
-                <div class="ugePlan t1">Forelæsning</div>
-                <div class="ugePlan t2">TØ</div>
-                <div class="ugePlan t3">Litteratur</div>
-                <div class="calSkel Uge">
-                    uge 41
-                    <button class="UgeBut UgeBut1" onclick="ShiftWeekForward()"></button>
-                    <button class="UgeBut UgeBut2" onclick="ShiftWeekBackward()"></button>
-                </div>
+        <div class="toEks">
+            <button class="basicbutton">Øvelser</button>
+        </div>
 
-                <div class="calSkel UgeForelæsning">
-                    <!--Trigger/Open prototyping-->
-                    <button id="protobutton" class="basicbutton">Prototyping</button>
-                    <!--Zoom-->
-                    <button class="ZoomBut"></button>
-                </div>
+        <div class="toCom">
+            <button class="basicbutton">Øvelser</button>
+        </div>
 
+        <div class="toStat">
+            <button class="basicbutton">Øvelser</button>
+        </div>
 
-                <!--The modal-->
-                <div id="protomodal" class="modal">
-                    <!--Content in the modal-->
-                    <div class="modal-content">
-                        <span id="protoclose" class="close">&times;</span>
-                        <p>Important information about prototyping</p>
-                    </div>
-                </div>
+        <div class="litteratur">litteratur</div>
 
+        <div class="litteraturEks">
+            <button class="basicbutton">Week 17</button>
+        </div>
 
-                <div class="calSkel UgeForelæsning">
-                    <button id="conbutton" class="basicbutton">Concurrency</button>
-                    <button class="ZoomBut"></button>
-                </div>
+        <div class="litteraturCom">
+            <button class="basicbutton">Week 17</button>
+        </div>
 
-                <div id="conmodal" class="modal">
-                    <!--Content in the modal-->
-                    <div class="modal-content">
-                        <span id="conclose" class="close">&times;</span>
-                        <p>Important information about concurrency</p>
-                    </div>
-                </div>
+        <div class="litteraturStat">
+            <button class="basicbutton">Week 17</button>
+        </div>
 
-                <div class="calSkel UgeForelæsning">
-                    <button id="normbutton" class="basicbutton">Normalfordeling</button>
-                    <button class="ZoomBut"></button>
-                </div>
+        <div class="forelæsning">forelæsning</div>
 
-                <div id="normmodal" class="modal">
-                    <!--Content in the modal-->
-                    <div class="modal-content">
-                        <span id="normclose" class="close">&times;</span>
-                        <p>Important information about Normalfordeling</p>
-                    </div>
-                </div>
-
-                <div class="calSkel deadlines">
-                    <ul style="list-style-type: none; text-align: left; padding-top: 20px;">
-                        UPCOMING DEADLINES
-                        <br><br>
-                        <li>Comark - threads and stuff (16.04)</li>
-                        <li>EXSYS - somesome (18.04)</li>
-                        <li>Saun Paul - we be burnin (20.04)</li>
-                        <li>Something - Sometime (23.04)</li>
-                        <li>Far far away - andele (21.05)</li>
-                    </ul>
-                </div>
-
-                <div class="calSkel UgeTØ">
-                    <button class="basicbutton">Øvelser</button>
-                    <button class="ZoomBut"></button>
-                </div>
+        <div class="forelæsningEks">
+            <!--Trigger/Open prototyping-->
+            <button id="protobutton" class="basicbutton">Prototyping</button>
+        </div>
 
 
-
-                <div class="calSkel UgeTØ">
-                    <button class="basicbutton">Øvelser</button>
-                    <button class="ZoomBut"></button>
-                </div>
-
-                <div class="calSkel UgeTØ">
-                    <button class="basicbutton">Øvelser</button>
-                    <button class="ZoomBut"></button>
-                </div>
-
-                <div class="calSkel UgeLitteratur">
-                    <button class="basicbutton">Week 17</button>
-                    <button class="LitteraturBut" onclick="popup1()">L</button>
-                </div>
-
-                <div class="calSkel UgeLitteratur">
-                    <button class="basicbutton">Week 17</button>
-                    <button class="LitteraturBut" onclick="popup1()">L</button>
-                </div>
-
-                <div class="calSkel UgeLitteratur">
-                    <button class="basicbutton">Week 17</button>
-                    <button class="LitteraturBut" onclick="popup1()">L</button>
-                </div>
+        <!--The modal-->
+        <div id="protomodal" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content">
+                <span id="protoclose" class="close">&times;</span>
+                <p>Important information about prototyping</p>
             </div>
         </div>
 
 
-
-
-        <div id="Others">
-            <p>Relevant information </p>
-
-            <div id="STADS">
-                <button class="STADSBut" onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'"
-                    type="button">
-                    STADS
-                    <p>Dine karakterer, undervisnings og eksamentilmelding </p>
-                </button>
-
-            </div>
-
-            <div id="AULibrary">
-                <button class="AuLiBut" onclick="location.href='https://library.au.dk/'" type="button">
-                    AU Library
-                    <p>Bøger, artikler mm. </p>
-                </button>
-            </div>
-
-            <div id="KursusKatalog">
-                <button class="KurKBut" onclick="location.href='http://www.example.com'" type="button">
-                    Kursus katalog
-                    <p>Se info om aktuelle kurser </p>
-                </button>
-            </div>
-
-            <div id="DigitalExam">
-                <button class="DeExBut" onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'"
-                    type="button">
-                    Digital eksamen
-                    <p>Digital aflevering af eksamensbesvarelser </p>
-                </button>
-            </div>
-
-            <div id="MoveOn">
-                <button class="MoveBut"
-                    onclick="location.href='https://au.moveon4.de/form/5c7d0007587531e5508b4567/eng'" type="button">
-                    Move On
-                    <p>Udveksling og praktik i udlandet </p>
-                </button>
-            </div>
-
-            <div id="ExamRegistration">
-                <button class="ExReBut" onclick="location.href='http://www.example.com'" type="button">
-                    Eksamen registration
-                    <p>??? </p>
-                </button>
-            </div>
+        <div class="forelæsningCom">
+            <button id="conbutton" class="basicbutton">Concurrency</button>
 
         </div>
 
-        <div class="Chat Chat0">
-        </div>
-        <div class="Chat Chat1">
-        </div>
-        <div class="Chat Chat2">
+        <div id="conmodal" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content">
+                <span id="conclose" class="close">&times;</span>
+                <p>Important information about concurrency</p>
+            </div>
         </div>
 
-        <div class="Chat ChatAdd">
-            <button class="button ChatButton" type="button" onclick="addChat()">+</button>
-            <div id="myDropdown3" class="dropdown-content3">
-                <a href="#">Add new chat</a>
+        <div class="forelæsningStat">
+            <button id="normbutton" class="basicbutton">Normalfordeling</button>
+
+        </div>
+
+        <div id="normmodal" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content">
+                <span id="normclose" class="close">&times;</span>
+                <p>Important information about Normalfordeling</p>
             </div>
         </div>
 

@@ -1,0 +1,315 @@
+.container {
+  display: grid;
+  grid-template-columns: [first] 7% [line2] 15% [line3] 15% [line4] 15% [line5] 15% [col6-start] 5% [line7] 5% [end];
+  grid-template-rows: [row1-start] 0% [row1-end] 70px [row2-start] 110px [row2-end] 110px [row3-start] 500px [row3-end] 500px [last-line];
+}
+
+.home {
+  display: grid;
+  background-size: cover;
+  background-image: url(Bilder/home-1767389-1505253.png);
+  grid-column: 1;
+  grid-row: 1;
+  width: 50px;
+  height: 50px;
+}
+
+.exsys {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  background-color: rgb(92, 92, 92);
+  justify-self: stretch;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  height: 50px;
+  color: white;
+}
+
+.comark {
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
+  background-color: rgb(92, 92, 92);;
+  justify-self: stretch;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  height: 50px;
+  color: white;
+}
+
+.stat {
+  display: grid;
+  grid-column: 4;
+  grid-row: 1;
+  background-color: rgb(92, 92, 92);;
+  justify-self: stretch;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  height: 50px;
+  color: white;
+}
+
+.hul{
+  display: grid;
+  grid-column: 5;
+  grid-row: 1;
+  background-color: rgb(92, 92, 92);
+  justify-self: stretch;
+  height: 50px;
+
+}
+
+.kalender {
+  display: grid;
+  grid-column: 6;
+  grid-row: 1;
+  background-color: gray;
+  justify-self: end;
+  background-size: cover;
+  background-image: url(Bilder/CALENDER-MONTH-ICON-PRODUUCT.png);
+  width: 50px;
+  height: 50px;
+}
+
+.settings {
+  display: grid;
+  grid-column: 7;
+  grid-row: 1;
+  background-color: gray;
+  justify-self: end;
+  background-size: cover;
+  background-image: url(Bilder/list.png);
+  width: 50px;
+  height: 50px;
+}
+
+.to {
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.toEks{
+  display: grid;
+  grid-column: 2;
+  grid-row: 3;
+  justify-items: center;
+}
+
+.toCom{
+  display: grid;
+  grid-column: 3;
+  grid-row: 3;
+  justify-items: center;
+}
+
+.toStat{
+  display: grid;
+  grid-column: 4;
+  grid-row: 3;
+  justify-items: center;
+}
+
+.litteratur {
+  display: grid;
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.litteraturEks{
+  display: grid;
+  grid-column: 2;
+  grid-row: 4;
+  justify-items: center;
+}
+
+.litteraturCom{
+  display: grid;
+  grid-column: 3;
+  grid-row: 4;
+  justify-items: center;
+}
+
+.litteraturStat{
+  display: grid;
+  grid-column: 4;
+  grid-row: 4;
+  justify-items: center;
+}
+
+.forelæsning{
+  display: grid;
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.forelæsningEks{
+  display: grid;
+  grid-column: 2;
+  grid-row: 5;
+  justify-items: center;
+}
+
+.forelæsningCom{
+  display: grid;
+  grid-column: 3;
+  grid-row: 5;
+  justify-items: center;
+}
+
+.forelæsningStat{
+  display: grid;
+  grid-column: 4;
+  grid-row: 5;
+  justify-items: center;
+}
+
+  .basicbutton{
+
+    background-color: white;
+    z-index: 2;
+    color: black;
+    border:0.2px;
+    border-style: solid;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    font-size: 15px;
+    height: 90px;
+    width: 130px;
+    }
+    
+.ZoomBut{
+  z-index: 3;
+  position: relative;
+  float: left;
+  top: 25%;
+  background-image: url(Bilder/zoom.png);
+  background-size: cover;
+  background-position-x: center;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: 0px;
+  }
+
+
+  
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 25%;
+  top: 13%;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: inline-block;
+  left: 4%;
+  top: 20%;
+  }
+            
+  .dropdown-content {
+  display: none;
+  margin-top: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+            
+  .dropdown-content a {
+  color: black;
+  border: 1px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+            
+  .dropdown a:hover {background-color: #ddd;}
+            
+  .show {display: block;}
+  
+  .dropdown2 {
+  left: 90%;
+  top: 20%;
+  }
+            
+  .dropdown-content2 {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 50px;
+  }
+            
+  .dropdown-content2 a {
+  color: black;
+  border: 1px;
+  text-decoration: none;
+  display: block;
+  }
+            
+  .dropdown2 a:hover {background-color: #ddd;}
+            
+  .show2 {display: block;}
+  
+  .dropdown3 {
+  left: 90%;
+  top: 20%;
+  }
+            
+  .dropdown-content3 {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 42px;
+  }
+            
+  .dropdown-content3 a {
+  color: black;
+  border: 1px;
+  text-decoration: none;
+  display: block;
+  }
+            
+  .dropdown3 a:hover {background-color: #ddd;}
+            
+  .show3 {display: block;}
