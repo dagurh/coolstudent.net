@@ -27,7 +27,8 @@ body{
   display: grid;
   grid-template-columns: [first] 6% [line2] 21% [line3] 21% [line4] 21% [line5] auto [line6] 30px [end];
   grid-template-rows: [row1-start] auto [row1-end] auto
-   [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] auto [last-line];
+   [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] auto [row4-start] auto [row4-end] auto 
+   [row5-start] auto [row5-end] auto [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] auto [row8-end] auto [last-line];
 }
 
 .exsys{
@@ -197,77 +198,6 @@ border-right: 0.1px solid #F4F4F4;
   display: grid; grid-column: 2; grid-row: 6; justify-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-/*det der ikke bruges pt:*/
-
-
-
-
-.ZoomBut{
-  z-index: 3;
-  position: relative;
-  float: left;
-  top: 25%;
-  background-image: url(Bilder/zoom.png);
-  background-size: cover;
-  background-position-x: center;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  border: 0px;
-  }
-
-
-  
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 5; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 25%;
-  top: 13%;
-  width: 50%; /* Full width */
-  height: 50%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-
 .dropdown {
   display: inline-block;
   left: 4%;
@@ -347,6 +277,110 @@ border-right: 0.1px solid #F4F4F4;
   .deadlines{
   display: grid;
   grid-column: 5;
-  grid-row: 3/30;
+  grid-row: 3/8;
   justify-items: center;
+  }
+
+  .Chat{
+    border-radius: 50%;
+    border: 1px;
+    height:40px;
+    width: 40px;
+    display: grid;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    justify-items: center;
+    grid-column: 6;
+    grid-row: 3/10;
+    margin-right: 100px;
+    }
+    
+  .Chat:hover{
+    cursor: pointer;
+    transform: translateY(-2%);
+    }
+    
+  .Chat0{
+    background-image: url(Bilder/Chat.png);
+    margin-top: 20px;
+    }
+          
+  .Chat1{
+    background-image: url(Bilder/Chat1.png);
+    margin-top: 90px;
+    }
+          
+  .Chat2{
+    background-image: url(Bilder/Chat2.png);
+    margin-top: 160px;
+    }
+    
+    .ChatButton{
+      margin-top: 230px; 
+    height:40px;
+    width:40px;
+    line-height: 0.8em;
+    color: black;
+    border:0px;
+    border-style: solid;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    font-size: 15px;
+    }
+
+
+    
+  
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 25%;
+  top: 13%;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  /*det der ikke bruges pt:*/
+.ZoomBut{
+  z-index: 3;
+  position: relative;
+  float: left;
+  top: 25%;
+  background-image: url(Bilder/zoom.png);
+  background-size: cover;
+  background-position-x: center;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: 0px;
   }
