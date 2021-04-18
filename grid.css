@@ -344,12 +344,9 @@ border-right: 0.1px solid #F4F4F4;
             
   .show3 {display: block;}
 
-<<<<<<< HEAD
   .deadlines{
   display: grid;
   grid-column: 5;
-  grid-row: 3/5;
+  grid-row: 3/30;
   justify-items: center;
   }
-=======
->>>>>>> dc8dbb085b93ebf179c0f448b330c9414dea28e9
