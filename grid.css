@@ -313,3 +313,10 @@
   .dropdown3 a:hover {background-color: #ddd;}
             
   .show3 {display: block;}
+
+  .deadlines{
+  display: grid;
+  grid-column: 5;
+  grid-row: 3/5;
+  justify-items: center;
+  }
