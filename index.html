@@ -11,61 +11,81 @@
 </head>
 
 <body>
-    <div class="container">
-        <button class="home"></button>
-        <button class="exsys" onclick="andenFunktion()">ExSys</button>
-        <button class="comark" onclick="andenFunktion()">ComArk</button>
-        <button class="stat" onclick="andenFunktion()">STAT</button>
-        <div class="hul"></div>
-        <a href="kalender.html">
-            <button class="kalender"></button>
-        </a>
-
-        <div class="dropdown2">
-            <button onclick="settings()" class="button button6">_-_</button>
-            <div id="myDropdown2" class="dropdown-content2">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
+        <div class="navbar">
+            
+            <div class="home">
+                <img class="homeimg" src="/Bilder/home.svg">
             </div>
+            <div class="exsys" onclick="andenFunktion()"><p>EXSYS</p></div>
+            <div class="comark" onclick="andenFunktion()"><p>COMARK</p></div>
+            <div class="stat" onclick="andenFunktion()"><p>STAT</p></div>
+            <div class="menu">
+                <div class="menuimg" onclick="settings()">
+                    <img src="/Bilder/menu.svg">
+                </div>
+             </div>
+             <div class="kalenderimg" href="kalender.html">
+                <img  src="/Bilder/kalender.svg">
+                </div>
         </div>
 
-        <div class="to">tø</div>
+    <div class="container">
+
+        <div class="topgab"></div><div class="topgab2"></div><div class="topgab3"></div><div class="topgab4"></div>
+   
+        <div class="to">
+            <img class="toLogo" src="/Bilder/task.svg">
+
+        </div>
 
         <div class="toEks">
-            <button class="basicbutton">Øvelser</button>
+            <div class="basicbutton"><h4>Exercises:</h4><h3>Project status</h3><p>mandag</p></div>
         </div>
 
         <div class="toCom">
-            <button class="basicbutton">Øvelser</button>
+            <div class="basicbutton"><h4>Exercises:</h4><h3>Project status</h3><p>mandag</p></div>
         </div>
 
         <div class="toStat">
-            <button class="basicbutton">Øvelser</button>
+            <div class="basicbutton"><h4>Exercises:</h4><h3>Project status</h3><p>mandag</p></div>
         </div>
 
-        <div class="litteratur">litteratur</div>
+          
+           
+                <div id="myDropdown2" class="dropdown-content2">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                </div>
+       
+
+
+        <div class="litteratur" >
+            <img class="litteraturLogo" src="Bilder/book.svg">
+        </div>
 
         <div class="litteraturEks">
-            <button class="basicbutton">Week 17</button>
+            <div class="basicbutton"><h4>Litteratur:</h4><h3>Project status</h3><p>mandag</p></div>
         </div>
 
         <div class="litteraturCom">
-            <button class="basicbutton">Week 17</button>
+            <div class="basicbutton"><h4>Litteratur:</h4><h3>Project status</h3><p>mandag</p></div>
         </div>
 
         <div class="litteraturStat">
-            <button class="basicbutton">Week 17</button>
+            <div class="basicbutton"><h4>Litteratur:</h4><h3>Project status</h3><p>mandag</p></div>
         </div>
 
-        <div class="forelæsning">forelæsning</div>
+        <div class = "forelæsning">
+            <img class="forelæsningLogo" src="Bilder/presentation.svg">
+        </div>
 
         <div class="forelæsningEks">
             <!--Trigger/Open prototyping-->
-            <button id="protobutton" class="basicbutton">Prototyping</button>
+            <div id="protobutton" class="basicbutton"><h4>Lecture:</h4><h3>Project status</h3><p>mandag</p></div>
         </div>
 
 
@@ -80,7 +100,7 @@
 
 
         <div class="forelæsningCom">
-            <button id="conbutton" class="basicbutton">Concurrency</button>
+            <div id="conbutton" class="basicbutton"><h4>Lecture:</h4><h3>Project status</h3><p>mandag</p></div>
 
         </div>
 
@@ -93,8 +113,7 @@
         </div>
 
         <div class="forelæsningStat">
-            <button id="normbutton" class="basicbutton">Normalfordeling</button>
-
+            <div id="normbutton" class="basicbutton"><h4>Lecture:</h4><h3>Project status</h3><p>mandag</p></div>
         </div>
 
         <div id="normmodal" class="modal">
@@ -104,6 +123,10 @@
                 <p>Important information about Normalfordeling</p>
             </div>
         </div>
+
+        
+
+        <div class="scroll"> </div>
 
     </div>
 </body>
