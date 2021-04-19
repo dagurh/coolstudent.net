@@ -101,3 +101,20 @@ window.onclick = function (event) {
     normmodal.style.display = "none";
   }
 }
+
+//menu expand
+let menuClosed = true;
+let menubox = document.getElementsByClassName('menubox')[0];
+let menuimg = document.getElementsByClassName('menuimg')[0];
+
+document.getElementsByClassName('menu')[0].onclick = function () {
+  if (menuClosed) {
+    menubox.classList.add('menuexpand');
+    menuimg.classList.add('menuimgexpand');
+    menuClosed = false;
+  } else {
+    menubox.classList.remove('menuexpand');
+    menuimg.classList.remove('menuimgexpand');
+    menuClosed = true;
+  }
+}

@@ -370,6 +370,71 @@ border-right: 0.1px solid #F4F4F4;
   cursor: pointer;
 }
 
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #403F3F;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  z-index: +5;
+ }
+  
+ .navbar div{
+  height: 70px;
+ }
+  
+ .menubox{
+  margin-top: 70px;
+  position: fixed;
+  background-color: #403F3F;
+  height: 630px;
+  width: 0px;
+  right: 0;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  border-left: 0.1px solid #ffffff;
+  border-top: 0.1px solid #ffffff;
+ }
+  
+ .menubox p{
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  margin-left: 50px;
+  margin-top: 30px;
+  white-space: nowrap;
+ }
+  
+ .menubox.menuexpand {
+  width: 31%;
+ }
+
+ .menuimg{
+  width: 42px;
+  height: 42px; 
+  justify-self: end;
+  margin-top: 10px;
+  margin-right: 15px;
+  content:url("/Bilder/menu.svg");
+  transition: opacity 0.2 ease;
+ }
+  
+  
+ .menuimg.menuimgexpand {
+  opacity: 100;
+  content:url("/Bilder/cros.svg");
+ }
+ 
+ 
+
   /*det der ikke bruges pt:*/
 .ZoomBut{
   z-index: 3;
