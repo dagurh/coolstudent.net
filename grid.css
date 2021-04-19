@@ -26,9 +26,9 @@ body{
   float: left;
   display: grid;
   grid-template-columns: [first] 6% [line2] 21% [line3] 21% [line4] 21% [line5] auto [line6] 30px [end];
-  grid-template-rows: [row1-start] auto [row1-end] auto
-   [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] auto [row4-start] auto [row4-end] auto 
-   [row5-start] auto [row5-end] auto [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] 2px [row8-end] 2px [last-line];
+  grid-template-rows: [row1-start] 0px [row1-end] 80px
+   [row2-start] 80px [row2-end] 200px [row3-start] auto [row3-end] auto [row4-start] 50px [row4-end] 50px 
+   [row5-start] 50px [row5-end] 50px [row6-start] 50px [row6-end] 50px [row7-start] 50px [row7-end] 50px [row8-start] 2px [row8-end] 2px [last-line];
 }
 
 .exsys{
@@ -282,6 +282,7 @@ border-right: 0.1px solid #F4F4F4;
   margin: none;
   padding: none;
   background-color: rgb(209, 209, 209);
+
   }
   .deadlines h5{
     font-family: Helvetica, Arial, sans-serif;
@@ -289,19 +290,18 @@ border-right: 0.1px solid #F4F4F4;
   font-size: 25px;
   color: white;
   }
-  .space{
+  /*.space{
     margin-top: -280px;
   }
 
   .rest{
     margin-top: -350px;
   }
+  */
 
   .bund{
-    grid-column: 1/9;
-    grid-row: 8;
-    position: absolute;
-    font-size: 15px;
+    grid-column: 1/5;
+    grid-row: 7;
   }
 
   /*
@@ -476,3 +476,31 @@ border-right: 0.1px solid #F4F4F4;
   width: 30px;
   margin-left: 25%;
  }
+
+ .kalenderfremogtilbage{
+  grid-column: 1/5;
+  grid-row: 6;
+  font-size: 15px;
+  z-index: 15;
+  border: #000;
+  border:1px;
+  border-style: solid;
+  justify-self: center;
+  width: 100%;
+ }
+
+ .back{
+   width: 30%;
+   height: 25px;
+ }
+
+ .front{
+  width: 30%;
+  height: 25px;
+}
+
+.Weeknumber{
+  width: 40%;
+}
+
+
