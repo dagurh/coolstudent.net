@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Mock.css">
+  <link rel="stylesheet" type="text/css" href="Buttons.css">
+  <link rel="stylesheet" type="text/css" href="Calendar.css">
+  <link rel="stylesheet" type="text/css" href="CalendarGridItems.css">
+  <link rel="stylesheet" type="text/css" href="Popup.css">
+  <link rel="stylesheet" type="text/css" href="blabla.css">
+  <link rel="stylesheet" type="text/css" href="Relevant-Buttons.css">
+  <script defer src="Javascript.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <div id="Main">
+    <div id="Toolbar">
+
+      <div class="dropdown">
+        <button onclick="addGroup()" class="button button1">+</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Add/Create Group</a>
+          <a href="#">Add/Create Comittee</a>
+        </div>
+      </div>
+
+      <button class="button button2" onclick="andenFunktion()">Studiegruppe</button>
+      <div class="circe statan"></div>
+      <div class="circe statha"></div>
+      <div class="circe exsysan"></div>
+      <div class="circe exsysha"></div>
+      <div class="circe coman"></div>
+      <div class="circe comha"></div>
+
+      <a href="index.html">
+        <button class="button butto">Main page</button>
+        </a>
+
+      <button class="button button3" onclick="andenFunktion()">ExSys</button>
+
+
+      <button class="button button4" onclick="andenFunktion()">ComArk</button>
+      <button class="button button5" onclick="andenFunktion()">STAT</button>
+
+
+      <div class="dropdown2">
+        <button onclick="settings()" class="button button6">_-_</button>
+        <div id="myDropdown2" class="dropdown-content2">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="Calendar">
+
+      <div class="grid">
+        <div class="calSkel M">Mandag</div>
+        <div class="calSkel T">Tirsdag</div>
+        <div class="calSkel O">Onsdag</div>
+        <div class="calSkel T1">Torsdag</div>
+        <div class="calSkel F">Fredag</div>
+        <div class="calSkel S">Lørdag</div>
+        <div class="calSkel S1">Søndag</div>
+
+        <div class="calSkel t1">8-10</div>
+        <div class="calSkel t2">10-12</div>
+        <div class="calSkel t3">12-14</div>
+        <div class="calSkel t4">14-16</div>
+        <div class="calSkel t5">16-18</div>
+        <div class="calSkel t6">18-20</div>
+        <div class="calSkel t7">20-22</div>
+        <div class="calSkel t8">22-24</div>
+
+        <div class="calSkel Uge">
+          uge 41
+          <button class="UgeBut UgeBut1" onclick="ShiftWeekForward()"></button>
+          <button class="UgeBut UgeBut2" onclick="ShiftWeekBackward()"></button>
+        </div>
+        <div class="calSkel ExSys">
+          Exsys lektion 9
+          <button class="LektierBut" onclick="popup1()">L</button>
+        </div>
+
+        <div class="calSkel Aflevering">
+          ExSys Aflevering 45
+          <button class="AfleveringBut" onclick="popup1()">A</button>
+        </div>
+
+        <div class="calSkel Møde">
+          Gruppe møde
+          <button class="MødeBut" onclick="popup1()">Z</button>
+          <button class="MødeBut" onclick="popup1()">D</button>
+        </div>
+
+
+        <div class="calSkel ExSys1">
+          Exsys lektion 8
+          <button class="LektierBut" onclick="popup1()">L</button>
+        </div>
+
+        <div class="calSkel ExSys2">
+          Exsys lektion 10
+          <button class="LektierBut" onclick="popup1()">L</button>
+        </div>
+
+        <div class="calSkel ExSys3">
+          Exsys lektion 11
+          <button class="LektierBut" onclick="popup1()">L</button>
+        </div>
+
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+        <div class="Z"></div>
+      </div>
+    </div>
+
+
+
+    <div id="Others">
+      <p>Relevant information </p>
+
+      <div id="STADS">
+        <button class="STADSBut" onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'"
+          type="button">
+          STADS
+          <p>Dine karakterer, undervisnings og eksamentilmelding </p>
+        </button>
+
+      </div>
+
+      <div id="AULibrary">
+        <button class="AuLiBut" onclick="location.href='https://library.au.dk/'" type="button">
+          AU Library
+          <p>Bøger, artikler mm. </p>
+        </button>
+      </div>
+
+      <div id="KursusKatalog">
+        <button class="KurKBut" onclick="location.href='http://www.example.com'" type="button">
+          Kursus katalog
+          <p>Se info om aktuelle kurser </p>
+        </button>
+      </div>
+
+      <div id="DigitalExam">
+        <button class="DeExBut" onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'"
+          type="button">
+          Digital eksamen
+          <p>Digital aflevering af eksamensbesvarelser </p>
+        </button>
+      </div>
+
+      <div id="MoveOn">
+        <button class="MoveBut" onclick="location.href='https://au.moveon4.de/form/5c7d0007587531e5508b4567/eng'"
+          type="button">
+          Move On
+          <p>Udveksling og praktik i udlandet </p>
+        </button>
+      </div>
+
+      <div id="ExamRegistration">
+        <button class="ExReBut" onclick="location.href='http://www.example.com'" type="button">
+          Eksamen registration
+          <p>??? </p>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="Chat Chat0">
+    </div>
+    <div class="Chat Chat1">
+    </div>
+    <div class="Chat Chat2">
+    </div>
+
+    <div class="Chat ChatAdd">
+      <button class="button ChatButton" type="button" onclick="addChat()">+</button>
+      <div id="myDropdown3" class="dropdown-content3">
+        <a href="#">Add new chat</a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

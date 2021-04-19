@@ -1,236 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="Mock.css">
-    <link rel="stylesheet" type="text/css" href="Buttons.css">
-    <link rel="stylesheet" type="text/css" href="Calendar.css">
-    <link rel="stylesheet" type="text/css" href="CalendarGridItems.css">
-    <link rel="stylesheet" type="text/css" href="Popup.css">
-    <link rel="stylesheet" type="text/css" href="blabla.css">
-    <link rel="stylesheet" type="text/css" href="Relevant-Buttons.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
     <script defer src="Javascript.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
+
 <body>
+    <div class="navbar">
 
-    
-    <div id="Main">
-    <div id="Toolbar">
-    
-        <div class="dropdown">
-            <button onclick="addGroup()" class="button1">+</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Add/Create Group</a>
-              <a href="#">Add/Create Comittee</a>
-            </div>
-          </div>
-
-        <button class="button2" onclick="andenFunktion()">Studiegruppe</button>
-        <div class="circe statan"></div>
-        <div class="circe statha"></div>
-        <div class="circe exsysan"></div>
-        <div class="circe exsysha"></div>
-        <div class="circe coman"></div>
-        <div class="circe comha"></div>
-        
-        <button class="button3" onclick="andenFunktion()">ExSys</button>
-        
-
-        <button class="button4" onclick="andenFunktion()">ComArk</button>
-        <button class="button5" onclick="andenFunktion()">STAT</button>
-
-       
-        <div class="dropdown2">
-            <button onclick="settings()" class="button6">_-_</button>
-            <div id="myDropdown2" class="dropdown-content2">
-              <a href="#">Menu</a>
-              <a href="#">Profil</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-              <a href="#">6</a>
-            </div>
-          </div>
-
-    </div>
-
-<div id="Calendar">
-
-    <div class="grid">
-    <div class="M">Mandag</div> 
-    <div class="T">Tirsdag</div>
-    <div class="O">Onsdag</div>
-    <div class="T1">Torsdag</div>
-    <div class="F">Fredag</div>
-    <div class="S">Lørdag</div>
-    <div class="S1">Søndag</div>
-
-    <div class="t1">8-10</div>
-    <div class="t2">10-12</div>
-    <div class="t3">12-14</div>
-    <div class="t4">14-16</div>
-    <div class="t5">16-18</div>
-    <div class="t6">18-20</div>
-    <div class="t7">20-22</div>
-    <div class="t8">22-24</div>
-
-    <div class="Uge"> 
-            uge 41
-            <button class="UgeBut" onclick="ShiftWeekForward()"></button>
-            <button class="UgeBut1" onclick="ShiftWeekBackward()"></button>
-    </div>
-    <div class="ExSys">
-            Exsys lektion 9
-            <button class="LektierBut" onclick="popup1()">L</button>
-    </div>
-    
-    <div class="Aflevering">
-        ExSys Aflevering 45
-        <button class="AfleveringBut" onclick="popup1()">A</button></div>
-
-        <div class="Møde">
-            Gruppe møde 
-        <button class="MødeBut" onclick="popup1()">Z</button>
-        <button class="MødeBut" onclick="popup1()">D</button>
+        <div class="home" id="home">
+            <img class="homeimg" src="/Bilder/home.svg">
         </div>
-    
-   
-    <div class="ExSys1">
-        Exsys lektion 8
-        <button class="LektierBut" onclick="popup1()">L</button>
+        <div class="exsys" onclick="andenFunktion()">
+            <p>EXSYS</p>
+        </div>
+        <div class="comark" onclick="andenFunktion()">
+            <p>COMARK</p>
+        </div>
+        <div class="stat" onclick="andenFunktion()">
+            <p>STAT</p>
+        </div>
+        <div class="menu">
+            <img class="menuimg">
+        </div>
+        <a class="kalenderimg" href="kalender.html">
+            <img src="/Bilder/kalender.svg">
+        </a>
     </div>
 
-    <div class="ExSys2">
-        Exsys lektion 10
-        <button class="LektierBut" onclick="popup1()">L</button>
+    <div class="menubox" id="menubox">
+        <p>Menupunkt 1</p>
+        <p>Menupunkt 2</p>
+        <p>Menupunkt 3</p>
     </div>
 
-    <div class="ExSys3">
-        Exsys lektion 11
-        <button class="LektierBut" onclick="popup1()">L</button>
+
+    <div class="container">
+
+        <div class="topgab"></div>
+        <div class="topgab2"></div>
+        <div class="topgab3"></div>
+        <div class="topgab4"></div>
+
+        <div class="to">
+            <img class="toLogo" src="/Bilder/task.svg">
+
+        </div>
+
+        <div class="toEks">
+            <div class="basicbutton">
+                <h4>Exercises:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="videobutton"></div>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+        <div class="toCom">
+            <div class="basicbutton">
+                <h4>Exercises:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="videobutton"></div>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+        <div class="toStat">
+            <div class="basicbutton">
+                <h4>Exercises:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="videobutton"></div>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+
+
+        <div id="myDropdown2" class="dropdown-content2">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+        </div>
+
+
+
+        <div class="litteratur">
+            <img class="litteraturLogo" src="Bilder/book.svg">
+        </div>
+
+        <div class="litteraturEks">
+            <div class="basicbutton">
+                <h4>Litteratur:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+        <div class="litteraturCom">
+            <div class="basicbutton">
+                <h4>Litteratur:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+        <div class="litteraturStat">
+            <div class="basicbutton">
+                <h4>Litteratur:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+        <div class="forelæsning">
+            <img class="forelæsningLogo" src="Bilder/presentation.svg">
+        </div>
+
+        <div class="forelæsningEks">
+            <!--Trigger/Open prototyping-->
+            <div id="protobutton" class="basicbutton">
+                <h4>Lecture:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="videobutton"></div>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+
+        <!--The modal-->
+        <div id="protomodal" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content">
+                <span id="protoclose" class="close">&times;</span>
+                <p>Important information about prototyping</p>
+            </div>
+        </div>
+
+
+        <div class="forelæsningCom">
+            <div id="conbutton" class="basicbutton">
+                <h4>Lecture:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="videobutton"></div>
+                <div class="documentbutton"></div>
+            </div>
+
+        </div>
+
+        <div id="conmodal" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content">
+                <span id="conclose" class="close">&times;</span>
+                <p>Important information about concurrency</p>
+            </div>
+        </div>
+
+        <div class="forelæsningStat">
+            <div id="normbutton" class="basicbutton">
+                <h4>Lecture:</h4>
+                <h3>Project status</h3>
+                <p>mandag</p>
+                <div class="videobutton"></div>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+        <div id="normmodal" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content">
+                <span id="normclose" class="close">&times;</span>
+                <p>Important information about Normalfordeling</p>
+            </div>
+        </div>
+
+        <div class="deadlines">
+            <h5>DEADLINES</h5>
+            <div class="basicbutton space">
+                <h4>Comark:</h4>
+                <h3>threads and stuff</h3>
+                <p>16.04</p>
+                <div class="documentbutton"></div>
+            </div>
+            <div class="basicbutton rest">
+                <h4>EXSYS:</h4>
+                <h3>somesome</h3>
+                <p>18.04</p>
+                <div class="documentbutton"></div>
+            </div>
+            <div class="basicbutton rest">
+                <h4>Saun Paul:</h4>
+                <h3>we be burnin</h3>
+                <p>20.04</p>
+                <div class="documentbutton"></div>
+            </div>
+            <div class="basicbutton rest">
+                <h4>Something:</h4>
+                <h3>Sometime</h3>
+                <p>23.04</p>
+                <div class="documentbutton"></div>
+            </div>
+            <div class="basicbutton rest">
+                <h4>Far far away:</h4>
+                <h3>andele</h3>
+                <p>21.05</p>
+                <div class="documentbutton"></div>
+            </div>
+        </div>
+
+        <div class="bund">
+            Placeholder
+        </div>
+
+
+        <!--
+        <div class="Chat Chat0">
+        </div>
+        <div class="Chat Chat1">
+        </div>
+        <div class="Chat Chat2">
+        </div>
+
+        <div class="Chat">
+            <button class="ChatButton" type="button" onclick="addChat()">+</button>
+            <div id="myDropdown3" class="dropdown-content3">
+                <a href="#">Add new chat</a>
+            </div>
+        </div>
+        -->
+
+        <div class="scroll"> </div>
+
     </div>
-
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-    <div class="Z"></div>
-</div>
-</div>
-
-
-
-<div id="Others">
-<p>Relevant information </p>
-
-<div id=STADS> 
-    <button class=STADSBut onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'"type="button">
-        STADS 
-        <p>Dine karakterer, undervisnings og eksamentilmelding  </p> 
-        </button>
-        
-</div>
-
-<div id=AULibrary> 
-    <button class=AuLiBut onclick="location.href='https://library.au.dk/'" type="button">
-        AU Library
-        <p>Bøger, artikler mm. </p> </button>
-</div>
-
-<div id=KursusKatalog> 
-    <button class=KurKBut onclick="location.href='http://www.example.com'" type="button">
-        Kursus katalog
-        <p>Se info om aktuelle kurser  </p> </button>
-</div>
-
-<div id=DigitalExam> 
-    <button class=DeExBut onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'" type="button">
-        Digital eksamen
-        <p>Digital aflevering af eksamensbesvarelser  </p> </button>
-</div>
-
-<div id=MoveOn> 
-    <button class=MoveBut onclick="location.href='https://au.moveon4.de/form/5c7d0007587531e5508b4567/eng'" type="button">
-        Move On
-        <p>Udveksling og praktik i udlandet </p> </button>
-</div>
-
-<div id=ExamRegistration> 
-    <button class=ExReBut onclick="location.href='http://www.example.com'" type="button">
-        Eksamen registration
-        <p>??? </p> </button>
-</div>
-
-</div>
-
-<div id="Chat">
-</div>
-<div id="Chat1">
-</div>
-<div id="Chat2">
-</div>
-
-<div id="ChatAdd">
-    <button class="ChatButton" type="button" onclick="addChat()">+</button>
-    <div id="myDropdown3" class="dropdown-content3">
-        <a href="#">Add new chat</a>
-    </div>
-</div>
-
-</div>
-    
-
-
-
-    
-
 </body>
+
 </html>

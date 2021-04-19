@@ -1,361 +1,264 @@
- 
-.button1{
+.button{
 background-color: white;
 position: absolute;
-left: 2%;
-top: 20%;
 z-index: 2;
 float: left;
 color: black;
-border-radius: 50%;
 border:0px;
 border-style: solid;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+font-family: 'Roboto', sans-serif;
+border-radius: 25px;
+font-size: 15px;
+}
+
+.button:hover{
+background-color: RGB(239,255,255);
+cursor: pointer;
+transform: translateY(-2%);
+}
+
+.basicbutton{
+background-color: white;
+position: absolute;
+z-index: 2;
+float: left;
+color: black;
+border:0px;
+border-style: solid;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+font-family: 'Roboto', sans-serif;
+border-radius: 25px;
+font-size: 15px;
+height: 90px;
+width: 130px;
+}
+
+.ZoomBut{
+z-index: 3;
+position: relative;
+float: left;
+top: 25%;
+background-image: url(Bilder/zoom.png);
+background-size: cover;
+background-position-x: center;
+border-radius: 50%;
+height: 25px;
+width: 25px;
+border: 0px;
+}
+
+.butto{
+  left: 50%;
+  top: 20%;
+  height: 60%;
+  width: 8%;
+  background-color: lightpink;
+  background-image: url(Bilder/CALENDER-MONTH-ICON-PRODUUCT.png);
+}
+
+.button1{
+left: 2%;
+top: 20%;
 text-align: center;
 line-height: 0.8em;
-
-
 height: 50px;
 width: 50px;
-
-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-      font-family: 'Roboto', sans-serif;
-      font-size: 45px;
+font-size: 45px;
 }
 
 .button2{
-  background-color: white;
-  position: absolute;
-  left: 10%;
-  top: 20%;
-  z-index: 2;
-  float: left;
-  color: black;
-  border-radius: 25px;
-  border:0px;
-          border-style: solid;
-
-          height: 60%;
-        width: 8%;
-
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-  }
-
-  .button3{
-    background-color: white;
-    position: absolute;
-    left: 60%;
-    top: 20%;
-    z-index: 2;
-    float: left;
-    color: black;
-    border-radius: 25px;
-    border:0px;
-          border-style: solid;
-
-          height: 60%;
-        width: 8%;
-
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-    }
-
-    .button4{
-      background-color: white;
-      position: absolute;
-      left: 70%;
-      top: 20%;
-      z-index: 2;
-      float: left;
-      color: black;
-      border-radius: 25px;
-      border:0px;
-          border-style: solid;
-
-          height: 60%;
-          width: 8%;
-
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      }
-
-      .button5{
-        background-color: white;
-        position: absolute;
-        left: 80%;
-        top: 20%;
-        z-index: 2;
-        float: left;
-        color: black;
-        border-radius: 25px;
-        border:0px;
-        border-style: solid;
-        
-        height: 60%;
-        width: 8%;
-
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-        }
-
-        .button6{
-          background-color: white;
-          position: absolute;
-          left: 90%;
-          top: 20%;
-          z-index: 2;
-          float: left; 
-          color: black;
-          border-radius: 50%;
-          border:0px;
-          border-style: solid;
-
-          height: 50px;
-          width: 50px;
-
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-      font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      line-height: 0.8em;
-
-          }
-
-
-          .button1:hover{
-            background-color: RGB(239,255,255);
-            cursor: pointer;
-            transform: translateY(-2%);
-          }
-          .button2:hover{
-            background-color: RGB(239,255,255);
-            cursor: pointer;
-            transform: translateY(-2%);
-          }
-          .button3:hover{
-            background-color: RGB(239,255,255);
-            cursor: pointer;
-            transform: translateY(-2%);
-          }
-          .button4:hover{
-            background-color: RGB(239,255,255);
-            cursor: pointer;
-            transform: translateY(-2%);
-          }
-          .button5:hover{
-            background-color: RGB(239,255,255);
-            cursor: pointer;
-            transform: translateY(-2%);
-          }
-          .button6:hover{
-            background-color: RGB(239,255,255);
-            cursor: pointer;
-            transform: translateY(-2%);
-          }
-
-          .dropdown {
-            position: absolute;
-            display: inline-block;
-            left: 4%;
-            top: 20%;
-          }
-          
-          .dropdown-content {
-            display: none;
-            position: absolute;
-            margin-top: 50px;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
-          
-          .dropdown-content a {
-            color: black;
-            border: 1px;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-          }
-          
-          .dropdown a:hover {background-color: #ddd;}
-          
-          .show {display: block;}
-
-          .dropdown2 {
-            position: absolute;
-            float: right;
-            left: 90%;
-            top: 20%;
-          }
-          
-          .dropdown-content2 {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            margin-top: 50px;
-          }
-          
-          .dropdown-content2 a {
-            color: black;
-            border: 1px;
-            text-decoration: none;
-            display: block;
-          }
-          
-          .dropdown2 a:hover {background-color: #ddd;}
-          
-          .show2 {display: block;}
-
-          .dropdown3 {
-            position: absolute;
-            float: right;
-            left: 90%;
-            top: 20%;
-          }
-          
-          .dropdown-content3 {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            margin-top: 42px;
-          }
-          
-          .dropdown-content3 a {
-            color: black;
-            border: 1px;
-            text-decoration: none;
-            display: block;
-          }
-          
-          .dropdown3 a:hover {background-color: #ddd;}
-          
-          .show3 {display: block;}
-
-
-          div#Chat{
-            border-radius: 50%;
-            border: 1px;
-            top: 20%;
-            left: 92%;
-            height:40px;
-            width: 40px;
-            position: absolute;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-            background-size: cover; 
-            background-image: url(Bilder/Chat.png);
-          }
-      
-          div#Chat1{
-            border-radius: 50%;
-            border: 1px;
-            top: 28%;
-            left: 92%;
-            height:40px;
-            width: 40px;
-            position: absolute;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-            background-size: cover; 
-            background-image: url(Bilder/Chat1.png);
-          }
-      
-          div#Chat2{
-            border-radius: 50%;
-            border: 1px;
-            top: 36%;
-            left: 92%;
-            height:40px;
-            width: 40px;
-            position: absolute;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-            background-size: cover; 
-            background-image: url(Bilder/Chat2.png);
-          }
-      
-          div#ChatAdd{
-            border-radius: 50%;
-            border: 1px;
-            top: 44%;
-            left: 92%;
-            height:40px;
-            width: 40px;
-            position: absolute;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-          }
-          .ChatButton{
-            height:100%;
-            width: 100%;
-            position: absolute;
-            border-radius: 50%;
-            border: 0px;
-            border-style: solid;
-            background-color: white;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-            font-family: 'Roboto', sans-serif;
-      font-size: 15px;
-      line-height: 0.8em;
-          }
-
-          .UgeBut{
-           border-color: rgb(14, 78, 67) ;
-           opacity: 0.8;
-           border-width: 0 3px 3px 0;
-           display: inline-block;
-           padding: 3px;
-          background-color: inherit;
-           transform: rotate(-45deg);
-           left: 12%;
-           top: 18px;
-           position: absolute;
-          }
-          .UgeBut1{
-            border-color: rgb(14, 78, 67);
-            opacity: 0.8;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-           background-color: inherit;
-            transform: rotate(135deg);
-            left: 4.5%;
-            top: 18px;
-            position: absolute;
-          }
-
-
-.ChatButton:hover{
-  cursor: pointer;
-  transform: translateY(-2%);
+left: 10%;
+top: 20%;
+height: 60%;
+width: 8%;
 }
 
-div#Chat:hover{cursor: pointer;
-  transform: translateY(-2%);}
-div#Chat1:hover{cursor: pointer;
-  transform: translateY(-2%);}
-div#Chat2:hover{cursor: pointer;
-  transform: translateY(-2%);}
-div#ChatAdd:hover{cursor: pointer;
-  transform: translateY(-2%);}
+.button3{
+left: 60%;
+top: 20%;
+height: 60%;
+width: 8%;
+}
 
+.button4{
+left: 70%;
+top: 20%;
+height: 60%;
+width: 8%;
+}
+
+.button5{
+left: 80%;
+top: 20%;
+height: 60%;
+width: 8%;
+}
+
+.button6{
+left: 90%;
+top: 20%;
+height: 50px;
+width: 50px;
+line-height: 0.8em;
+}
+        
+.dropdown {
+position: absolute;
+display: inline-block;
+left: 4%;
+top: 20%;
+}
+          
+.dropdown-content {
+display: none;
+position: absolute;
+margin-top: 50px;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+          
+.dropdown-content a {
+color: black;
+border: 1px;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+          
+.dropdown a:hover {background-color: #ddd;}
+          
+.show {display: block;}
+
+.dropdown2 {
+position: absolute;
+float: right;
+left: 90%;
+top: 20%;
+}
+          
+.dropdown-content2 {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+margin-top: 50px;
+}
+          
+.dropdown-content2 a {
+color: black;
+border: 1px;
+text-decoration: none;
+display: block;
+}
+          
+.dropdown2 a:hover {background-color: #ddd;}
+          
+.show2 {display: block;}
+
+.dropdown3 {
+position: absolute;
+float: right;
+left: 90%;
+top: 20%;
+}
+          
+.dropdown-content3 {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+margin-top: 42px;
+}
+          
+.dropdown-content3 a {
+color: black;
+border: 1px;
+text-decoration: none;
+display: block;
+}
+          
+.dropdown3 a:hover {background-color: #ddd;}
+          
+.show3 {display: block;}
+
+.Chat{
+border-radius: 50%;
+border: 1px;
+height:40px;
+width: 40px;
+position: absolute;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+background-size: cover;
+}
+
+.Chat:hover{
+cursor: pointer;
+transform: translateY(-2%);
+}
+
+.Chat0{
+top: 20%;
+left: 92%;
+background-image: url(Bilder/Chat.png);
+}
+      
+.Chat1{
+top: 28%;
+left: 92%;
+background-image: url(Bilder/Chat1.png);
+}
+      
+.Chat2{
+top: 36%;
+left: 92%; 
+background-image: url(Bilder/Chat2.png);
+}
+      
+.ChatAdd{
+top: 44%;
+left: 92%;
+}
+
+.ChatButton{
+height:100%;
+width: 100%;
+line-height: 0.8em;
+}
+
+.UgeBut{
+border-color: rgb(14, 78, 67) ;
+opacity: 0.8;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+background-color: inherit;
+top: 18px;
+position: absolute;
+}
 
 .UgeBut:hover{
 cursor: pointer;
 border-color: white;
 }
-.UgeBut1:hover{
-  cursor: pointer;
-  border-color: white;
+
+.UgeBut1{
+transform: rotate(-45deg);
+left: 12%;
+}
+
+.UgeBut2{
+transform: rotate(135deg);
+left: 4.5%;
 }
 
 .LektierBut{
@@ -369,65 +272,90 @@ margin-left: 5px;
 }
 
 .MødeBut{
-  border-radius: 25%;
-  margin-left: 5px;
+border-radius: 25%;
+margin-left: 5px;
 }
 
 .circe {
-  border-radius: 50%;
-  border: 1px;
-  border-style: solid;
-  height: 15px;
-  width: 15px;
-  z-index: 3;
-  position: absolute;
+border-radius: 50%;
+border: 1px;
+border-style: solid;
+height: 15px;
+width: 15px;
+z-index: 3;
+position: absolute;
 }
 
 .statan{
-  left: 86%;
-  top: 24%;
-  background-color: rgb(55, 55, 214);
+left: 86%;
+top: 24%;
+background-color: rgb(55, 55, 214);
 }
 
 .statha{
-  left: 86%;
-  top: 52%;
-  background-color: rgb(37, 179, 37);
+left: 86%;
+top: 52%;
+background-color: rgb(37, 179, 37);
 }
 
 .exsysan{
-  left: 66%;
-  top: 24%;
-  background-color: rgb(55, 55, 214);
+left: 66%;
+top: 24%;
+background-color: rgb(55, 55, 214);
 }
 
 .exsysha{
-  left: 66%;
-  top: 52%;
-  background-color: rgb(37, 179, 37);
+left: 66%;
+top: 52%;
+background-color: rgb(37, 179, 37);
 }
 
 .coman{
-  left: 76%;
-  top: 24%;
-  background-color: rgb(55, 55, 214);
+left: 76%;
+top: 24%;
+background-color: rgb(55, 55, 214);
 }
 
 .comha{
-  left: 76%;
-  top: 52%;
-  background-color: rgb(37, 179, 37);
+left: 76%;
+top: 52%;
+background-color: rgb(37, 179, 37);
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 25%;
+  top: 13%;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+}
 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
 
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
