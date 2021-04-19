@@ -449,6 +449,7 @@ border-right: 0.1px solid #F4F4F4;
   transition: 1s;
   border-left: 0.1px solid #ffffff;
   border-top: 0.1px solid #ffffff;
+  z-index: 3;
  }
   
  .menubox p{
