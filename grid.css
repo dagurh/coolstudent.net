@@ -26,9 +26,9 @@ body{
   float: left;
   display: grid;
   grid-template-columns: [first] 6% [line2] 21% [line3] 21% [line4] 21% [line5] auto [line6] 30px [end];
-  grid-template-rows: [row1-start] 0px [row1-end] 80px
-   [row2-start] 80px [row2-end] 200px [row3-start] auto [row3-end] auto [row4-start] 50px [row4-end] 50px 
-   [row5-start] 50px [row5-end] 50px [row6-start] 50px [row6-end] 50px [row7-start] 50px [row7-end] 50px [row8-start] 2px [row8-end] 2px [last-line];
+  grid-template-rows: [row1-start] auto [row1-end] auto
+   [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] auto [row4-start] auto [row4-end] auto 
+   [row5-start] auto [row5-end] auto [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] 2px [row8-end] 2px [last-line];
 }
 
 .exsys{
@@ -282,7 +282,8 @@ border-right: 0.1px solid #F4F4F4;
   margin: none;
   padding: none;
   background-color: rgb(209, 209, 209);
-
+  width: 60%; 
+  height: 39.1%;
   }
   .deadlines h5{
     font-family: Helvetica, Arial, sans-serif;
@@ -290,12 +291,35 @@ border-right: 0.1px solid #F4F4F4;
   font-size: 25px;
   color: white;
   }
-  /*.space{
-    margin-top: -280px;
+
+  .deadlines h4{
+    font-size: 10px;
+    margin: 0px;
+  }
+  .deadlines h3{
+    font-size: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin: none;
+  }
+  .deadlines p{
+    font-size: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin: none;
+  }
+
+  .space{
+    margin: 0px;
+    height: 80%;
+    width: 80%;
   }
 
   .rest{
-    margin-top: -350px;
+    margin: 0px;
+    margin-top: 3px;
+    height: 80%;
+    width: 80%;
   }
   */
 
