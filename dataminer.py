@@ -8,7 +8,7 @@ __CREATE_SQL = """
 CREATE TABLE IF NOT EXISTS deadlines
 (course TEXT NOT NULL,
  title TEXT NOT NULL,
- due TEXT NOT NULL);
+ dued TEXT NOT NULL);
 """
 
 deadlinesexsys = 'https://blackboard.au.dk/webapps/blackboard/content/listContent.jsp?course_id=_145314_1&content_id=_2887280_1&mode=reset'
