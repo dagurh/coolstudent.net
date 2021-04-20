@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/css/grid.css">
-    <script defer src="/javascript/Javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/grid.css') }}">
+    <script defer src="{{ url_for('static', filename='/javascript/Javascript.js') }}"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoolStudent.net</title>
@@ -14,7 +14,7 @@
     <div class="navbar">
 
         <div class="home" id="home">
-            <img class="homeimg" src="/Bilder/home.svg">
+            <img class="homeimg" src="{{ url_for('static', filename='/Bilder/home.svg') }}">
         </div>
         <div class="exsys" onclick="andenFunktion()">
             <p>EXSYS</p>
@@ -29,7 +29,7 @@
             <img class="menuimg">
         </div>
         <a class="kalenderimg" href="kalender.html">
-            <img src="/Bilder/kalender.svg">
+            <img src="{{ url_for('static', filename='/Bilder/kalender.svg') }}">
         </a>
     </div>
 
@@ -48,7 +48,7 @@
         <div class="topgab4"></div>
 
         <div class="to">
-            <img class="toLogo" src="/Bilder/task.svg">
+            <img class="toLogo" src="{{ url_for('static', filename='/Bilder/task.svg') }}">
 
         </div>
 
@@ -57,8 +57,8 @@
                 <h4>Exercises:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="videobutton"></div>
-                <div class="documentbutton"></div>
+                <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
         </div>
 
@@ -67,8 +67,8 @@
                 <h4>Exercises:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="videobutton"></div>
-                <div class="documentbutton"></div>
+                <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
         </div>
 
@@ -77,8 +77,8 @@
                 <h4>Exercises:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="videobutton"></div>
-                <div class="documentbutton"></div>
+                <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
         </div>
 
@@ -96,7 +96,7 @@
 
 
         <div class="litteratur">
-            <img class="litteraturLogo" src="/Bilder/book.svg">
+            <img class="litteraturLogo" src="{{ url_for('static', filename='/Bilder/book.svg') }}">
         </div>
 
         <div class="litteraturEks">
@@ -104,7 +104,7 @@
                 <h4>Litteratur:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="documentbutton"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
         </div>
 
@@ -113,7 +113,7 @@
                 <h4>Litteratur:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="documentbutton"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
         </div>
 
@@ -122,12 +122,12 @@
                 <h4>Litteratur:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="documentbutton"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
         </div>
 
         <div class="forelæsning">
-            <img class="forelæsningLogo" src="/Bilder/presentation.svg">
+            <img class="forelæsningLogo" src="{{ url_for('static', filename='/Bilder/presentation.svg') }}">
         </div>
 
         <div class="forelæsningEks">
@@ -136,8 +136,8 @@
                 <h4>Lecture:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="videobutton"></div>
-                <div class="documentbutton"></div>
+                <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
         </div>
 
@@ -157,8 +157,8 @@
                 <h4>Lecture:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="videobutton"></div>
-                <div class="documentbutton"></div>
+                <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
 
         </div>
@@ -176,8 +176,8 @@
                 <h4>Lecture:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
-                <div class="videobutton"></div>
-                <div class="documentbutton"></div>
+                <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);"></div>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
         </div>
 
@@ -190,44 +190,27 @@
         </div>
 
         <div class="deadlines">
+            {% if list %}
             <h5>DEADLINES</h5>
-            <div class="basicbutton space">
-                <h4>Comark:</h4>
-                <h3>threads and stuff</h3>
-                <p>16.04</p>
-                <div class="documentbutton"></div>
+            {% for row in list %}            
+            <div id="deadline--{{row[0]}}" class="basicbutton space">
+                <h4>{{row[0]}}</h4>
+                <h3>{{row[1]}}</h3>
+                <p>{{row[2]}}</p>
+                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
             </div>
-            <div class="basicbutton rest">
-                <h4>EXSYS:</h4>
-                <h3>somesome</h3>
-                <p>18.04</p>
-                <div class="documentbutton"></div>
-            </div>
-            <div class="basicbutton rest">
-                <h4>Saun Paul:</h4>
-                <h3>we be burnin</h3>
-                <p>20.04</p>
-                <div class="documentbutton"></div>
-            </div>
-            <div class="basicbutton rest">
-                <h4>Something:</h4>
-                <h3>Sometime</h3>
-                <p>23.04</p>
-                <div class="documentbutton"></div>
-            </div>
-            <div class="basicbutton rest">
-                <h4>Far far away:</h4>
-                <h3>andele</h3>
-                <p>21.05</p>
-                <div class="documentbutton"></div>
-            </div>
+            {% endfor %}
+
+            {% else %}
+            <h3>There are no deadlines mate</h3>
+            {% endif %}
         </div>
 
-        <div class="Chat Chat1">
+        <div class="Chat Chat1" style="background-image: url(/static/Bilder/Chat.png);">
         </div>
-        <div class="Chat Chat2">
+        <div class="Chat Chat2" style="background-image: url(/static/Bilder/Chat1.png);">
         </div>
-        <div class="Chat Chat3">
+        <div class="Chat Chat3" style="background-image: url(/static/Bilder/Chat2.png);">
         </div>
 
         <div class="Chat Chat4">

@@ -353,19 +353,16 @@ border-right: 0.1px solid #F4F4F4;
     }
     
   .Chat1{
-    background-image: url(/Bilder/Chat.png);
    margin-top: 20%;
   
     }
           
   .Chat2{
-    background-image: url(/Bilder/Chat1.png);
     margin-top: 25%;
   
     }
 
     .Chat3{
-      background-image: url(/Bilder/Chat2.png);
       margin-top: 30%;
      
       }
@@ -503,7 +500,6 @@ border-right: 0.1px solid #F4F4F4;
   float: right;
   background-size: cover;
   background-position-x: center;
-  background-image: url(/Bilder/video-call-icon-11-256.png);
   height: 30px;
   width: 30px;
   margin-right: 25%;
@@ -513,7 +509,6 @@ border-right: 0.1px solid #F4F4F4;
   float: left;
   background-size: cover;
   background-position-x: center;
-  background-image: url(/Bilder/adddoc.png);
   height: 30px;
   width: 30px;
   margin-left: 25%;
