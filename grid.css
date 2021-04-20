@@ -369,10 +369,13 @@ border-right: 0.1px solid #F4F4F4;
       margin-top: 30%;
      
       }
+
+.Chat4{
+  margin-top: 35%;
+}
     
 
     .ChatButton{
-    margin-top: 500px; 
     line-height: 0.8em;
     color: black;
     border:0px;
