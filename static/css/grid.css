@@ -28,7 +28,7 @@ body{
   grid-template-columns: [first] 6% [line2] 21% [line3] 21% [line4] 21% [line5] 15% [line6] 30% [end];
   grid-template-rows: [row1-start] auto [row1-end] auto
    [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] auto [row4-start] auto [row4-end] auto 
-   [row5-start] auto [row5-end] auto [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] 2px [row8-end] 2px [last-line];
+   [row5-start] auto [row5-end] 30% [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] auto [row8-end] auto [last-line];
 }
 
 .exsys{
@@ -281,19 +281,20 @@ border-right: 0.1px solid #F4F4F4;
   .show3 {display: block;}
 
  .deadlines{
-  display: grid;
+  display: inline-block;
   grid-column: 5;
   grid-row: 3/6;
-  justify-items: center;
-  margin: none;
-  padding: none;
   background-color: rgb(209, 209, 209);
+  overflow: auto;
   }
+
+
   .deadlines h5{
     font-family: Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  font-size: 25px;
-  color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+    text-align: center;
   }
 
   .deadlines h4{
@@ -314,9 +315,12 @@ border-right: 0.1px solid #F4F4F4;
   }
 
   .space{
-    margin: 0px;
-    height: 80%;
+    height: 100px;
     width: 80%;
+    padding-top: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .rest{
