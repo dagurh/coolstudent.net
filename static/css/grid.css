@@ -25,7 +25,7 @@ body{
   width: 100%;
   float: left;
   display: grid;
-  grid-template-columns: [first] 6% [line2] 21% [line3] 21% [line4] 21% [line5] 15% [line6] 30% [end];
+  grid-template-columns: [first] 6% [line2] 21% [line3] 21% [line4] 21% [line5] 21% [line6] 30% [end];
   grid-template-rows: [row1-start] auto [row1-end] auto
    [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] auto [row4-start] auto [row4-end] auto 
    [row5-start] auto [row5-end] 30% [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] auto [row8-end] auto [last-line];
@@ -284,16 +284,14 @@ border-right: 0.1px solid #F4F4F4;
   display: inline-block;
   grid-column: 5;
   grid-row: 3/6;
-  background-color: rgb(209, 209, 209);
   overflow: auto;
   }
-
 
   .deadlines h5{
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
     font-size: 25px;
-    color: white;
+    color: black;
     text-align: center;
   }
 
@@ -316,7 +314,7 @@ border-right: 0.1px solid #F4F4F4;
 
   .space{
     height: 100px;
-    width: 80%;
+    width: 75%;
     padding-top: 5px;
     position: relative;
     left: 50%;
@@ -553,25 +551,53 @@ border-right: 0.1px solid #F4F4F4;
 
  }
  .kalenderfremogtilbage{
-  grid-column: 1/5;
-  grid-row: 6;
-  font-size: 15px;
-  z-index: 15;
+  font-size: 25px;
   justify-self: center;
+  text-align: center;
   height: 25px;
+  grid-row: 6;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
   width: 100%;
  }
 
- .back{
-   width: 30%;
+ .weeknumber{
+   grid-column: 3/4;
+   border-left: none;
+   border-right: none;
  }
 
- .front{
-  width: 30%;
+ .back{
+   grid-column: 2/3;
+ }
+   
+
+.front{
+  grid-column: 4/5;
 }
 
 .Weeknumber{
   width: 40%;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: lightgray; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
 
