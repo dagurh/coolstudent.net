@@ -3,14 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="Mock.css">
-  <link rel="stylesheet" type="text/css" href="Buttons.css">
-  <link rel="stylesheet" type="text/css" href="Calendar.css">
-  <link rel="stylesheet" type="text/css" href="CalendarGridItems.css">
-  <link rel="stylesheet" type="text/css" href="Popup.css">
-  <link rel="stylesheet" type="text/css" href="blabla.css">
-  <link rel="stylesheet" type="text/css" href="Relevant-Buttons.css">
-  <script defer src="Javascript.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/Mock.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/Buttons.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/CalendarGridItems.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/Relevant-Buttons.css') }}">
+  <script defer src="{{ url_for('static', filename='/javascript/Javascript.js') }}"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -38,7 +35,7 @@
       <div class="circe coman"></div>
       <div class="circe comha"></div>
 
-      <a href="index.html">
+      <a href="/">
         <button class="button butto">Main page</button>
         </a>
 
