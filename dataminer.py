@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return redirect('https://vm06.exsys2021.cs.au.dk/index')
+  return redirect('https://vm06.exsys2021.cs.au.dk/')
 
 @app.route('/index')
 def indexx():
