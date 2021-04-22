@@ -7,10 +7,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return redirect('https://vm06.exsys2021.cs.au.dk/')
-
-@app.route('/index')
-def indexx():
   return render_template('index.html', list=db.all_deadlines())
 
 @app.route('/kalender')
