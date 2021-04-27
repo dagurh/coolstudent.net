@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return render_template('index.html', list=db.all_deadlines())
+  return render_template('index.html', list=db.all_deadlines(), exsyslit=db.exsysLit(), comarklit=db.comarkLit(), statlit=db.statLit(), exsystø=db.exsysTØ(), comarktø=db.comarkTØ(), stattø=db.statTØ(), exsyslec=db.exsysLec(), comarklec=db.comarkLec(), statlec=db.statLec())
 
 @app.route('/kalender')
 def kalender():

@@ -10,8 +10,12 @@
     <title>CoolStudent.net</title>
 </head>
 
+<<<<<<< HEAD
 <body style="overflow: hidden;">
 
+=======
+<body>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
     <div class="navbar">
 
         <div class="home" id="home">
@@ -54,13 +58,21 @@
         </div>
 
         <div class="toEks">
+            {% if exsystø%}
+            {% for row in exsystø %}
             <div class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Exercises:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
                 </div>
                 <div class="quicklinks">
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderVid">
                     <div class="videobutton">
                     </div>
@@ -71,16 +83,28 @@
                 </div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="toCom">
+            {% if comarktø%}
+            {% for row in comarktø %}
             <div class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Exercises:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
                 </div>
                 <div class="quicklinks">
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderVid">
                     <div class="videobutton" >
                     </div>
@@ -91,16 +115,28 @@
                 </div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="toStat">
+            {% if stattø%}
+            {% for row in stattø %}
             <div class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Exercises:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
                 </div>
                 <div class="quicklinks">
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderVid">
                     <div class="videobutton">
                     </div>
@@ -112,6 +148,10 @@
                 </div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
 
@@ -132,48 +172,84 @@
         </div>
 
         <div class="litteraturEks">
+            {% if exsyslit%}
+            {% for row in exsyslit %}
             <div class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Litteratur:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
                 </div>
                 <div class="quicklinks">
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderDoc">
                     <div class="documentbutton"></div>
                 </div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="litteraturCom">
+            {% if comarklit%}
+            {% for row in comarklit %}
             <div class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Litteratur:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
                 </div>
                 <div class="quicklinks">
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderDoc">
                     <div class="documentbutton"></div>
                 </div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="litteraturStat">
+            {% if statlit%}
+            {% for row in statlit %}
             <div class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Litteratur:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
                 </div>
                 <div class="quicklinks">
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderDoc">
                     <div class="documentbutton"></div>
                 </div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="forelæsning">
@@ -181,8 +257,11 @@
         </div>
 
         <div class="forelæsningEks">
+            {% if exsyslec%}
+            {% for row in exsyslec %}
             <!--Trigger/Open prototyping-->
             <div id="protobutton" class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Lecture:</h4>
                 <h3>Project status</h3>
@@ -190,6 +269,11 @@
                 </div>
                 <div class="quicklinks">
 
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderVid">
                     <div class="videobutton">
                     </div>
@@ -200,6 +284,10 @@
                 </div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
 
@@ -208,19 +296,48 @@
             <!--Content in the modal-->
             <div class="modal-content">
                 <span id="protoclose" class="close">&times;</span>
-                <p>Important information about prototyping</p>
+                <div class="small">
+                    <p>ExSys status: </p>
+                </div>
+                <div class="headline">
+                    <p>Projekt information </p>
+                </div>
+                <div class="information">
+                    <p>Important information about prototyping here </p>
+                </div>
+                <div class="Resources">
+                    <p>Resources:</p>
+                    <a class="link" href="url">Resourcer her</a>
+                </div>
+                <div class="Slides">
+                    <p> Slides:</p>
+                    <a class="link" href="url">Slides her</a>
+                </div>
+                <div class="Recordings">
+                    <p>Recordings:</p>
+                    <a class="link" href="url">Recordings her</a>
+                </div>
+
             </div>
         </div>
 
 
         <div class="forelæsningCom">
+            {% if comarklec%}
+            {% for row in comarklec %}
             <div id="conbutton" class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Lecture:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
                 </div>
                 <div class="quicklinks">
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderVid">
                     <div class="videobutton">
                     </div>
@@ -231,25 +348,56 @@
                 </div>
                 </div>
             </div>
-
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div id="conmodal" class="modal">
             <!--Content in the modal-->
             <div class="modal-content">
                 <span id="conclose" class="close">&times;</span>
-                <p>Important information about concurrency</p>
+                <div class="small">
+                    <p>ComArk status: </p>
+                </div>
+                <div class="headline">
+                    <p>Projekt information </p>
+                </div>
+                <div class="information">
+                    <p>Important information about concurrency here </p>
+                </div>
+                <div class="Resources">
+                    <p>Resources:</p>
+                    <a class="link" href="url">Resourcer her</a>
+                </div>
+                <div class="Slides">
+                    <p> Slides:</p>
+                    <a class="link" href="url">Slides her</a>
+                </div>
+                <div class="Recordings">
+                    <p>Recordings:</p>
+                    <a class="link" href="url">Recordings her</a>
+                </div>
             </div>
         </div>
 
         <div class="forelæsningStat">
+            {% if statlec%}
+            {% for row in statlec %}
             <div id="normbutton" class="basicbutton">
+<<<<<<< HEAD
                 <div class="topinfo">
                 <h4>Lecture:</h4>
                 <h3>Project status</h3>
                 <p>mandag</p>
                 </div>
                 <div class="quicklinks">
+=======
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
                 <div class="BorderVid">
                     <div class="videobutton">
                     </div>
@@ -260,14 +408,41 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             </div>
+=======
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
+>>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
         </div>
 
         <div id="normmodal" class="modal">
             <!--Content in the modal-->
             <div class="modal-content">
                 <span id="normclose" class="close">&times;</span>
-                <p>Important information about Normalfordeling</p>
+                <div class="small">
+                    <p>Stat status: </p>
+                </div>
+                <div class="headline">
+                    <p>Statistik 1 </p>
+                </div>
+                <div class="information">
+                    <p>Important information about normality here </p>
+                </div>
+                <div class="Resources">
+                    <p>Resources:</p>
+                    <a class="link" href="url">Resourcer her</a>
+                </div>
+                <div class="Slides">
+                    <p> Slides:</p>
+                    <a class="link" href="url">Slides her</a>
+                </div>
+                <div class="Recordings">
+                    <p>Recordings:</p>
+                    <a class="link" href="url">Recordings her</a>
+                </div>
             </div>
         </div>
 
@@ -313,9 +488,9 @@
         </div>
 
         <div class="kalenderfremogtilbage back">
-            < </div>
+             </div>
                 <div class="kalenderfremogtilbage weeknumber"> Week 17 </div>
-                <div class="kalenderfremogtilbage front"> > </div>
+                <div class="kalenderfremogtilbage front"> </div>
 
         </div>
 
