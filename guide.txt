@@ -1,0 +1,12 @@
+How to activate venv:
+Windows: cd venv\Script
+.\activate.ps1
+Mac: source venv/bin/activate
+
+Run the python script:
+python dataminer.py or python3 dataminer.py
+
+Accessing the database:
+open terminal and cd into the coolstudent folder
+terminal: sqlite3
+sqlite3: .open data.db
