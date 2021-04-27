@@ -643,17 +643,12 @@ border-bottom-left-radius: 10px;
 
 .BorderDoc:hover{
   cursor: pointer;
-<<<<<<< HEAD
   background-color:#5EA0F4;
   border-bottom-right-radius: 10px;
   }
 
   .BorderDoc:hover .documentbutton{
     background-image: url("/static/Bilder/dokumentHVID.svg");
-      }
-=======
-  background-color:lightgray;
-  border-radius: 10px;
   }
 
 
@@ -750,4 +745,3 @@ position: absolute;
   font-weight: lighter;
   color:#4e4e4e;
 }
->>>>>>> 030105b5584b1a965af5e57bfd0f30c6d21f7a3c
