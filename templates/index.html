@@ -53,10 +53,12 @@
         </div>
 
         <div class="toEks">
+            {% if exsystø%}
+            {% for row in exsystø %}
             <div class="basicbutton">
-                <h4>Exercises:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderVid">
                     <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
                     </div>
@@ -65,13 +67,19 @@
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="toCom">
+            {% if comarktø%}
+            {% for row in comarktø %}
             <div class="basicbutton">
-                <h4>Exercises:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderVid">
                     <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
                     </div>
@@ -80,13 +88,19 @@
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="toStat">
+            {% if stattø%}
+            {% for row in stattø %}
             <div class="basicbutton">
-                <h4>Exercises:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderVid">
                     <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
                     </div>
@@ -95,6 +109,10 @@
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
 
@@ -115,36 +133,54 @@
         </div>
 
         <div class="litteraturEks">
+            {% if exsyslit%}
+            {% for row in exsyslit %}
             <div class="basicbutton">
-                <h4>Litteratur:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderDoc">
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="litteraturCom">
+            {% if comarklit%}
+            {% for row in comarklit %}
             <div class="basicbutton">
-                <h4>Litteratur:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderDoc">
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="litteraturStat">
+            {% if statlit%}
+            {% for row in statlit %}
             <div class="basicbutton">
-                <h4>Litteratur:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderDoc">
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div class="forelæsning">
@@ -152,11 +188,13 @@
         </div>
 
         <div class="forelæsningEks">
+            {% if exsyslec%}
+            {% for row in exsyslec %}
             <!--Trigger/Open prototyping-->
             <div id="protobutton" class="basicbutton">
-                <h4>Lecture:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderVid">
                     <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
                     </div>
@@ -165,6 +203,10 @@
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
 
@@ -179,10 +221,12 @@
 
 
         <div class="forelæsningCom">
+            {% if comarklec%}
+            {% for row in comarklec %}
             <div id="conbutton" class="basicbutton">
-                <h4>Lecture:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderVid">
                     <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
                     </div>
@@ -191,7 +235,10 @@
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
-
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div id="conmodal" class="modal">
@@ -203,10 +250,12 @@
         </div>
 
         <div class="forelæsningStat">
+            {% if statlec%}
+            {% for row in statlec %}
             <div id="normbutton" class="basicbutton">
-                <h4>Lecture:</h4>
-                <h3>Project status</h3>
-                <p>mandag</p>
+                <h4>{{row[1]}}</h4>
+                <h3>{{row[3]}}</h3>
+                <p>{{row[4]}}</p>
                 <div class="BorderVid">
                     <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
                     </div>
@@ -215,6 +264,10 @@
                     <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
                 </div>
             </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
 
         <div id="normmodal" class="modal">
