@@ -1,3 +1,39 @@
+
+
+let newDocumentMap = new Map(); // hente stat fra database true/false
+newDocumentMap.set("tø", true);
+newDocumentMap.set("lecture", true);
+newDocumentMap.set("literature", false);
+
+let weekNumber = 18;
+let headline = "Situated Action";
+
+function copyToClipboard(str) {
+  const el = document.createElement('textarea');
+  el.value = str;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+};
+
+document.getElementsByClassName('testCopy')[0].onclick = function() {
+  if(newDocumentMap.get("tø")){
+    copyToClipboard("Eksys TØ - Week " + weekNumber + " - " + headline);
+    window.open("https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL", '_blank').focus();  
+    newDocumentMap.set("tø", false);
+  }else{
+    window.open("https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk", '_blank').focus();  
+  }
+ }
+
+ document.getElementsByClassName('reset')[0].onclick = function() {
+  for (let [key, value] of newDocumentMap) {
+    newDocumentMap.set(key, true);
+    }
+ }
+
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 
