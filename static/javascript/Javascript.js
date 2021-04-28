@@ -1,53 +1,44 @@
+// ved ikke helt hvordan man gør
+let db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
 
-let result;
+const newDocumentMap = new Map(); // hente stat fra database true/false
+newDocumentMap.set('tø', true);
+newDocumentMap.set('lecture', true);
+newDocumentMap.set('literature', false);
 
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "data.py?text=" + text, true);
-xhr.responseType = "JSON";
-xhr.onload = function(e) {
-  result = JSON.parse(xhr.response);
-}
-xhr.send();
+const weekNumber = 18;
+const headline = 'Situated Action';
 
-
-let newDocumentMap = new Map(); // hente stat fra database true/false
-newDocumentMap.set("tø", true);
-newDocumentMap.set("lecture", true);
-newDocumentMap.set("literature", false);
-
-let weekNumber = 18;
-let headline = "Situated Action";
-
-function copyToClipboard(str) {
+function copyToClipboard (str) {
   const el = document.createElement('textarea');
   el.value = str;
   document.body.appendChild(el);
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);
-};
+}
 
 let documentButton = document.getElementsByClassName('BorderDoc');
 
 for (i = 0; i < documentButton.length; i++) {
   documentButton[i].onclick = function () {
-    if (newDocumentMap.get("tø")) {
-      event.currentTarget.classList.add("clicked");
-      event.currentTarget.childNodes[1].classList.add("documentbuttonClicked");
-      copyToClipboard("Eksys TØ - Week " + weekNumber + " - " + headline);
-      window.open("https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL", '_blank').focus();
-      newDocumentMap.set("tø", false);
+    if (newDocumentMap.get('tø')) {
+      event.currentTarget.classList.add('clicked');
+      event.currentTarget.childNodes[1].classList.add('documentbuttonClicked');
+      copyToClipboard('Eksys TØ - Week ' + weekNumber + ' - ' + headline);
+      window.open('https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL', '_blank').focus();
+      newDocumentMap.set('tø', false);
     } else {
-      window.open("https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk", '_blank').focus();
+      window.open('https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk', '_blank').focus();
     }
-  }
+  };
 }
 
-let videoButton = document.getElementsByClassName('BorderVid');
+const videoButton = document.getElementsByClassName('BorderVid');
 for (i = 0; i < videoButton.length; i++) {
   videoButton[i].onclick = function () {
-    window.open("https://aarhusuniversity.zoom.us/j/68510210704", '_blank').focus();
-  }
+    window.open('https://aarhusuniversity.zoom.us/j/68510210704', '_blank').focus();
+  };
 }
 
 /* When the user clicks on the button,
@@ -55,15 +46,15 @@ toggle between hiding and showing the dropdown content */
 
 /* exported addGroup */
 
-function addGroup() {
+function addGroup () {
   document.getElementById('myDropdown').classList.toggle('show');
 }
 
-function settings() {
+function settings () {
   document.getElementById('myDropdown2').classList.toggle('show2');
 }
 
-function addChat() {
+function addChat () {
   document.getElementById('myDropdown3').classList.toggle('show3');
 }
 
@@ -99,65 +90,65 @@ window.onclick = function (event) {
       }
     }
   }
-}
+};
 // Get the modal
-var protomodal = document.getElementById("protomodal");
-var conmodal = document.getElementById("conmodal");
-var normmodal = document.getElementById("normmodal");
+let protomodal = document.getElementById('protomodal');
+let conmodal = document.getElementById('conmodal');
+let normmodal = document.getElementById('normmodal');
 
 // Get the button that opens the modal
-var protobtn = document.getElementById("protobutton");
-var conbtn = document.getElementById("conbutton");
-var normbtn = document.getElementById("normbutton");
+let protobtn = document.getElementById('protobutton');
+let conbtn = document.getElementById('conbutton');
+let normbtn = document.getElementById('normbutton');
 
 // Get the <span> element that closes the modal
-var protospan = document.getElementsByClassName("close")[0];
-var conspan = document.getElementsByClassName("close")[1];
-var normspan = document.getElementsByClassName("close")[2];
+let protospan = document.getElementsByClassName('close')[0];
+let conspan = document.getElementsByClassName('close')[1];
+let normspan = document.getElementsByClassName('close')[2];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 protobtn.onclick = function () {
-  protomodal.style.display = "block";
-}
+  protomodal.style.display = 'block';
+};
 conbtn.onclick = function () {
-  conmodal.style.display = "block";
-}
+  conmodal.style.display = 'block';
+};
 normbtn.onclick = function () {
-  normmodal.style.display = "block";
-}
+  normmodal.style.display = 'block';
+};
 
 // When the user clicks on <span> (x), close the modal
 protospan.onclick = function () {
-  protomodal.style.display = "none";
-}
+  protomodal.style.display = 'none';
+};
 conspan.onclick = function () {
-  conmodal.style.display = "none";
-}
+  conmodal.style.display = 'none';
+};
 normspan.onclick = function () {
-  normmodal.style.display = "none";
-}
+  normmodal.style.display = 'none';
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == protomodal) {
-    protomodal.style.display = "none";
+    protomodal.style.display = 'none';
   }
-}
+};
 window.onclick = function (event) {
   if (event.target == conmodal) {
-    conmodal.style.display = "none";
+    conmodal.style.display = 'none';
   }
-}
+};
 window.onclick = function (event) {
   if (event.target == normmodal) {
-    normmodal.style.display = "none";
+    normmodal.style.display = 'none';
   }
-}
+};
 
-//menu expand
+// menu expand
 let menuClosed = true;
-let menubox = document.getElementsByClassName('menubox')[0];
-let menuimg = document.getElementsByClassName('menuimg')[0];
+const menubox = document.getElementsByClassName('menubox')[0];
+const menuimg = document.getElementsByClassName('menuimg')[0];
 
 document.getElementsByClassName('menu')[0].onclick = function () {
   if (menuClosed) {
@@ -169,4 +160,4 @@ document.getElementsByClassName('menu')[0].onclick = function () {
     menuimg.classList.remove('menuimgexpand');
     menuClosed = true;
   }
-}
+};

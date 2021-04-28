@@ -10,7 +10,8 @@ CREATE TABLE IF NOT EXISTS deadlines
 
 __CREATE_SQL2 = """
 CREATE TABLE IF NOT EXISTS courses
-(course TEXT NOT NULL,
+(id INT,
+  course TEXT NOT NULL,  
   category TEXT NOT NULL,
   week INT,
   title TEXT NOT NULL,
@@ -39,7 +40,7 @@ def all_deadlines() -> List:
   with sqlite3.connect(__DEADLINES_DB) as conn:
     cur = conn.cursor()
     cur.execute(
-      """SELECT * FROM deadlines;"""
+      """SELECT * FROM deadlines ORDER BY SUBSTRING(due, -2), due ASC;"""
     )
     return cur.fetchall()
 
