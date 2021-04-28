@@ -154,22 +154,9 @@ conspan.onclick = function () {
   conmodal.style.display = 'none';
 };
 normspan.onclick = function () {
-<<<<<<< HEAD
   normmodal.style.display = "none";
 }
-modalbag = document.getElementsByClassName("modal")[0];
-modalbag.onclick = function (event) {
-if(event.currentTarget == event.target)
-normmodal.style.display = "none";
-protomodal.style.display = "none";
-conmodal.style.display = "none";
-console.log("heeey");
-}
 
-
-=======
-  normmodal.style.display = 'none';
-};
 protospan2.onclick = function () {
   protomodal2.style.display = 'none';
 };
@@ -179,7 +166,15 @@ conspan2.onclick = function () {
 normspan2.onclick = function () {
   normmodal2.style.display = 'none';
 };
->>>>>>> 792a08932863ae58263ccf818ccb052244d98a0f
+
+modalbag = document.getElementsByClassName("modal")[0];
+modalbag.onclick = function (event) {
+if(event.currentTarget == event.target)
+normmodal.style.display = "none";
+protomodal.style.display = "none";
+conmodal.style.display = "none";
+console.log("heeey");
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
