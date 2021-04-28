@@ -1,6 +1,6 @@
 
-let result;
-
+/*let result;
+let text = "heey";
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "data.py?text=" + text, true);
 xhr.responseType = "JSON";
@@ -8,7 +8,7 @@ xhr.onload = function(e) {
   result = JSON.parse(xhr.response);
 }
 xhr.send();
-
+*/
 
 let newDocumentMap = new Map(); // hente stat fra database true/false
 newDocumentMap.set("tø", true);
@@ -160,6 +160,7 @@ let menubox = document.getElementsByClassName('menubox')[0];
 let menuimg = document.getElementsByClassName('menuimg')[0];
 
 document.getElementsByClassName('menu')[0].onclick = function () {
+  console.log("HEEEY");
   if (menuClosed) {
     menubox.classList.add('menuexpand');
     menuimg.classList.add('menuimgexpand');
