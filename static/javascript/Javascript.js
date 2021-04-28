@@ -1,5 +1,8 @@
 
 
+//ved ikke helt hvordan man gør
+var db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
+
 let newDocumentMap = new Map(); // hente stat fra database true/false
 newDocumentMap.set("tø", true);
 newDocumentMap.set("lecture", true);
@@ -33,12 +36,12 @@ for(i = 0; i < documentButton.length; i++){
    }
 }
 
- document.getElementsByClassName('reset')[0].onclick = function() {
-  for (let [key, value] of newDocumentMap) {
-    newDocumentMap.set(key, true);
-    }
+ let videoButton = document.getElementsByClassName('BorderVid');
+ for(i = 0; i < videoButton.length; i++){
+ videoButton[i].onclick = function() {
+  window.open("https://aarhusuniversity.zoom.us/j/68510210704", '_blank').focus();  
  }
-
+ }
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
