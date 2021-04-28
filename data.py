@@ -16,7 +16,14 @@ CREATE TABLE IF NOT EXISTS courses
   title TEXT NOT NULL,
   weekday TEXT NOT NULL,
   infotitle TEXT NOT NULL,
-  info TEXT NOT NULL);
+  info TEXT NOT NULL,
+  Resources TEXT,
+  Slides TEXT,
+  Recordings TEXT,
+  Zoom TEXT,
+  Document TEXT,
+  DocumentCreated boolean
+  );
 """
 
 def create_database():

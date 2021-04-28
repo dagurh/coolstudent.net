@@ -642,8 +642,7 @@ border-radius: 10px;
   top: 9%;
   width: 70%; /* Full width */
   height: 90%; /* Full height */
- 
-  background-color:inherit;
+  background-color: transparent;
 }
 
 /* Modal Content */
