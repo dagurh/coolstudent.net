@@ -1,7 +1,14 @@
 
+let result;
 
-//ved ikke helt hvordan man gør
-var db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "dataminer.py?text=" + text, true);
+xhr.responseType = "JSON";
+xhr.onload = function(e) {
+  result = JSON.parse(xhr.response);
+}
+xhr.send();
+
 
 let newDocumentMap = new Map(); // hente stat fra database true/false
 newDocumentMap.set("tø", true);
