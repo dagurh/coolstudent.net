@@ -136,6 +136,16 @@ conspan.onclick = function () {
 normspan.onclick = function () {
   normmodal.style.display = "none";
 }
+modalbag = document.getElementsByClassName("modal")[0];
+modalbag.onclick = function (event) {
+if(event.currentTarget == event.target)
+normmodal.style.display = "none";
+protomodal.style.display = "none";
+conmodal.style.display = "none";
+console.log("heeey");
+}
+
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
