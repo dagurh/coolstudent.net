@@ -22,8 +22,7 @@ CREATE TABLE IF NOT EXISTS courses
   Slides TEXT,
   Recordings TEXT,
   Zoom TEXT,
-  Document TEXT,
-  DocumentCreated boolean
+  Document TEXT
   );
 """
 

@@ -103,19 +103,28 @@ window.onclick = function (event) {
   }
 };
 // Get the modal
-const protomodal = document.getElementById('protomodal');
-const conmodal = document.getElementById('conmodal');
-const normmodal = document.getElementById('normmodal');
+const protomodal = document.getElementById('protomodal--1');
+const protomodal2 = document.getElementById('protomodal--2');
+const conmodal = document.getElementById('conmodal--3');
+const conmodal2 = document.getElementById('conmodal--4');
+const normmodal = document.getElementById('normmodal--5');
+const normmodal2 = document.getElementById('normmodal--6');
 
 // Get the button that opens the modal
-const protobtn = document.getElementById('protobutton');
-const conbtn = document.getElementById('conbutton');
-const normbtn = document.getElementById('normbutton');
+const protobtn = document.getElementById('protobutton--1');
+const protobtn2 = document.getElementById('protobutton--2');
+const conbtn = document.getElementById('conbutton--3');
+const conbtn2 = document.getElementById('conbutton--4');
+const normbtn = document.getElementById('normbutton--5');
+const normbtn2 = document.getElementById('normbutton--6');
 
 // Get the <span> element that closes the modal
-const protospan = document.getElementsByClassName('close')[0];
-const conspan = document.getElementsByClassName('close')[1];
-const normspan = document.getElementsByClassName('close')[2];
+const protospan = document.getElementById('protoclose--1');
+const protospan2 = document.getElementById('protoclose--2');
+const conspan = document.getElementById('conclose--3');
+const conspan2 = document.getElementById('conclose--4');
+const normspan = document.getElementById('normclose--5');
+const normspan2 = document.getElementById('normclose--6');
 
 // When the user clicks the button, open the modal
 protobtn.onclick = function () {
@@ -126,6 +135,15 @@ conbtn.onclick = function () {
 };
 normbtn.onclick = function () {
   normmodal.style.display = 'block';
+};
+protobtn2.onclick = function () {
+  protomodal2.style.display = 'block';
+};
+conbtn2.onclick = function () {
+  conmodal2.style.display = 'block';
+};
+normbtn2.onclick = function () {
+  normmodal2.style.display = 'block';
 };
 
 // When the user clicks on <span> (x), close the modal
@@ -138,21 +156,45 @@ conspan.onclick = function () {
 normspan.onclick = function () {
   normmodal.style.display = 'none';
 };
+protospan2.onclick = function () {
+  protomodal2.style.display = 'none';
+};
+conspan2.onclick = function () {
+  conmodal2.style.display = 'none';
+};
+normspan2.onclick = function () {
+  normmodal2.style.display = 'none';
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == protomodal) {
+  if (event.target === protomodal) {
     protomodal.style.display = 'none';
   }
 };
 window.onclick = function (event) {
-  if (event.target == conmodal) {
+  if (event.target === conmodal) {
     conmodal.style.display = 'none';
   }
 };
 window.onclick = function (event) {
-  if (event.target == normmodal) {
+  if (event.target === normmodal) {
     normmodal.style.display = 'none';
+  }
+};
+window.onclick = function (event) {
+  if (event.target === protomodal2) {
+    protomodal2.style.display = 'none';
+  }
+};
+window.onclick = function (event) {
+  if (event.target === conmodal2) {
+    conmodal2.style.display = 'none';
+  }
+};
+window.onclick = function (event) {
+  if (event.target === normmodal2) {
+    normmodal2.style.display = 'none';
   }
 };
 
