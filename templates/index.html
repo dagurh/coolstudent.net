@@ -56,15 +56,20 @@
             {% if exsystø%}
             {% for row in exsystø %}
             <div class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderVid">
-                    <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
-                    </div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
                 </div>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="quicklinks">
+                    <div class="BorderVid">
+                        <div class="videobutton">
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="BorderDoc">
+                        <div class="documentbutton"></div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -77,15 +82,20 @@
             {% if comarktø%}
             {% for row in comarktø %}
             <div class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderVid">
-                    <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
-                    </div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
                 </div>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="quicklinks">
+                    <div class="BorderVid">
+                        <div class="videobutton">
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="BorderDoc">
+                        <div class="documentbutton"></div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -98,15 +108,22 @@
             {% if stattø%}
             {% for row in stattø %}
             <div class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderVid">
-                    <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
-                    </div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
                 </div>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="quicklinks">
+
+                    <div class="BorderVid">
+                        <div class="videobutton">
+                        </div>
+                    </div>
+                    <div class="border"></div>
+
+                    <div class="BorderDoc">
+                        <div class="documentbutton"></div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -136,11 +153,17 @@
             {% if exsyslit%}
             {% for row in exsyslit %}
             <div class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
+                </div>
+                <div class="quicklinks litv">
+                    <div class="BorderVidlit">
+                    </div>
+                    <div class="BorderDoc lit">
+                        <div class="documentbutton"></div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -153,11 +176,17 @@
             {% if comarklit%}
             {% for row in comarklit %}
             <div class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
+                </div>
+                <div class="quicklinks litv">
+                    <div class="BorderVidlit">
+                    </div>
+                    <div class="BorderDoc lit">
+                        <div class="documentbutton"></div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -170,11 +199,17 @@
             {% if statlit%}
             {% for row in statlit %}
             <div class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
+                </div>
+                <div class="quicklinks litv">
+                    <div class="BorderVidlit">
+                    </div>
+                    <div class="BorderDoc lit">
+                        <div class="documentbutton"></div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -192,15 +227,20 @@
             {% for row in exsyslec %}
             <!--Trigger/Open prototyping-->
             <div id="protobutton" class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderVid">
-                    <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
-                    </div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
                 </div>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="quicklinks">
+                    <div class="BorderVid">
+                        <div class="videobutton">
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="BorderDoc">
+                        <div class="documentbutton"></div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -244,15 +284,20 @@
             {% if comarklec%}
             {% for row in comarklec %}
             <div id="conbutton" class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderVid">
-                    <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
-                    </div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
                 </div>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="quicklinks">
+                    <div class="BorderVid">
+                        <div class="videobutton">
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="BorderDoc">
+                        <div class="documentbutton"></div>
+                    </div>
                 </div>
             </div>
             <div id="conmodal" class="modal">
@@ -294,15 +339,21 @@
             {% if statlec%}
             {% for row in statlec %}
             <div id="normbutton" class="basicbutton">
-                <h4>{{row[1]}}</h4>
-                <h3>{{row[3]}}</h3>
-                <p>{{row[4]}}</p>
-                <div class="BorderVid">
-                    <div class="videobutton" style="background-image: url(/static/Bilder/video-call-icon-11-256.png);">
-                    </div>
+                <div class="topinfo">
+                    <h4>{{row[1]}}</h4>
+                    <h3>{{row[3]}}</h3>
+                    <p>{{row[4]}}</p>
                 </div>
-                <div class="BorderDoc">
-                    <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
+                <div class="quicklinks">
+                    <div class="BorderVid">
+                        <div class="videobutton">
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="BorderDoc">
+                        <div class="documentbutton">
+                        </div>
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -344,17 +395,27 @@
             {% if list %}
             {% for row in list %}
             <div id="deadline--{{row[0]}}" class="basicbutton space">
-                <h4>{{row[0]}}</h4>
-                <h3>{{row[1]}}</h3>
-                <p>{{row[2]}}</p>
-                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
-                <div class="submitbutton" style="background-image: url(/static/Bilder/upload-iconSort.svg);"></div>
+                <div class="topinfo">
+
+                    <h4>{{row[0]}}</h4>
+                    <h3>{{row[1]}}</h3>
+                    <p>{{row[2]}}</p>
+                </div>
+                <div class="quicklinks">
+                    <div class="BorderUp">
+                        <div class="UPbutton"></div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="BorderDoc">
+                        <div class="documentbutton"></div>
+                    </div>
+                </div>
             </div>
             {% endfor %}
-
             {% else %}
             <h5>There are no deadlines mate</h5>
             {% endif %}
+
         </div>
 
         <div class="Chat Chat1" style="background-image: url(/static/Bilder/Chat.png);">
