@@ -158,9 +158,10 @@
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
                 </div>
-                <div class="quicklinks">
-
-                <div class="BorderDoc">
+                <div class="quicklinks litv">
+                    <div class="BorderVidlit">
+                    </div>
+                <div class="BorderDoc lit">
                     <div class="documentbutton"></div>
                 </div>
                 </div>
@@ -180,8 +181,10 @@
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
                 </div>
-                <div class="quicklinks">
-                <div class="BorderDoc">
+                <div class="quicklinks litv">
+                    <div class="BorderVidlit">
+                    </div>
+                <div class="BorderDoc lit">
                     <div class="documentbutton"></div>
                 </div>
                 </div>
@@ -201,8 +204,10 @@
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
                 </div>
-                <div class="quicklinks">
-                <div class="BorderDoc">
+                <div class="quicklinks litv">
+                    <div class="BorderVidlit">
+                    </div>
+                <div class="BorderDoc lit">
                     <div class="documentbutton"></div>
                 </div>
                 </div>
@@ -390,17 +395,27 @@
             {% if list %}
             {% for row in list %}
             <div id="deadline--{{row[0]}}" class="basicbutton space">
+                <div class="topinfo">
+
                 <h4>{{row[0]}}</h4>
                 <h3>{{row[1]}}</h3>
                 <p>{{row[2]}}</p>
-                <div class="documentbutton" style="background-image: url(/static/Bilder/adddoc.png);"></div>
-                <div class="submitbutton" style="background-image: url(/static/Bilder/upload-iconSort.svg);"></div>
+                </div>
+              <div class="quicklinks">
+                <div class="BorderUp">
+                    <div class="UPbutton"></div>
+                </div>
+                <div class ="border"></div>
+                <div class="BorderDoc">
+                    <div class="documentbutton"></div>
+                </div>
+              </div>
             </div>
             {% endfor %}
-
             {% else %}
             <h5>There are no deadlines mate</h5>
             {% endif %}
+           
         </div>
 
         <div class="Chat Chat1" style="background-image: url(/static/Bilder/Chat.png);">

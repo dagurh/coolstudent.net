@@ -17,15 +17,21 @@ function copyToClipboard(str) {
   document.body.removeChild(el);
 };
 
-document.getElementsByClassName('testCopy')[0].onclick = function() {
-  if(newDocumentMap.get("tø")){
-    copyToClipboard("Eksys TØ - Week " + weekNumber + " - " + headline);
-    window.open("https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL", '_blank').focus();  
-    newDocumentMap.set("tø", false);
-  }else{
-    window.open("https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk", '_blank').focus();  
-  }
- }
+let documentButton = document.getElementsByClassName('BorderDoc');
+
+for(i = 0; i < documentButton.length; i++){
+  documentButton[i].onclick = function() {
+    if(newDocumentMap.get("tø")){
+      event.currentTarget.classList.add("clicked");
+      event.currentTarget.childNodes[1].classList.add("documentbuttonClicked");
+      copyToClipboard("Eksys TØ - Week " + weekNumber + " - " + headline);
+      window.open("https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL", '_blank').focus();  
+      newDocumentMap.set("tø", false);
+    }else{
+      window.open("https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk", '_blank').focus();  
+    }
+   }
+}
 
  document.getElementsByClassName('reset')[0].onclick = function() {
   for (let [key, value] of newDocumentMap) {
