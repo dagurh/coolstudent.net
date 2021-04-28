@@ -1,5 +1,16 @@
 // ved ikke helt hvordan man gør
-let db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
+const db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
+
+/* let result;
+let text = "heey";
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "data.py?text=" + text, true);
+xhr.responseType = "JSON";
+xhr.onload = function(e) {
+  result = JSON.parse(xhr.response);
+}
+xhr.send();
+*/
 
 const newDocumentMap = new Map(); // hente stat fra database true/false
 newDocumentMap.set('tø', true);
@@ -18,7 +29,7 @@ function copyToClipboard (str) {
   document.body.removeChild(el);
 }
 
-let documentButton = document.getElementsByClassName('BorderDoc');
+const documentButton = document.getElementsByClassName('BorderDoc');
 
 for (i = 0; i < documentButton.length; i++) {
   documentButton[i].onclick = function () {
@@ -92,19 +103,19 @@ window.onclick = function (event) {
   }
 };
 // Get the modal
-let protomodal = document.getElementById('protomodal');
-let conmodal = document.getElementById('conmodal');
-let normmodal = document.getElementById('normmodal');
+const protomodal = document.getElementById('protomodal');
+const conmodal = document.getElementById('conmodal');
+const normmodal = document.getElementById('normmodal');
 
 // Get the button that opens the modal
-let protobtn = document.getElementById('protobutton');
-let conbtn = document.getElementById('conbutton');
-let normbtn = document.getElementById('normbutton');
+const protobtn = document.getElementById('protobutton');
+const conbtn = document.getElementById('conbutton');
+const normbtn = document.getElementById('normbutton');
 
 // Get the <span> element that closes the modal
-let protospan = document.getElementsByClassName('close')[0];
-let conspan = document.getElementsByClassName('close')[1];
-let normspan = document.getElementsByClassName('close')[2];
+const protospan = document.getElementsByClassName('close')[0];
+const conspan = document.getElementsByClassName('close')[1];
+const normspan = document.getElementsByClassName('close')[2];
 
 // When the user clicks the button, open the modal
 protobtn.onclick = function () {
@@ -151,6 +162,7 @@ const menubox = document.getElementsByClassName('menubox')[0];
 const menuimg = document.getElementsByClassName('menuimg')[0];
 
 document.getElementsByClassName('menu')[0].onclick = function () {
+  console.log('HEEEY');
   if (menuClosed) {
     menubox.classList.add('menuexpand');
     menuimg.classList.add('menuimgexpand');
