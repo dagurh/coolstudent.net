@@ -456,13 +456,13 @@ border-right: 0.1px solid #F4F4F4;
   justify-self: end;
   margin-top: 10px;
   margin-right: 15px;
-  content:url("/Bilder/menu.png");
+  content:url("/static/Bilder/menu.svg");
   transition: opacity 0.2 ease;
  }
   
  .menuimg.menuimgexpand {
   opacity: 100;
-  content:url("/Bilder/cros.svg");
+  content:url("/static/Bilder/cros.svg");
  }
 
  .videobutton{
