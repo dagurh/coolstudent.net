@@ -173,6 +173,10 @@ if(event.currentTarget == event.target)
 normmodal.style.display = "none";
 protomodal.style.display = "none";
 conmodal.style.display = "none";
+//dont work yet
+normmodal2.style.display = 'none';
+conmodal2.style.display = 'none';
+protomodal2.style.display = 'none';
 console.log("heeey");
 }
 
