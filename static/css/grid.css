@@ -521,17 +521,31 @@ border-right: 0.1px solid #F4F4F4;
  .kalenderfremogtilbage{
   justify-self: center;
   text-align: center;
-  height: 30px;
+  height: 35px;
   grid-row: 6;
   border: 0.2px solid #6d6d6d;
   width: 100%;
  }
 
+ .kalenderfremogtilbage:hover{
+   background-color: #6d6d6d;
+   cursor: pointer;
+ }
+ 
+ .kalenderfremogtilbage:hover .arrowIcon{
+  background-image: url("/static/Bilder/nextHvid.svg");
+ }
+  
+ .weeknumber:hover{
+  background-color: inherit;
+  cursor:inherit;
+ }
+
  .kalenderfremogtilbage p{
-  font-size: 20px;
+  font-size: 19px;
   font-family: Helvetica, Arial, sans-serif;
   color: #4e4e4e;
-  margin-top: 4px;
+  margin-top: 6px;
  }
 
  .weeknumber{
@@ -542,8 +556,22 @@ border-right: 0.1px solid #F4F4F4;
 
  .back{
    grid-column: 2/3;
- }
+  }
    
+ .arrowIcon{
+  height: 22px;
+  width: 22px;
+  background-image: url("/static/Bilder/next.svg"); 
+  background-repeat: no-repeat;
+  margin-left: 48%;
+  margin-top: 6px;
+  transform: rotate(180deg);
+ } 
+ .right{
+  transform: rotate(0deg);
+ } 
+
+
 
 .front{
   grid-column: 4/5;

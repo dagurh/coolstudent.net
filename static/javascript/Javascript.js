@@ -2,7 +2,7 @@
 let result;
 
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "dataminer.py?text=" + text, true);
+xhr.open("GET", "data.py?text=" + text, true);
 xhr.responseType = "JSON";
 xhr.onload = function(e) {
   result = JSON.parse(xhr.response);
