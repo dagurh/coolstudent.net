@@ -441,9 +441,19 @@
 
         </div>
 
-        <div class="kalenderfremogtilbage back">
+
+        <div class="kalenderfremogtilbage back"></div>
+        <div class="kalenderfremogtilbage weeknumber">
+            {% if statlec%}
+            {% for row in statlec %}
+
+            {{row[2]}}
+
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
         </div>
-        <div class="kalenderfremogtilbage weeknumber"> Week 17 </div>
         <div class="kalenderfremogtilbage front"> </div>
 
     </div>
