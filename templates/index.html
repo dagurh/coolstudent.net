@@ -243,14 +243,7 @@
                     </div>
                 </div>
             </div>
-            {% endfor %}
-            {% else %}
-            <p>Bla</p>
-            {% endif %}
-        </div>
-
-
-        <!--The modal-->
+            <!--The modal-->
         <div id="protomodal" class="modal">
             <!--Content in the modal-->
             <div class="modal-content">
@@ -278,6 +271,14 @@
                 </div>
             </div>
         </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
+        </div>
+
+
+        
 
 
         <div class="forelæsningCom">
@@ -356,39 +357,40 @@
                     </div>
                 </div>
             </div>
+            <div id="normmodal" class="modal">
+                <!--Content in the modal-->
+                <div class="modal-content">
+                    <span id="normclose" class="close">&times;</span>
+                    <div class="small">
+                        <p>Stat status: </p>
+                    </div>
+                    <div class="headline">
+                        <p>{{row[5]}}</p>
+                    </div>
+                    <div class="information">
+                        <p>{{row[6]}} </p>
+                    </div>
+                    <div class="Resources">
+                        <p>Resources:</p>
+                        <a class="link" href="{{row[7]}}">Resourcer her</a>
+                    </div>
+                    <div class="Slides">
+                        <p> Slides:</p>
+                        <a class="link" href="{{row[8]}}">Slides her</a>
+                    </div>
+                    <div class="Recordings">
+                        <p>Recordings:</p>
+                        <a class="link" href="{{row[9]}}">Recordings her</a>
+                    </div>
+                </div>
+            </div>
             {% endfor %}
             {% else %}
             <p>Bla</p>
             {% endif %}
         </div>
 
-        <div id="normmodal" class="modal">
-            <!--Content in the modal-->
-            <div class="modal-content">
-                <span id="normclose" class="close">&times;</span>
-                <div class="small">
-                    <p>Stat status: </p>
-                </div>
-                <div class="headline">
-                    <p>{{row[5]}}</p>
-                </div>
-                <div class="information">
-                    <p>{{row[6]}} </p>
-                </div>
-                <div class="Resources">
-                    <p>Resources:</p>
-                    <a class="link" href="{{row[7]}}">Resourcer her</a>
-                </div>
-                <div class="Slides">
-                    <p> Slides:</p>
-                    <a class="link" href="{{row[8]}}">Slides her</a>
-                </div>
-                <div class="Recordings">
-                    <p>Recordings:</p>
-                    <a class="link" href="{{row[9]}}">Recordings her</a>
-                </div>
-            </div>
-        </div>
+       
 
         <div class="deadlines">
             <h5>DEADLINES</h5>
