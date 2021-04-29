@@ -39,7 +39,7 @@ def all_deadlines() -> List:
   with sqlite3.connect(__DEADLINES_DB) as conn:
     cur = conn.cursor()
     cur.execute(
-      """SELECT * FROM deadlines ORDER BY SUBSTRING(due, -2), due ASC;"""
+      """SELECT * FROM deadlines ORDER BY SUBSTR(due, -2), due ASC;"""
     )
     return cur.fetchall()
 
