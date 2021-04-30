@@ -30,15 +30,21 @@ function copyToClipboard (str) {
 }
 
 const documentButton = document.getElementsByClassName('BorderDoc');
+let first = true; 
 
 for (i = 0; i < documentButton.length; i++) {
   documentButton[i].onclick = function () {
     if (newDocumentMap.get('tø')) {
-      event.currentTarget.classList.add('clicked');
-      event.currentTarget.childNodes[1].classList.add('documentbuttonClicked');
-      copyToClipboard('Eksys TØ - Week ' + weekNumber + ' - ' + headline);
-      window.open('https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL', '_blank').focus();
-      newDocumentMap.set('tø', false);
+      if(first){
+        protomodaldoc.style.display = 'block';
+        first = false;
+      }else{
+        event.currentTarget.classList.add('clicked');
+        event.currentTarget.childNodes[1].classList.add('documentbuttonClicked');
+        copyToClipboard('Eksys TØ - Week ' + weekNumber + ' - ' + headline);
+        window.open('https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL', '_blank').focus();
+        newDocumentMap.set('tø', false);
+      }
     } else {
       window.open('https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk', '_blank').focus();
     }
@@ -103,6 +109,7 @@ window.onclick = function (event) {
   }
 };
 // Get the modal
+const protomodaldoc = document.getElementById('protomodal--doc');
 const protomodal = document.getElementById('protomodal--1');
 const protomodal2 = document.getElementById('protomodal--2');
 const conmodal = document.getElementById('conmodal--3');
@@ -119,6 +126,7 @@ const normbtn = document.getElementById('normbutton--5');
 const normbtn2 = document.getElementById('normbutton--6');
 
 // Get the <span> element that closes the modal
+const protospandoc = document.getElementById('protoclose');
 const protospan = document.getElementById('protoclose--1');
 const protospan2 = document.getElementById('protoclose--2');
 const conspan = document.getElementById('conclose--3');
@@ -147,6 +155,9 @@ normbtn2.onclick = function () {
 };
 
 // When the user clicks on <span> (x), close the modal
+protospandoc.onclick = function () {
+  protomodaldoc.style.display = 'none';
+};
 protospan.onclick = function () {
   protomodal.style.display = 'none';
 };

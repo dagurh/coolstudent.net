@@ -226,8 +226,8 @@
             {% if exsyslec%}
             {% for row in exsyslec %}
             <!--Trigger/Open prototyping-->
-            <div id="protobutton--{{row[0]}}" class="basicbutton">
-                <div class="topinfo">
+            <div class="basicbutton">
+                <div id="protobutton--{{row[0]}}" class="topinfo">
                     <h4>{{row[2]}}</h4>
                     <h3>{{row[4]}}</h3>
                     <p>{{row[5]}}</p>
@@ -297,8 +297,8 @@
         <div class="forelæsningCom">
             {% if comarklec%}
             {% for row in comarklec %}
-            <div id="conbutton--{{row[0]}}" class="basicbutton">
-                <div class="topinfo">
+            <div class="basicbutton">
+                <div id="conbutton--{{row[0]}}" class="topinfo">
                     <h4>{{row[2]}}</h4>
                     <h3>{{row[4]}}</h3>
                     <p>{{row[5]}}</p>
@@ -352,8 +352,8 @@
         <div class="forelæsningStat">
             {% if statlec%}
             {% for row in statlec %}
-            <div id="normbutton--{{row[0]}}" class="basicbutton">
-                <div class="topinfo">
+            <div class="basicbutton">
+                <div id="normbutton--{{row[0]}}" class="topinfo">
                     <h4>{{row[2]}}</h4>
                     <h3>{{row[4]}}</h3>
                     <p>{{row[5]}}</p>
@@ -409,8 +409,8 @@
             <h5>DEADLINES</h5>
             {% if list %}
             {% for row in list %}
-            <div id="deadline--{{row[0]}}" class="basicbutton space">
-                <div class="topinfo">
+            <div class="basicbutton space">
+                <div id="deadline--{{row[0]}}" class="topinfo">
 
                     <h4 style="margin-top: 5px; font-size: 20px;">{{row[0]}}</h4>
                     <h3 style="font-weight: 900; font-size: 15px;">{{row[1]}}</h3>
@@ -474,6 +474,25 @@
         <div class="kalenderfremogtilbage front"> 
             <div class = "arrowIcon right"></div>
         </div>
+
+        <div id="protomodal--doc" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content">
+                <span id="protoclose" class="close">&times;</span>
+                <div class="small">
+                    <p>ExSys lecture </p>
+                </div>
+                <div class="headline">
+                    <p>create document</p>
+                </div>
+                <div class="information">
+                    <p> do you want to create an new document</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
     </div>
 
 </body>
