@@ -30,25 +30,39 @@ function copyToClipboard (str) {
 }
 
 const documentButton = document.getElementsByClassName('BorderDoc');
+const continueButton = document.getElementsByClassName('continue');
 let first = true; 
+let theTarget;
 
 for (i = 0; i < documentButton.length; i++) {
   documentButton[i].onclick = function () {
     if (newDocumentMap.get('tø')) {
+      theTarget = event.currentTarget;
       if(first){
+        document.getElementsByClassName('docs-popup-info')[0].innerHTML = "You are creating a shared google docs document in the folder: studygroup/course/aktivety. - this command also copies a recomended name for the document to your clipboard, for this document it's: course-aktivety-weeknumber-aktivetyheadline ";
         protomodaldoc.style.display = 'block';
         first = false;
       }else{
-        event.currentTarget.classList.add('clicked');
-        event.currentTarget.childNodes[1].classList.add('documentbuttonClicked');
-        copyToClipboard('Eksys TØ - Week ' + weekNumber + ' - ' + headline);
-        window.open('https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL', '_blank').focus();
-        newDocumentMap.set('tø', false);
+        addocument(event);
       }
     } else {
       window.open('https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk', '_blank').focus();
     }
   };
+}
+
+continueButton[0].onclick = function (){
+  console.log("heybaba");
+  addocument(event);
+}
+
+
+function addocument(event){
+  theTarget.classList.add('clicked');
+  theTarget.childNodes[1].classList.add('documentbuttonClicked');
+  copyToClipboard('Eksys TØ - Week ' + weekNumber + ' - ' + headline);
+  window.open('https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL', '_blank').focus();
+  newDocumentMap.set('tø', false);
 }
 
 const videoButton = document.getElementsByClassName('BorderVid');
