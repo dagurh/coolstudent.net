@@ -43,7 +43,7 @@ for (i = 0; i < documentButton.length; i++) {
         protomodaldoc.style.display = 'block';
         first = false;
       }else{
-        addocument(event);
+        addocument();
       }
     } else {
       window.open('https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk', '_blank').focus();
@@ -52,12 +52,11 @@ for (i = 0; i < documentButton.length; i++) {
 }
 
 continueButton[0].onclick = function (){
-  console.log("heybaba");
-  addocument(event);
+  addocument();
+  protomodaldoc.style.display = 'none';
 }
 
-
-function addocument(event){
+function addocument(){
   theTarget.classList.add('clicked');
   theTarget.childNodes[1].classList.add('documentbuttonClicked');
   copyToClipboard('Eksys TØ - Week ' + weekNumber + ' - ' + headline);
@@ -123,6 +122,7 @@ window.onclick = function (event) {
   }
 };
 // Get the modal
+const protomodalUpload = document.getElementById('protomodal--upload');
 const protomodaldoc = document.getElementById('protomodal--doc');
 const protomodal = document.getElementById('protomodal--1');
 const protomodal2 = document.getElementById('protomodal--2');
@@ -140,6 +140,7 @@ const normbtn = document.getElementById('normbutton--5');
 const normbtn2 = document.getElementById('normbutton--6');
 
 // Get the <span> element that closes the modal
+const protospanUpload = document.getElementById('protoclose--upload');
 const protospandoc = document.getElementById('protoclose');
 const protospan = document.getElementById('protoclose--1');
 const protospan2 = document.getElementById('protoclose--2');
@@ -167,8 +168,38 @@ conbtn2.onclick = function () {
 normbtn2.onclick = function () {
   normmodal2.style.display = 'block';
 };
+//upload button
+const uploadButton = document.getElementsByClassName('BorderUp');
+let targetUploadButton;
+for(i = 0; i<uploadButton.length; i++){
+  uploadButton[i].onclick = function () {
+    protomodalUpload.style.display = 'block';
+    targetUploadButton = event.currentTarget;
+  };
+}
+
+function getFile(){
+  document.getElementById("upfile").click();
+}
+function sub(obj) {
+  var file = obj.value;
+  var fileName = file.split("\\");
+  document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
+  //document.myForm.submit();
+  event.preventDefault();
+}
+
+document.getElementsByClassName('send')[0].onclick = function () {
+  console.log("hey ggg");
+  targetUploadButton.classList.add('uploadclicked');
+  targetUploadButton.childNodes[1].classList.add('uploadclickedicon');
+};
+
 
 // When the user clicks on <span> (x), close the modal
+protospanUpload.onclick = function () {
+  protomodalUpload.style.display = 'none';
+};
 protospandoc.onclick = function () {
   protomodaldoc.style.display = 'none';
 };
@@ -192,18 +223,21 @@ normspan2.onclick = function () {
   normmodal2.style.display = 'none';
 };
 
-modalbag = document.getElementsByClassName("modal")[0];
-modalbag.onclick = function (event) {
-if(event.currentTarget == event.target)
-normmodal.style.display = "none";
-protomodal.style.display = "none";
-conmodal.style.display = "none";
-//dont work yet
-normmodal2.style.display = 'none';
-conmodal2.style.display = 'none';
-protomodal2.style.display = 'none';
-console.log("heeey");
+modalbag = document.getElementsByClassName("modal");
+for(i = 0; i<modalbag.length; i++){
+  modalbag[i].onclick = function (event) {
+    if(event.currentTarget == event.target)
+    normmodal.style.display = "none";
+    protomodal.style.display = "none";
+    conmodal.style.display = "none";
+    //dont work yet
+    normmodal2.style.display = 'none';
+    conmodal2.style.display = 'none';
+    protomodal2.style.display = 'none';
+    console.log("heeey");
+    }
 }
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {

@@ -490,6 +490,27 @@
         </div>
         </div>
 
+        <div id="protomodal--upload" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content docs">
+                <span id="protoclose--upload" class="close">&times;</span>
+                <div class="headline">
+                    <p>Upload document</p>
+                </div>
+                <div class="docsinfo">
+                    <p>chose a file please</p>
+                </div>
+                <form name="myForm">
+                    <div id="yourBtn" onclick="getFile()">click to upload a file</div>
+                    <!-- this is your file input tag, so i hide it!-->
+                    <!-- i used the onchange event to fire the form submission-->
+                    <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" type="file" value="upload" onchange="sub(this)" /></div>
+                    <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+                    <input class="continue send" type="submit"></input>
+                  </form>
+            </div>
+        </div>
+        </div>
 
     </div>
 
