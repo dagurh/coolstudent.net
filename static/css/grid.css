@@ -795,7 +795,6 @@ border-bottom-left-radius: 12px;
 }
 .choosefile{
   margin-left: 0%;
-  width: 30%;
 }
 
 #yourBtn {
@@ -835,12 +834,14 @@ border-bottom-left-radius: 12px;
 }
 
 .uploadclicked{
-  background-color: #4ca750;
+  background-color: #A7D9B1;
+  border-bottom-left-radius: 10px;
 }
 
 .uploadclickedicon{
-  background-image: url("/static/Bilder/next.svg");
-
+  background-image: url("/static/Bilder/uploadCheck.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
 }
 
 .modal-content .information{

@@ -231,10 +231,12 @@ function sub(obj) {
   event.preventDefault();
 }
 
+// when clicking send
 document.getElementsByClassName('send')[0].onclick = function () {
   console.log("hey ggg");
   targetUploadButton.classList.add('uploadclicked');
   targetUploadButton.childNodes[1].classList.add('uploadclickedicon');
+  protomodalUpload.style.display = 'none';
 };
 
 
