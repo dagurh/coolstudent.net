@@ -19,21 +19,25 @@ for(i = 0; i<getinfo.length; i++){
 }
 
 const newDocumentMap = new Map(); 
-// data til EXSYS
+// link til EXSYS
 newDocumentMap.set("EXSYSLecturesMonday", {created: "false", new: 'https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL', mappe: 'https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk'});
 newDocumentMap.set("EXSYSLecturesWednesday", {created: "false", new: 'https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=13YIUL75PP8QtOcora9N4M1ChF3POeHCL', mappe: 'https://drive.google.com/drive/folders/13YIUL75PP8QtOcora9N4M1ChF3POeHCL?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk'});
 newDocumentMap.set('EXSYStø', {created: "false", new: 'https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=15EmJs6oCn8cyWyWFVVwdnyhO2t21gkts', mappe: "https://drive.google.com/drive/folders/15EmJs6oCn8cyWyWFVVwdnyhO2t21gkts?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 newDocumentMap.set('EXSYSLiterature', {created: "false", new: 'https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1gUja6CYqUuDEt11-Jnk4o70hCxac7fSc', mappe: "https://drive.google.com/drive/folders/1gUja6CYqUuDEt11-Jnk4o70hCxac7fSc?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
-// data til COMARK
+newDocumentMap.set('EXSYSAssignment', {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1AdCZ1xzp6AoB07PEkBHRU1NwWAoXXnBJ", mappe: "https://drive.google.com/drive/folders/1AdCZ1xzp6AoB07PEkBHRU1NwWAoXXnBJ?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
+
+// links til COMARK
 newDocumentMap.set("COMARKLecturesTuesday", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1D9lpavkVkqKOdzLfyYkO8GTjWfZVFb-k", mappe: "https://drive.google.com/drive/folders/1D9lpavkVkqKOdzLfyYkO8GTjWfZVFb-k?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 newDocumentMap.set("COMARKLecturesThursday", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1D9lpavkVkqKOdzLfyYkO8GTjWfZVFb-k", mappe: "https://drive.google.com/drive/folders/1D9lpavkVkqKOdzLfyYkO8GTjWfZVFb-k?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 newDocumentMap.set("COMARKLiterature", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1Fp5uMLFxcEMI6UzTQlgtBOP0vam5-jvk", mappe: "https://drive.google.com/drive/folders/1Fp5uMLFxcEMI6UzTQlgtBOP0vam5-jvk?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 newDocumentMap.set("COMARKtø", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1ye6XUIeCWf3sUb23GaPSTjHZBavjavZG", mappe: "https://drive.google.com/drive/folders/1LmjXOWBjQ5Ck6gWq4L-zQsVfNUcyshjI?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
-// data til STAT
+newDocumentMap.set("COMARKAssignment", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1cKHRRkIzeqIbZKAKU7WeZ079Um7UeA2F", mappe: "https://drive.google.com/drive/folders/1cKHRRkIzeqIbZKAKU7WeZ079Um7UeA2F?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
+// links til STAT
 newDocumentMap.set("STATLecturesTuesday", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_", mappe: "https://drive.google.com/drive/folders/1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 newDocumentMap.set("STATLecturesFriday", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_", mappe: "https://drive.google.com/drive/folders/1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 newDocumentMap.set("STATLiterature", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=156QXc7eCQZ0Xhjl-IY2rf7wnowajNc4t", mappe: "https://drive.google.com/drive/folders/156QXc7eCQZ0Xhjl-IY2rf7wnowajNc4t?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 newDocumentMap.set("STATtø", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1MlreAjMvM6LgX5qM2xVgIlV5BKlRcS_v", mappe: "https://drive.google.com/drive/folders/1MlreAjMvM6LgX5qM2xVgIlV5BKlRcS_v?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
+newDocumentMap.set("STATAssignment", {created: "false", new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1SlU2QKyvDkD0GkaU_4PhIujAwIBUE7wr", mappe: "https://drive.google.com/drive/folders/1SlU2QKyvDkD0GkaU_4PhIujAwIBUE7wr?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 
 
 function copyToClipboard (str) {
@@ -59,10 +63,10 @@ function getDataFromHtml(event){
   console.log(info[1]);
   if(info[1] == "Lectures"){
     linkStatus = newDocumentMap.get(info[0]+info[1]+info[4]);
-    console.log(linkStatus)
+    console.log(linkStatus);
   }else{
     linkStatus = newDocumentMap.get(info[0]+info[1]);
-    console.log(linkStatus)
+    console.log(linkStatus);
   }
 }
 
@@ -77,7 +81,7 @@ for (i = 0; i < videoButton.length; i++) {
     window.open('https://aarhusuniversity.zoom.us/j/68510210704', '_blank').focus();
   };
 }
-// Document Button
+// Document popup-Button
 continueButton[0].onclick = function (){
   addocument();
   protomodaldoc.style.display = 'none';
@@ -90,10 +94,10 @@ function addClickEventToDocumentButton(){
       getDataFromHtml(event);
       if (linkStatus.created == "false") {
         if(first){
-          document.getElementsByClassName('docs-popup-info')[0].innerHTML = "You are creating a shared google docs document in the folder: studygroup/course/aktivety. - this command also copies a recomended name for the document to your clipboard, for this document it's: course-aktivety-weeknumber-aktivetyheadline ";
+          document.getElementsByClassName('docs-popup-info')[0].innerHTML 
+          = "You are creating a shared google docs document in the folder:  studygroup/"+info[0]+"/"+info[1]+". <br> <br> This command also copies a recomended name for the document to your clipboard, for this document it's:    "+ createClipboardString(info[1]);
           protomodaldoc.style.display = 'block';
           first = false;
-  
         }else{
           addocument();
         }
@@ -107,9 +111,19 @@ function addClickEventToDocumentButton(){
 function addocument(){
   theTarget.classList.add('clicked');
   theTarget.childNodes[1].classList.add('documentbuttonClicked');
-  copyToClipboard(info[0] +" "+info[1]+" - Week: "+info[2]+' - ' + info[3]);
+  copyToClipboard(createClipboardString(info[1]));
   window.open(linkStatus.new, '_blank').focus();
   linkStatus.created = "true";
+}
+
+function createClipboardString(kind){
+  let string;
+  if(kind == "Assignment"){
+    string = info[0] +" - "+info[2];
+  }else{
+    string = info[0] +" "+info[1]+" - Week "+info[2]+' - ' + info[3];
+  }
+  return string;
 }
 
 

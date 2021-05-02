@@ -421,7 +421,7 @@
                         <div class="UPbutton"></div>
                     </div>
                     <div class="border"></div>
-                    <div class="BorderDoc">
+                    <div class="BorderDoc" data-data = "{{row[0]}},Assignment,{{row[1]}},{{row[2]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -496,9 +496,6 @@
                 <span id="protoclose--upload" class="close">&times;</span>
                 <div class="headline">
                     <p>Upload document</p>
-                </div>
-                <div class="docsinfo">
-                    <p>chose a file please</p>
                 </div>
                 <form name="myForm">
                     <div id="yourBtn" onclick="getFile()">click to upload a file</div>
