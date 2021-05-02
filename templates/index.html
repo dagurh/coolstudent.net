@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="border"></div>
-                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
+                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="border"></div>
-                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
+                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                     </div>
                     <div class="border"></div>
 
-                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
+                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                 <div class="quicklinks litv">
                     <div class="BorderVidlit">
                     </div>
-                    <div class="BorderDoc lit" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
+                    <div class="BorderDoc lit" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                 <div class="quicklinks litv">
                     <div class="BorderVidlit">
                     </div>
-                    <div class="BorderDoc lit" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
+                    <div class="BorderDoc lit" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -207,7 +207,7 @@
                 <div class="quicklinks litv">
                     <div class="BorderVidlit">
                     </div>
-                    <div class="BorderDoc lit" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
+                    <div class="BorderDoc lit" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -238,7 +238,7 @@
                         </div>
                     </div>
                     <div class="border"></div>
-                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
+                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -309,7 +309,7 @@
                         </div>
                     </div>
                     <div class="border"></div>
-                    <div class="BorderDoc" data-data= "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
+                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -364,10 +364,12 @@
                         </div>
                     </div>
                     <div class="border"></div>
-                    <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}}">
-                        <div class="documentbutton">
+
+                        <div class="BorderDoc" data-data = "{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
+                            <div class="documentbutton">
+                            </div>
                         </div>
-                    </div>
+           
                 </div>
             </div>
             <div id="normmodal--{{row[0]}}" class="modal">
@@ -411,7 +413,6 @@
             {% for row in list %}
             <div class="basicbutton space">
                 <div id="deadline--{{row[0]}}" class="topinfo">
-
                     <h4 style="margin-top: 5px; font-size: 20px;">{{row[0]}}</h4>
                     <h3 style="font-weight: 900; font-size: 15px;">{{row[1]}}</h3>
                     <p style="margin-top: 5px; font-weight: 700; font-size: 12px;">Due: {{row[2]}}</p>
@@ -453,8 +454,7 @@
         </div>
         <div class="Groups Groups1">
             <p>TUTOR</p>
-
-
+            <a href = "/reset">RESET</a>
         </div>
 
         <div class="kalenderfremogtilbage back">
@@ -510,6 +510,7 @@
         </div>
 
     </div>
+ 
 
 </body>
 
