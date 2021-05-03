@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/grid.css') }}">
+    <script defer src="{{ url_for('static', filename='/javascript/Javascript.js') }}"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolStudent.net</title>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="home" id="home" >
+            <a href="/">
+                <img class="homeimg" src="{{ url_for('static', filename='/Bilder/home.svg') }}">
+            </a>
+        </div>
+        <div class="exsys" onclick="window.location='/Exsys';" >
+            <p>EXSYS</p>
+        </div>
+        <div class="comark" onclick="window.location='/ComArk';" >
+            <p>COMARK</p>
+        </div>
+        <div class="stat" onclick="window.location='/Stat';">
+            <p>STAT</p>
+        </div>
+        <div class="menu">
+            <img class="menuimg">
+        </div>
+        <a class="kalenderimg" href="/kalender">
+            <img src="{{ url_for('static', filename='/Bilder/kalender.svg') }}">
+        </a>
+    </div>
+    <p> WIP </p>
+</body>
+</html>

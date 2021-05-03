@@ -14,15 +14,17 @@
     <div class="navbar">
 
         <div class="home" id="home">
+            <a href="/">
             <img class="homeimg" src="{{ url_for('static', filename='/Bilder/home.svg') }}">
+        </a>
         </div>
-        <div class="exsys" onclick="andenFunktion()">
+        <div class="exsys" onclick="window.location='/Exsys';" >
             <p>EXSYS</p>
         </div>
-        <div class="comark" onclick="andenFunktion()">
+        <div class="comark" onclick="window.location='/ComArk';" >
             <p>COMARK</p>
         </div>
-        <div class="stat" onclick="andenFunktion()">
+        <div class="stat" onclick="window.location='/Stat';">
             <p>STAT</p>
         </div>
         <div class="menu">
@@ -267,26 +269,24 @@
                 </div>
                 <div class="Resources files">
                     <p>Resources:</p>
-                    <a class="link" href="{{row[7]}}">Resourcer her</a>
+                    
                     <div class = "filecontainer">
                         <div class = "videoimg"></div>
-                    <a class="link" href="url">Resourcer her</a>
+                        <a class="link" href="{{row[7]}}">Resourcer her</a>
                     </div>
                 </div>
                 <div class="Slides files">
                     <p> Slides:</p>
-                    <a class="link" href="{{row[8]}}">Slides her</a>
                     <div class = "filecontainer">
                         <div class = "videoimg"></div>
-                        <a class="link" href="url">Slides her</a>
+                        <a class="link" href="{{row[8]}}">Slides her</a>
                     </div>
                 </div>
                 <div class="Recordings files">
                     <p>Recordings:</p>
-                    <a class="link" href="{{row[9]}}">Recordings her</a>
                     <div class = "filecontainer">
                         <div class = "videoimg"></div>
-                        <a class="link" href="url">Recordings her</a>
+                        <a class="link" href="{{row[9]}}">Recordings her</a>
                     </div>
                 </div>
             </div>

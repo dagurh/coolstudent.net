@@ -39,6 +39,7 @@ body{
   background-color: #f9fcfc;
   color: #403F3F;
 }
+
 .comark{
   float: left;
   width: 20.8%;
@@ -72,7 +73,7 @@ body{
 }
 
 .exsys p, .comark p, .stat p, .homeimg{
-  margin-top: 19px;
+  margin-top: 10px;
 }
 
 
