@@ -5,15 +5,16 @@ import data as db
 
 app = Flask(__name__)
 
+globalWeek = 17
 
 @app.route('/', methods=['GET'])
 def index():
     return render_template('index.html', list=db.all_deadlines(),
-                           exsyslit=db.exsysLit(17), comarklit=db.comarkLit(17),
-                           statlit=db.statLit(17), exsystø=db.exsysTØ(17),
-                           comarktø=db.comarkTØ(17), stattø=db.statTØ(17),
-                           exsyslec=db.exsysLec(17), comarklec=db.comarkLec(17),
-                           statlec=db.statLec(17))
+                           exsyslit=db.exsysLit(globalWeek), comarklit=db.comarkLit(globalWeek),
+                           statlit=db.statLit(globalWeek), exsystø=db.exsysTØ(globalWeek),
+                           comarktø=db.comarkTØ(globalWeek), stattø=db.statTØ(globalWeek),
+                           exsyslec=db.exsysLec(globalWeek), comarklec=db.comarkLec(globalWeek),
+                           statlec=db.statLec(globalWeek))
 
 
 @app.route('/Exsys')
@@ -35,18 +36,16 @@ def Stat():
 def kalender():
     return render_template('kalender.html')
 
-
-#
-# @app.route('/db/<int:id>', methods=['GET'])
-# def my_link(id):
-#    db.changelink(id)
-#    return render_template('index.html', list=db.all_deadlines(),
-#                           exsyslit=db.exsysLit(), comarklit=db.comarkLit(),
-#                           statlit=db.statLit(), exsystø=db.exsysTØ(),
-#                           comarktø=db.comarkTØ(), stattø=db.statTØ(),
-#                           exsyslec=db.exsysLec(), comarklec=db.comarkLec(),
-#                           statlec=db.statLec())
-
+@app.route('/db/<int:id>', methods=['GET'])
+def my_link(id):
+    db.changelink(id)
+    print("heeey")
+    return render_template('index.html', list=db.all_deadlines(),
+                           exsyslit=db.exsysLit(globalWeek), comarklit=db.comarkLit(globalWeek),
+                           statlit=db.statLit(globalWeek), exsystø=db.exsysTØ(globalWeek),
+                           comarktø=db.comarkTØ(globalWeek), stattø=db.statTØ(globalWeek),
+                           exsyslec=db.exsysLec(globalWeek), comarklec=db.comarkLec(globalWeek),
+                           statlec=db.statLec(globalWeek))
 
 @app.route('/week/<int:week>', methods=['GET'])
 def earlier_week(week):
