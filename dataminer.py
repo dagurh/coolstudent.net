@@ -8,8 +8,6 @@ app = Flask(__name__)
 @app.route('/')
 def index():
 
-  # db.changelink("the new link")
-
   return render_template('index.html', list=db.all_deadlines(),
                           exsyslit=db.exsysLit(), comarklit=db.comarkLit(),
                           statlit=db.statLit(), exsystø=db.exsysTØ(),

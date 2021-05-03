@@ -267,6 +267,7 @@ document.getElementsByClassName('send')[0].onclick = function () {
 
 
 // When the user clicks on <span> (x), close the modal
+
 protospanUpload.onclick = function () {
   protomodalUpload.style.display = 'none';
 };
@@ -298,19 +299,20 @@ normspan2.onclick = function () {
 modalbag = document.getElementsByClassName("modal");
 for(i = 0; i<modalbag.length; i++){
   modalbag[i].onclick = function (event) {
-    if(event.currentTarget == event.target)
-    normmodal.style.display = "none";
-    protomodal.style.display = "none";
-    conmodal.style.display = "none";
-    normmodal2.style.display = 'none';
-    conmodal2.style.display = 'none';
-    protomodal2.style.display = 'none';
-    protomodaldoc.style.display = 'none';
-    protomodalUpload.style.display = 'none';
+    if(event.currentTarget == event.target){
+      normmodal.style.display = "none";
+      protomodal.style.display = "none";
+      conmodal.style.display = "none";
+      normmodal2.style.display = 'none';
+      conmodal2.style.display = 'none';
+      protomodal2.style.display = 'none';
+      protomodaldoc.style.display = 'none';
+      protomodalUpload.style.display = 'none';
+    }
     }
 }
 
-
+/*
 // When the user clicks anywhere outside of the modal, close it # 2 dosnt work i think
 window.onclick = function (event) {
   if (event.target === protomodal) {
@@ -342,7 +344,7 @@ window.onclick = function (event) {
     normmodal2.style.display = 'none';
   }
 };
-
+*/
 // menu expand
 let menuClosed = true;
 const menubox = document.getElementsByClassName('menubox')[0];

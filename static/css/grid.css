@@ -390,15 +390,26 @@ border-right: 0.1px solid #F4F4F4;
   float: right;
   font-size: 32px;
   font-weight: bold;
-  margin-top: -60px;
-  margin-right: -45px;
 }
 
-.close:hover,
-.close:focus {
+.closebox{
+  position: fixed;
+  top: 110px;
+  right: 9.5%;
+  height: 100px;
+  width: 7%;
+}
+
+.closebox:hover .close{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+  font-size: 58px;
+ 
+}
+.closebox:hover{
+  top: 99px;
+  right: 9.3%;
 }
 
 .navbar{
@@ -847,11 +858,11 @@ border-bottom-left-radius: 12px;
 }
 
 .modal-content .information{
-  width: 50%;
+  width: 64%;
   height: auto;
   overflow: auto;
-  position: absolute;
-  top: 19%;
+  position: relative;
+  margin-top: -20px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color:#4e4e4e;
@@ -876,8 +887,8 @@ border-bottom-left-radius: 12px;
   font-size: 20px;
   font-family: Helvetica, Arial, sans-serif;
   width: 40%;
-  position: absolute;
-  top: 7%;
+  position: relative;
+  margin-top: -30px;
   opacity: 50%;
   font-weight: lighter;
   
@@ -885,8 +896,8 @@ border-bottom-left-radius: 12px;
 .modal-content .headline{
   padding: 0px;
   width: 40%;
-  position: absolute;
-  top: 8.2%;
+  position: relative;
+  margin-top: -28px;
   font-size: 40px;
   justify-self: stretch;
   font-family: Helvetica, Arial, sans-serif;
