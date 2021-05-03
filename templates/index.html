@@ -251,6 +251,7 @@
                 </div>
             </div>
             <!--The modal-->
+<<<<<<< HEAD
             <div id="protomodal--{{row[0]}}" class="modal">
                 <!--Content in the modal-->
                 <div class="modal-content">
@@ -310,6 +311,48 @@
                             <div class="videoimg"></div>
                             <a class="link" href="{{row[9]}}">Recordings her</a>
                         </div>
+=======
+        <div id="protomodal--{{row[0]}}" class="modal">
+            <!--Content in the modal-->
+            <div class="modal-content">
+                <span id="protoclose--{{row[0]}}" class="close">&times;</span>
+                <div class="small">
+                    <p>ExSys lecture </p>
+                </div>
+                <div class="headline">
+                    <p>{{row[5]}} </p>
+                </div>
+                <div class="information">
+                    <p>Beyoncé Giselle Knowles-Carter (født den 4. september 1981), bedre kendt som Beyoncé (udtales /biːɑːnsi/ eller “bee-YON-say”) er en amerikansk moderne R&B-sanger, skuespiller og modedesigner. Hun er født og opvokset i Houston, Texas, hvor hun spillede med i adskillige kunstskolers forestillinger og blev introduceret for sang- 
+                        og dansekonkurrencer som barn. Knowles blev kendt i de sene 1990’ere som forsanger i R&B-pigegruppen Destiny’s Child, en af verdens bedst sælgende pigegrupper gennem tiderne.
+                        
+                        I 2003, hvor Destiny’s Child i en periode ikke udsendte noget musik, udgav Knowles sit debut soloalbum Dangerously in Love, som indeholder flere hits som “Crazy in Love” og “Baby Boy” og endte med at blive et af de mest succesfulde album det år. Det indbragte hende et (på det tidspunkt) rekordhøjt antal på 5 vundne Grammy Award-priser. Efter gruppens opløsning i 2005, udgav Knowles sit andet soloalbum, B’Day i 2006. Den røg direkte ind som nummer 1 på Billboard 200 og indeholder hits som “Irreplaceable” og “Beautiful Liar”. 
+                        
+                        Beyoncé Giselle Knowles-Carter (født den 4. september 1981), bedre kendt som Beyoncé (udtales /biːɑːnsi/ eller “bee-YON-say”) er en amerikansk moderne R&B-sanger, skuespiller og modedesigner. Hun er født og opvokset i Houston, Texas, hvor hun spillede med i adskillige kunstskolers forestillinger og blev introduceret for sang- 
+                        og dansekonkurrencer som barn. Knowles blev kendt i de sene 1990’ere som forsanger i R&B-pigegruppen Destiny’s Child, en af verdens bedst sælgende pigegrupper gennem tiderne.
+                        
+                        I 2003, hvor Destiny’s Child i en periode ikke udsendte noget musik, udgav Knowles sit debut soloalbum Dangerously in Love, som indeholder flere hits som “Crazy in Love” og “Baby Boy” og endte med at blive et af de mest succesfulde album det år. Det indbragte hende et (på det tidspunkt) rekordhøjt antal på 5 vundne Grammy Award-priser. Efter gruppens opløsning i 2005, udgav Knowles sit andet soloalbum, B’Day i 2006. Den røg direkte ind som nummer 1 på Billboard 200 og indeholder hits som “Irreplaceable” og “Beautiful Liar”. </p>
+                </div>
+                <div class="Resources files">
+                    <p>Resources:</p>
+                    <div class = "filecontainer">
+                        <div class = "pdfimg"></div>
+                        <a class="link" href="{{row[7]}}">Resourcer her</a>
+                    </div>
+                </div>
+                <div class="Slides files">
+                    <p> Slides:</p>
+                    <div class = "filecontainer">
+                        <div class = "pdfimg"></div>
+                        <a class="link" href="{{row[8]}}">Slides her</a>
+                    </div>
+                </div>
+                <div class="Recordings files">
+                    <p>Recordings:</p>
+                    <div class = "filecontainer">
+                        <div class = "videoimg"></div>
+                        <a class="link" href="{{row[9]}}">Recordings her</a>
+>>>>>>> f710a8d2201206474137cc3c664ef525fa61b578
                     </div>
                 </div>
                 {% endfor %}
@@ -317,6 +360,16 @@
                 <p>Bla</p>
                 {% endif %}
             </div>
+<<<<<<< HEAD
+=======
+            </div>
+            {% endfor %}
+            {% else %}
+            <p>Bla</p>
+            {% endif %}
+        </div>
+       
+>>>>>>> f710a8d2201206474137cc3c664ef525fa61b578
 
             <div class="forelæsningCom">
                 {% if comarklec%}
@@ -373,6 +426,7 @@
             </div>
 
 
+<<<<<<< HEAD
 
             <div class="forelæsningStat">
                 {% if statlec%}
@@ -382,6 +436,21 @@
                         <h4>{{row[2]}}</h4>
                         <h3>{{row[4]}}</h3>
                         <p>{{row[5]}}</p>
+=======
+        <div class="forelæsningStat">
+            {% if statlec%}
+            {% for row in statlec %}
+            <div class="basicbutton">
+                <div id="normbutton--{{row[0]}}" class="topinfo">
+                    <h4>{{row[2]}}</h4>
+                    <h3>{{row[4]}}</h3>
+                    <p>{{row[5]}}</p>
+                </div>
+                <div class="quicklinks">
+                    <div class="BorderVid">
+                        <div class="videobutton">
+                        </div>
+>>>>>>> f710a8d2201206474137cc3c664ef525fa61b578
                     </div>
                     <div class="quicklinks">
                         <div class="BorderVid">
@@ -431,6 +500,7 @@
                 {% endif %}
             </div>
 
+<<<<<<< HEAD
 
 
             <div class="deadlines">
@@ -442,6 +512,23 @@
                         <h4 style="margin-top: 5px; font-size: 20px;">{{row[0]}}</h4>
                         <h3 style="font-weight: 900; font-size: 15px;">{{row[1]}}</h3>
                         <p style="margin-top: 5px; font-weight: 700; font-size: 12px;">Due: {{row[2]}}</p>
+=======
+       
+
+        <div class="deadlines">
+            <h5>DEADLINES</h5>
+            {% if list %}
+            {% for row in list %}
+            <div class="basicbutton space">
+                <div id="deadline--{{row[0]}}" class="topinfo">
+                    <h4 style="margin-top: 5px; font-size: 20px;">{{row[0]}}</h4>
+                    <h3 style="font-weight: 900; font-size: 15px;">{{row[1]}}</h3>
+                    <p style="margin-top: 5px; font-weight: 700; font-size: 12px;">Due: {{row[2]}}</p>
+                </div>
+                <div class="quicklinks">
+                    <div class="BorderUp">
+                        <div class="UPbutton"></div>
+>>>>>>> f710a8d2201206474137cc3c664ef525fa61b578
                     </div>
                     <div class="quicklinks">
                         <div class="BorderUp">
@@ -474,6 +561,7 @@
                 <a href="#">Add new chat</a>
             </div>
 
+<<<<<<< HEAD
             <p class="groupsh1">GROUPS </p>
             <div class="Groups">
                 <p>STUDY <br> GROUP </p>
@@ -482,6 +570,15 @@
                 <p>TUTOR</p>
                 <a href="/reset">RESET</a>
             </div>
+=======
+        <p class="groupsh1">GROUPS </p>
+        <div class="Groups">
+            <p>STUDY <br> GROUP </p>
+        </div>
+        <div class="Groups Groups1">
+            <p>TUTOR</p>
+        </div>
+>>>>>>> f710a8d2201206474137cc3c664ef525fa61b578
 
             <div class="kalenderfremogtilbage back">
                 <div class="arrowIcon"></div>
@@ -534,8 +631,13 @@
                 </form>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
 
+=======
+        </div>
+        <a href = "/reset" class = "reset">RESET</a>
+>>>>>>> f710a8d2201206474137cc3c664ef525fa61b578
     </div>
 
 

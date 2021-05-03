@@ -8,7 +8,7 @@ let linkStatus;
 let nameA;
 
 
-// use this to fill out info in map
+
 const statusMap = new Map();
 for(i = 0; i<documentButton.length; i++){
   let infoString = documentButton[i].getAttribute("data-data");
@@ -42,9 +42,6 @@ newDocumentMap.set("STATLiterature", {created: statusMap.get("STATLiterature"), 
 newDocumentMap.set("STATtø", {created: statusMap.get("STATtø"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1MlreAjMvM6LgX5qM2xVgIlV5BKlRcS_v", mappe: "https://drive.google.com/drive/folders/1MlreAjMvM6LgX5qM2xVgIlV5BKlRcS_v?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 newDocumentMap.set("STATAssignment", {created: statusMap.get("STATAssignment"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1SlU2QKyvDkD0GkaU_4PhIujAwIBUE7wr", mappe: "https://drive.google.com/drive/folders/1SlU2QKyvDkD0GkaU_4PhIujAwIBUE7wr?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk"});
 
-function resetDatabase(){
-  
-}
 
 function copyToClipboard (str) {
   const el = document.createElement('textarea');
@@ -103,9 +100,6 @@ function addClickEventToDocumentButton(){
   for (i = 0; i < documentButton.length; i++) {
     documentButton[i].onclick = function () {
       getDataFromClickedButton(event);
-      console.log(linkStatus.created);
-      console.log(info[0],info[1]);
-      console.log
       if (linkStatus.created == "false") {
         if(first){
           document.getElementsByClassName('docs-popup-info')[0].innerHTML 
