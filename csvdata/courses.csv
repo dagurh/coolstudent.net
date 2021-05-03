@@ -1,0 +1,7 @@
+id,course,category,week,title,weekday,infotitle,info,resources,slides,recordings,zoom,document
+1,EXSYS,Lectures,17,User stories,Monday,Project information,SKRT,bla,bla,bla,bla,FALSE
+2,EXSYS,Lectures,17,HTML kode,Wednesday,Project information,SKRT,bla,bla,bla,bla,FALSE
+3,COMARK,Lectures,17,Micro Programming,Tuesday,Project information,SKRT,bla,bla,bla,bla,FALSE
+4,COMARK,Lectures,17,Micro Programming,Thursday,Project information,SKRT,bla,bla,bla,bla,FALSE
+5,STAT,Lectures,17,Multiple Regression,Tuesday,Project information,SKRT,bla,bla,bla,bla,FALSE
+6,STAT,Lectures,17,Multiple Regression,Friday,Project information,SKRT,bla,bla,bla,bla,FALSE
