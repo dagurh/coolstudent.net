@@ -26,122 +26,136 @@ CREATE TABLE IF NOT EXISTS courses
   );
 """
 
+
 def create_database():
-  with sqlite3.connect(
-    __DEADLINES_DB, detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES
-  ) as conn:
-    cur = conn.cursor()
-    cur.execute(__CREATE_SQL)
-    cur.execute(__CREATE_SQL2)
-    conn.commit()
+    with sqlite3.connect(
+        __DEADLINES_DB, detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES
+    ) as conn:
+        cur = conn.cursor()
+        cur.execute(__CREATE_SQL)
+        cur.execute(__CREATE_SQL2)
+        conn.commit()
+
 
 def all_deadlines() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM deadlines ORDER BY SUBSTR(due, -2), due ASC;"""
-    )
-    return cur.fetchall()
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM deadlines ORDER BY SUBSTR(due, -2), due ASC;"""
+        )
+        return cur.fetchall()
 
-def exsysLit() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'EXSYS' AND category = 'Literature';
-      """)
-    return cur.fetchall()
 
-def comarkLit() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'COMARK' AND category = 'Literature';
-      """)
-    return cur.fetchall()
+def exsysLit(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'EXSYS' AND category = 'Literature' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
 
-def statLit() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'STAT' AND category = 'Literature';
-      """)
-    return cur.fetchall()
 
-def exsysTØ() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'EXSYS' AND category = 'Exercises';
-      """)
-    return cur.fetchall()
+def comarkLit(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'COMARK' AND category = 'Literature' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
 
-def comarkTØ() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'COMARK' AND category = 'Exercises';
-      """)
-    return cur.fetchall()
 
-def statTØ() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'STAT' AND category = 'Exercises';
-      """)
-    return cur.fetchall()
+def statLit(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'STAT' AND category = 'Literature' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
 
-def exsysLec() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'EXSYS' AND category = 'Lectures';
-      """)
-    return cur.fetchall()
 
-def comarkLec() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'COMARK' AND category = 'Lectures';
-      """)
-    return cur.fetchall()
+def exsysTØ(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'EXSYS' AND category = 'Exercises' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
 
-def statLec() -> List:
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """SELECT * FROM courses 
-      WHERE course = 'STAT' AND category = 'Lectures';
-      """)
-    return cur.fetchall()
+
+def comarkTØ(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'COMARK' AND category = 'Exercises' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
+
+
+def statTØ(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'STAT' AND category = 'Exercises' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
+
+
+def exsysLec(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'EXSYS' AND category = 'Lectures' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
+
+
+def comarkLec(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'COMARK' AND category = 'Lectures' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
+
+
+def statLec(week) -> List:
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT * FROM courses 
+      WHERE course = 'STAT' AND category = 'Lectures' AND week = ?;
+      """, (week,))
+        return cur.fetchall()
+
 
 def changelink(id):
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """UPDATE courses
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """UPDATE courses
       SET Document = "true"
       WHERE id = ?;
       """, (id,))
-    conn.commit()
+        conn.commit()
+
 
 def resetLinks():
-  with sqlite3.connect(__DEADLINES_DB) as conn:
-    cur = conn.cursor()
-    cur.execute(
-      """UPDATE courses
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """UPDATE courses
       SET Document = "false";
       """)
-    conn.commit()
+        conn.commit()
+
 
 if __name__ != "__main__":
-  create_database()
+    create_database()
