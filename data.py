@@ -124,5 +124,24 @@ def statLec() -> List:
       """)
     return cur.fetchall()
 
+def changelink(id):
+  with sqlite3.connect(__DEADLINES_DB) as conn:
+    cur = conn.cursor()
+    cur.execute(
+      """UPDATE courses
+      SET Document = "true"
+      WHERE id = ?;
+      """, (id,))
+    conn.commit()
+
+def resetLinks():
+  with sqlite3.connect(__DEADLINES_DB) as conn:
+    cur = conn.cursor()
+    cur.execute(
+      """UPDATE courses
+      SET Document = "false";
+      """)
+    conn.commit()
+
 if __name__ != "__main__":
   create_database()
