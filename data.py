@@ -1,12 +1,18 @@
 import sqlite3
 from typing import Iterable, List
+import csv
 
 __DEADLINES_DB = "data.db"
 __CREATE_SQL = """
 CREATE TABLE IF NOT EXISTS deadlines
 (course TEXT NOT NULL,
  title TEXT NOT NULL,
- due TEXT NOT NULL);"""
+ due TEXT NOT NULL,
+ docstate TEXT NOT NULL,
+ uplstate TEXT NOT NULL,
+ info TEXT NOT NULL,
+ resources TEXT NOT NULL
+ );"""
 
 __CREATE_SQL2 = """
 CREATE TABLE IF NOT EXISTS courses
