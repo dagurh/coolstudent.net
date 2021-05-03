@@ -962,3 +962,9 @@ top: 19%;
   background-repeat:no-repeat;
   margin-left: 7px;
 }
+
+.reset{
+  position: fixed;
+  left: 97%;
+  top: 97%;
+}
