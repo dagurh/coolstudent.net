@@ -235,7 +235,7 @@
             {% for row in exsyslec %}
             <!--Trigger/Open prototyping-->
             <div class="basicbutton">
-                <div id="protobutton--{{row[0]}}" class="topinfo">
+                <div id="{{row[0]}}" class="topinfo" >
                     <h4>{{row[2]}}</h4>
                     <h3>{{row[4]}}</h3>
                     <p>{{row[5]}}</p>
@@ -253,7 +253,7 @@
                 </div>
             </div>
             <!--The modal-->
-            <div id="protomodal--{{row[0]}}" class="modal">
+            <div id="modal--{{row[0]}}" class="modal">
                 <!--Content in the modal-->
                 <div class="modal-content">
                     <div class="closebox"><span id="protoclose--{{row[0]}}" class="close">&times;</span></div>
@@ -264,53 +264,27 @@
                         <p>{{row[5]}} </p>
                     </div>
                     <div class="information">
-                        <p>Beyoncé Giselle Knowles-Carter (født den 4. september 1981), bedre kendt som Beyoncé (udtales
-                            /biːɑːnsi/ eller “bee-YON-say”) er en amerikansk moderne R&B-sanger, skuespiller og
-                            modedesigner. Hun er født og opvokset i Houston, Texas, hvor hun spillede med i adskillige
-                            kunstskolers forestillinger og blev introduceret for sang-
-                            og dansekonkurrencer som barn. Knowles blev kendt i de sene 1990’ere som forsanger i
-                            R&B-pigegruppen Destiny’s Child, en af verdens bedst sælgende pigegrupper gennem tiderne.
-
-                            I 2003, hvor Destiny’s Child i en periode ikke udsendte noget musik, udgav Knowles sit debut
-                            soloalbum Dangerously in Love, som indeholder flere hits som “Crazy in Love” og “Baby Boy”
-                            og endte med at blive et af de mest succesfulde album det år. Det indbragte hende et (på det
-                            tidspunkt) rekordhøjt antal på 5 vundne Grammy Award-priser. Efter gruppens opløsning i
-                            2005, udgav Knowles sit andet soloalbum, B’Day i 2006. Den røg direkte ind som nummer 1 på
-                            Billboard 200 og indeholder hits som “Irreplaceable” og “Beautiful Liar”.
-
-                            Beyoncé Giselle Knowles-Carter (født den 4. september 1981), bedre kendt som Beyoncé
-                            (udtales /biːɑːnsi/ eller “bee-YON-say”) er en amerikansk moderne R&B-sanger, skuespiller og
-                            modedesigner. Hun er født og opvokset i Houston, Texas, hvor hun spillede med i adskillige
-                            kunstskolers forestillinger og blev introduceret for sang-
-                            og dansekonkurrencer som barn. Knowles blev kendt i de sene 1990’ere som forsanger i
-                            R&B-pigegruppen Destiny’s Child, en af verdens bedst sælgende pigegrupper gennem tiderne.
-
-                            I 2003, hvor Destiny’s Child i en periode ikke udsendte noget musik, udgav Knowles sit debut
-                            soloalbum Dangerously in Love, som indeholder flere hits som “Crazy in Love” og “Baby Boy”
-                            og endte med at blive et af de mest succesfulde album det år. Det indbragte hende et (på det
-                            tidspunkt) rekordhøjt antal på 5 vundne Grammy Award-priser. Efter gruppens opløsning i
-                            2005, udgav Knowles sit andet soloalbum, B’Day i 2006. Den røg direkte ind som nummer 1 på
-                            Billboard 200 og indeholder hits som “Irreplaceable” og “Beautiful Liar”. </p>
+                        <p>Placeholder text</p>
                     </div>
                     <div class="Resources files">
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" href="{{row[7]}}">Resourcer her</a>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
                         </div>
                     </div>
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" href="{{row[8]}}">Slides her</a>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" href="{{row[9]}}">Recordings her</a>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                 </div>
@@ -325,7 +299,7 @@
             {% if comarklec%}
             {% for row in comarklec %}
             <div class="basicbutton">
-                <div id="conbutton--{{row[0]}}" class="topinfo">
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[2]}}</h4>
                     <h3>{{row[4]}}</h3>
                     <p>{{row[5]}}</p>
@@ -342,30 +316,39 @@
                     </div>
                 </div>
             </div>
-            <div id="conmodal--{{row[0]}}" class="modal">
+            <div id="modal--{{row[0]}}" class="modal">
                 <!--Content in the modal-->
                 <div class="modal-content">
-                    <span id="conclose--{{row[0]}}" class="close">&times;</span>
+                    <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
                     <div class="small">
-                        <p>ComArk status: </p>
+                        <p>ComArk lecture </p>
                     </div>
                     <div class="headline">
                         <p>{{row[5]}} </p>
                     </div>
                     <div class="information">
-                        <p>{{row[6]}} </p>
+                        <p>Placeholder text</p>
                     </div>
-                    <div class="Resources">
+                    <div class="Resources files">
                         <p>Resources:</p>
-                        <a class="link" href="{{row[7]}}">Resourcer her</a>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
                     </div>
-                    <div class="Slides">
+                    <div class="Slides files">
                         <p> Slides:</p>
-                        <a class="link" href="{{row[8]}}">Slides her</a>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
+                        </div>
                     </div>
-                    <div class="Recordings">
+                    <div class="Recordings files">
                         <p>Recordings:</p>
-                        <a class="link" href="{{row[9]}}">Recordings her</a>
+                        <div class="filecontainer">
+                            <div class="videoimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -381,7 +364,7 @@
             {% if statlec%}
             {% for row in statlec %}
             <div class="basicbutton">
-                <div id="normbutton--{{row[0]}}" class="topinfo">
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[2]}}</h4>
                     <h3>{{row[4]}}</h3>
                     <p>{{row[5]}}</p>
@@ -401,30 +384,39 @@
 
                 </div>
             </div>
-            <div id="normmodal--{{row[0]}}" class="modal">
+            <div id="modal--{{row[0]}}" class="modal">
                 <!--Content in the modal-->
                 <div class="modal-content">
-                    <span id="normclose--{{row[0]}}" class="close">&times;</span>
+                    <div class="closebox"><span id="normclose--{{row[0]}}" class="close">&times;</span></div>
                     <div class="small">
-                        <p>Stat status: </p>
+                        <p>Stat lecture </p>
                     </div>
                     <div class="headline">
-                        <p>{{row[5]}}</p>
+                        <p>{{row[5]}} </p>
                     </div>
                     <div class="information">
-                        <p>{{row[6]}} </p>
+                        <p>Placeholder text</p>
                     </div>
-                    <div class="Resources">
+                    <div class="Resources files">
                         <p>Resources:</p>
-                        <a class="link" href="{{row[7]}}">Resourcer her</a>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
                     </div>
-                    <div class="Slides">
+                    <div class="Slides files">
                         <p> Slides:</p>
-                        <a class="link" href="{{row[8]}}">Slides her</a>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
+                        </div>
                     </div>
-                    <div class="Recordings">
+                    <div class="Recordings files">
                         <p>Recordings:</p>
-                        <a class="link" href="{{row[9]}}">Recordings her</a>
+                        <div class="filecontainer">
+                            <div class="videoimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -453,6 +445,29 @@
                     <div class="border"></div>
                     <div class="BorderDoc" data-data="{{row[0]}},Assignment,{{row[1]}},{{row[2]}}">
                         <div class="documentbutton"></div>
+                    </div>
+                </div>
+            </div>
+             <!--The modal-->
+             <div id="modal--{{row[0]}}" class="modal">
+                <!--Content in the modal-->
+                <div class="modal-content">
+                    <div class="closebox"><span id="protoclose--{{row[0]}}" class="close">&times;</span></div>
+                    <div class="small">
+                        <p>ExSys lecture </p>
+                    </div>
+                    <div class="headline">
+                        <p>{{row[5]}} </p>
+                    </div>
+                    <div class="information">
+                        <p>Placeholder text</p>
+                    </div>
+                    <div class="Resources files">
+                        <p>Resources:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -506,8 +521,8 @@
         <div id="protomodal--doc" class="modal">
             <!--Content in the modal-->
             <div class="modal-content docs">
-                <span id="protoclose" class="close">&times;</span>
-                <div class="headline">
+                <div class="small-pop-up-closebox"><span id="protoclose--doc" class="close">&times;</span></div>
+                <div class="headlinedocs">
                     <p>Create document</p>
                 </div>
                 <div class="docsinfo">
@@ -521,8 +536,8 @@
     <div id="protomodal--upload" class="modal">
         <!--Content in the modal-->
         <div class="modal-content docs">
-            <span id="protoclose--upload" class="close">&times;</span>
-            <div class="headline">
+            <div class="small-pop-up-closebox"><span id="protoclose--upload" class="close">&times;</span></div>
+            <div class="headlinedocs">
                 <p>Upload document</p>
             </div>
             <form name="myForm">
