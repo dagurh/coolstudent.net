@@ -26,6 +26,6 @@ with open('csvdata/deadlines.csv', newline='') as csv_file:
   for row in reader:
     with sqlite3.connect(__DEADLINES_DB) as conn:
       cur = conn.cursor()
-      cur.execute("""INSERT INTO deadlines VALUES (?,?,?,?,?,?,?)""",
-                  (row[0], row[1], row[2], row[3], row[4], row[5], row[6]))
+      cur.execute("""INSERT INTO deadlines VALUES (?,?,?,?,?,?,?,?)""",
+                  (int(row[0]), row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
       conn.commit()

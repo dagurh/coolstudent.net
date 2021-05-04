@@ -1,7 +1,7 @@
 "course	title	due	docstate	uplstate	info	resources",title,due,docstate,uplstate,info,resources
-EXSYS,Afl1,17.05,FALSE,FALSE,bla,bla
-COMARK,Afl1,18.05,FALSE,FALSE,bla,bla
-EXSYS,Afl2,15.06,FALSE,FALSE,bla,bla
-STAT,Afl1,12.04,FALSE,FALSE,bla,bla
-STAT,Afl2,25.05,FALSE,FALSE,bla,bla
-STAT,Afl3,25.06,FALSE,FALSE,bla,bla
+1,EXSYS,Afl1,17.05,FALSE,FALSE,bla,bla
+2,COMARK,Afl1,18.05,FALSE,FALSE,bla,bla
+3,EXSYS,Afl2,15.06,FALSE,FALSE,bla,bla
+4,STAT,Afl1,12.04,FALSE,FALSE,bla,bla
+5,STAT,Afl2,25.05,FALSE,FALSE,bla,bla
+6,STAT,Afl3,25.06,FALSE,FALSE,bla,bla
