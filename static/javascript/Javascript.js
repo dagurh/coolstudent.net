@@ -229,20 +229,24 @@ const topinfoButton = document.getElementsByClassName("topinfo");
 for(i = 0; i<topinfoButton.length; i++){
   topinfoButton[i].onclick = function () {
     modalID = parseInt(event.currentTarget.getAttribute("id"));
+    console.log(modalID);
     document.getElementById('modal--'+modalID).style.display = "block";
 }
 }
 
+
 //upload button
+const protomodalUpload = document.getElementById("protomodal--upload");
 const uploadButton = document.getElementsByClassName('BorderUp');
 let targetUploadButton;
+
 for(i = 0; i<uploadButton.length; i++){
   uploadButton[i].onclick = function () {
     protomodalUpload.style.display = 'block';
     targetUploadButton = event.currentTarget;
   };
 }
-
+// file upload
 function getFile(){
   document.getElementById("upfile").click();
 }
