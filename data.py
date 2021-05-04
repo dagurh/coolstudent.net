@@ -5,7 +5,8 @@ import csv
 __DEADLINES_DB = "data.db"
 __CREATE_SQL = """
 CREATE TABLE IF NOT EXISTS deadlines
-(course TEXT NOT NULL,
+(id INT,
+ course TEXT NOT NULL,
  title TEXT NOT NULL,
  due TEXT NOT NULL,
  docstate TEXT NOT NULL,
