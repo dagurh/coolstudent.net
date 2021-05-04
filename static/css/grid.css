@@ -93,7 +93,7 @@ body{
 .toLogo, .litteraturLogo, .forelæsningLogo{
   height: 40px;
   width: 40px;
-  margin-top: 75px;
+  margin-top: 10px;
   justify-self: center;
 
 }
