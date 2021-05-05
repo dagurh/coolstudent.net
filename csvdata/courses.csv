@@ -1,5 +1,5 @@
 id,course,category,week,title,weekday,infotitle,info,resources,slides,recordings,zoom,document
-1,EXSYS,Lectures,17,User stories,Monday,Project information,SKRT,bla,bla,bla,bla,FALSE
+1,EXSYS,Lectures,17,User stories,Monday,Project information,vi glæder os til at se jer,bla,bla,bla,bla,FALSE
 2,EXSYS,Lectures,17,HTML kode,Wednesday,Project information,SKRT,bla,bla,bla,bla,FALSE
 3,COMARK,Lectures,17,Micro Frogramming,Tuesday,Project information,SKRT,bla,bla,bla,bla,FALSE
 4,COMARK,Lectures,17,Micro Programming,Thursday,Project information,SKRT,bla,bla,bla,bla,FALSE
@@ -7,3 +7,31 @@ id,course,category,week,title,weekday,infotitle,info,resources,slides,recordings
 6,STAT,Lectures,17,Multiple Regression,Friday,Project information,SKRT,bla,bla,bla,bla,FALSE
 7,EXSYS,Exercises,17,bla,Friday,somethings,SKRT,bla,bla,bla,bla,FALSE
 8,EXSYS,Literature,17,bla,Friday,something,Skrt,bla,bla,bla,bla,FLASE
+9,COMARK,Exercises,17,Microarchitecture,Friday,Microarchitecture,See the attached exercises,microarchitecture_exercises.pdf,slides,recordings,zoom,FALSE
+10,COMARK,Literature,17,Micro Programming,Thursday,Micro Programming,SCO Chapter 4.3-4.4,resources,slides,recordings,zoom,FALSE
+11,STAT,Exercises,17,Analysis of varians,Friday,Variansanalyse,Øvelse 6 (Geologi/Biologi/IT) hørende til Kapitel 6: En- og tosidet variansanalyse. Efter øvelsen skal der laves en rapport over opgave 6.4.,resources,slides,recordings,zoom,FALSE
+12,STAT,Literature,17,Analysis of varians,Monday,Variansanalyse,I skal læse kapitel 6 i webbogen hvis i ikke nåede det i sidste uge.,resources,slides,recordings,zoom,FALSE
+13,EXSYS,Literature,18,Situated Action,Thursday,Situated Action,info,resources,slides,recordings,zoom,FALSE
+14,COMARK,Literature,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+15,STAT,Literature,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+16,EXSYS,Exercises,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+17,COMARK,Exercises,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+18,STAT,Exercises,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+19,EXSYS,Lectures,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+20,EXSYS,Lectures,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+21,COMARK,Lectures,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+22,COMARK,Lectures,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+23,STAT,Lectures,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+24,STAT,Lectures,18,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+25,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+26,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+27,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+28,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+29,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+30,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+31,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+32,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+33,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+34,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+35,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
+36,course,category,19,title,weekday,infotitle,info,resources,slides,recordings,zoom,FALSE
