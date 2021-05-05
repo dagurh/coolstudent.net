@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/grid.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/Relevant-Buttons.css') }}">
     <script defer src="{{ url_for('static', filename='/javascript/Javascript.js') }}"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,6 +44,54 @@
 
 
     <div class="container">
+        <div class="relaviteLinks">
+            <div id="STADS">
+                <button class="STADSBut" onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'"
+                    type="button">
+                    STADS
+                    <p>Dine karakterer, undervisnings og eksamentilmelding </p>
+                </button>
+
+            </div>
+
+            <div id="AULibrary">
+                <button class="AuLiBut" onclick="location.href='https://library.au.dk/'" type="button">
+                    AU Library
+                    <p>Bøger, artikler mm. </p>
+                </button>
+            </div>
+
+            <div id="KursusKatalog">
+                <button class="KurKBut" onclick="location.href='http://www.example.com'" type="button">
+                    Kursus katalog
+                    <p>Se info om aktuelle kurser </p>
+                </button>
+            </div>
+
+            <div id="DigitalExam">
+                <button class="DeExBut" onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'"
+                    type="button">
+                    Digital eksamen
+                    <p>Digital aflevering af eksamensbesvarelser </p>
+                </button>
+            </div>
+
+            <div id="MoveOn">
+                <button class="MoveBut"
+                    onclick="location.href='https://au.moveon4.de/form/5c7d0007587531e5508b4567/eng'" type="button">
+                    Move On
+                    <p>Udveksling og praktik i udlandet </p>
+                </button>
+            </div>
+
+            <div id="ExamRegistration">
+                <button class="ExReBut" onclick="location.href='http://www.example.com'" type="button">
+                    Eksamen registration
+                    <p>??? </p>
+                </button>
+            </div>
+        </div>
+
 
         <div class="topgab"></div>
         <div class="topgab2"></div>
@@ -92,21 +141,24 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
                 </div>
@@ -155,21 +207,24 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
                 </div>
@@ -220,21 +275,24 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
                 </div>
@@ -297,23 +355,30 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
+<<<<<<< HEAD
+                    
+=======
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
+>>>>>>> 208f96251dedb350369edd458e5566bfe23d6084
                 </div>
             </div>
             {% endfor %}
@@ -357,23 +422,30 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
+<<<<<<< HEAD
+            
+=======
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
+>>>>>>> 208f96251dedb350369edd458e5566bfe23d6084
                 </div>
             </div>
             {% endfor %}
@@ -417,23 +489,30 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
+<<<<<<< HEAD
+                   
+=======
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
+>>>>>>> 208f96251dedb350369edd458e5566bfe23d6084
                 </div>
             </div>
             {% endfor %}
@@ -451,7 +530,7 @@
             {% for row in exsyslec %}
             <!--Trigger/Open prototyping-->
             <div class="basicbutton">
-                <div id="{{row[0]}}" class="topinfo" >
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[2]}}</h4>
                     <h3>{{row[4]}}</h3>
                     <p>{{row[5]}}</p>
@@ -486,21 +565,24 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
                 </div>
@@ -549,21 +631,24 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
                 </div>
@@ -617,21 +702,24 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
                     <div class="Slides files">
                         <p> Slides:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
                         </div>
                     </div>
                     <div class="Recordings files">
                         <p>Recordings:</p>
                         <div class="filecontainer">
                             <div class="videoimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
                 </div>
@@ -664,8 +752,8 @@
                     </div>
                 </div>
             </div>
-             <!--The modal-->
-             <div id="modal--{{row[0]}}" class="modal">
+            <!--The modal-->
+            <div id="modal--{{row[0]}}" class="modal">
                 <!--Content in the modal-->
                 <div class="modal-content">
                     <div class="closebox"><span id="protoclose--{{row[0]}}" class="close">&times;</span></div>
@@ -682,7 +770,8 @@
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
-                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                            <a class="link" target="_blank"
+                                href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
                         </div>
                     </div>
                 </div>
@@ -696,20 +785,20 @@
 
         <div class="chat-popup" id="myChat">
             <form class="form-container">
-              <h1>Chat</h1>
-          
-              <label for="msg"><b>Message</b></label>
-              <textarea placeholder="Type message.." name="msg" required></textarea>
-              <button class="btn">Send</button>
-              <span class="cancel" onclick="closeChat()">&times;</span>
+                <h1>Chat</h1>
+
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button class="btn">Send</button>
+                <span class="cancel" onclick="closeChat()">&times;</span>
             </form>
-          </div>
+        </div>
 
         <div class="Chat Chat1" onclick="openChat()" style="background-image: url(/static/Bilder/Chat.png);">
         </div>
         <div class="Chat Chat2" onclick="openChat()" style="background-image: url(/static/Bilder/Chat1.png);">
         </div>
-        <div class="Chat Chat3"onclick="openChat()"  style="background-image: url(/static/Bilder/Chat2.png);">
+        <div class="Chat Chat3" onclick="openChat()" style="background-image: url(/static/Bilder/Chat2.png);">
         </div>
 
         <div class="Chat Chat4">
@@ -778,16 +867,10 @@
             </form>
         </div>
     </div>
-    </div>
+
     <a href="/reset" class="reset">RESET</a>
-    </div>
-    <div class="relaviteLinks">
-        <a class="linkItem" onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'">google</a>
-        <a class="linkItem" onclick="location.href='https://library.au.dk/'">google</a>
-        <a class="linkItem" onclick="location.href='http://www.example.com'">google</a>
-        <a class="linkItem" onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'">google</a>
-        <a class="linkItem" onclick="location.href='https://au.moveon4.de/form/5c7d0007587531e5508b4567/eng'">google</a>
-    </div>
+
+
 
 </body>
 
