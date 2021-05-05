@@ -57,8 +57,8 @@ body{
   background-color: #f9fcfc;
   float: left;
   width:5.9%;
-  align-items: center;
   height: 70px;
+  align-items: center;
 }
 
 .homeimg{
@@ -66,15 +66,20 @@ body{
   grid-row: 1;
   width: 35px;
   height: 35px;  
+<<<<<<< HEAD
   padding-top: 5px;
+=======
+  padding-top: 6px;
+>>>>>>> c3f011a458a71faba97ac1fca8b2a8419e2d8ae8
 }
 
 .exsys, .comark, .stat, .homeimg, .menuimg, .menu{
   cursor: pointer;
+  
 }
 
 .exsys p, .comark p, .stat p, .homeimg{
-  margin-top: 10px;
+  margin-top: 5%;
 }
 
 
