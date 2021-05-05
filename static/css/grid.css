@@ -93,7 +93,7 @@ body{
 .toLogo, .litteraturLogo, .forelæsningLogo{
   height: 40px;
   width: 40px;
-  margin-top: 10px;
+  margin-top: 75px;
   justify-self: center;
 
 }
@@ -244,14 +244,17 @@ border-right: 0.1px solid #F4F4F4;
   .dropdown-content3 {
   display: none;
   background-color: #f1f1f1;
-  overflow: auto;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color:#727272;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1; 
   grid-column: 6;
   grid-row: 4/6;
   width: 5%;
-  height: 15%;
-  margin-top: 38%;
+  height: 5%;
+  margin-top: 36%;
   margin-left:94.5%;
   position: fixed;
   }
@@ -264,7 +267,10 @@ border-right: 0.1px solid #F4F4F4;
   font-size: 15px;
   }
             
-  .dropdown3 a:hover {background-color: #ddd;}
+  .dropdown-content3:hover {
+    
+    background-color: #ddd;
+  }
             
   .show3 {display: block;}
 
@@ -346,19 +352,19 @@ border-right: 0.1px solid #F4F4F4;
     }
     
   .Chat1{
-   margin-top: 20%;
+   margin-top: 17%;
   }
           
   .Chat2{
-    margin-top: 25%;
+    margin-top: 22%;
     }
 
     .Chat3{
-      margin-top: 30%; 
+      margin-top: 27%; 
       }
 
 .Chat4{
-  margin-top: 35%;
+  margin-top: 32%;
 }
     
 
@@ -381,10 +387,78 @@ border-right: 0.1px solid #F4F4F4;
       }
     
 
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  left:70%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background-color: white;
+  height: 50%;
+  width: 22%;
+  bottom: 0%;
+border-radius: 25px;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color:#727272;
+ max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: white;
+  color: black;
+  border: 0.2px solid #6d6d6d;
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the Chat button */
+.form-container .cancel {
+top: 5%;
+position: absolute;
+font-size: x-large;
+}
+
+/* Add some hover effects to Chatbuttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.form-container .cancel:hover{
+  cursor: pointer;
+  
+} 
     
   
-
-
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -518,7 +592,7 @@ form{
  .groupsh1{
   right: 0; 
   position: fixed;
-  margin-top: 5.5%;
+  margin-top: 2%;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color:#727272;
@@ -530,20 +604,19 @@ form{
     width: 100px;
     right: 0; 
     position: fixed;
-    margin-top: 7%;
+    margin-top: 4%;
     box-shadow: #000;
-    border:1px;
-    border-style: solid;
     text-align: center;
     justify-self: stretch;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
     color:#4e4e4e;
     font-size: 20px;
+    border: 0.2px solid #6d6d6d;
  }
 
  .Groups1{
-  margin-top: 12%;
+  margin-top: 10%;
   
  }
 
@@ -1013,4 +1086,9 @@ top: 19%;
   position: fixed;
   left: 97%;
   top: 97%;
+}
+
+.WIP{
+margin-top: 10%;
+margin-left: 30%;
 }

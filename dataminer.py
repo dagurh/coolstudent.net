@@ -5,7 +5,7 @@ import data as db
 
 app = Flask(__name__)
 
-globalWeek = 17
+globalWeek = 18
 
 @app.route('/', methods=['GET'])
 def index():
@@ -31,6 +31,10 @@ def Comark():
 def Stat():
     return render_template('Stat.html')
 
+
+@app.route('/Groups')
+def Groups():
+  return render_template('Groups.html')
 
 @app.route('/kalender')
 def kalender():
