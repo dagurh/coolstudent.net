@@ -73,7 +73,7 @@ SYN-SENT: “the RST is acceptable if the ACK field acknowledges the SYN”. Exp
 exception. Note that ”RST is acceptable“ means that the RST signal is accepted and thus the connection is
 aborted; if RST is not accepted then the packet containing the RST flag is ignored.",exercises.pdf,,,,FALSE
 18,STAT,Exercises,18,Multinomial Models,Thursday,Multinomialmodellen,Øvelse 3 (Geologi/Biologi/IT) hørende til Kapitel 3: Multinomialmodellen. Efter øvelsen skal der laves en rapport over opgave 3.6.,https://data.math.au.dk/interactive/istar/Bog4IT.html,,,,FALSE
-19,EXSYS,Lectures,18,Situated Actions,Monday,Plans and Situated Actions,"Going through Suchmans text about ""Plans and Situated Actions”",link to Alexa-video,situatedActionSlides.pdf,uge18.mov,,FALSE
+19,EXSYS,Lectures,18,Situated Actions,Monday,Situated Actions,"Going through Suchmans text about ""Plans and Situated Actions”",link to Alexa-video,situatedActionSlides.pdf,uge18.mov,,FALSE
 20,EXSYS,Lectures,18,Benyon ,Wednesday,Benyon ,I'm going to talk about the text from Benyon (2014) and compare it to Sucmans text about situated action.,,BenyonSlides.pdf,uge18.mov,,FALSE
 21,COMARK,Lectures,18,IP        ,Tuesday,IP        ,All videos for this week is in the reocrding tap. i will be talking about IP protocols.,,IpprotocolSlides.pdf,https://cs.au.dk/~peyman/videos/carch/network/ip/ip.html,,FALSE
 22,COMARK,Lectures,18,Ethernet,Thursday,Ethernet,All videos for this week is in the reocrding tap. i will be talking about Ethernet protocols.,,EthernetSlides.pdf,https://cs.au.dk/~peyman/videos/carch/network/link/link.html,,FALSE
