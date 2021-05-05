@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/grid.css') }}">-->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/Kalender.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/CalendarGridItems.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/grid.css') }}">
   <script defer src="{{ url_for('static', filename='/javascript/Javascript.js') }}"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +24,7 @@
 
       <div class="home" id="home">
         <a href="/">
-          <img class="homeimg" src="{{ url_for('static', filename='/Bilder/home.svg') }}">
+          <img class="homeimg" src="{{ url_for('static', filename='/Bilder/homeHvid.svg') }}">
         </a>
       </div>
       <div class="exsys" onclick="window.location='/Exsys';">
@@ -42,12 +43,23 @@
         <img src="{{ url_for('static', filename='/Bilder/kalender.svg') }}">
       </a>
     </div>
+<style>
+    .home{
+      background-color: #403F3F;
+  }
+</style>
 
     <div class="menubox" id="menubox">
       <p>Menupunkt 1</p>
       <p>Menupunkt 2</p>
       <p>Menupunkt 3</p>
     </div>
+
+<style>  
+.grid{
+overflow: hidden;
+}
+</style>
 
     <div class="ikkenavbar">
       <div class="grid">
