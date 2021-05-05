@@ -5,7 +5,7 @@ import data as db
 
 app = Flask(__name__)
 
-globalWeek = 17
+globalWeek = 18
 
 @app.route('/', methods=['GET'])
 def index():
