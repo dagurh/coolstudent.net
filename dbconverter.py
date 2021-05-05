@@ -9,7 +9,7 @@ with sqlite3.connect(__DEADLINES_DB) as conn:
   cur.execute("""DELETE FROM deadlines""")
   conn.commit()
 
-with open('csvdata/courses.csv', newline='') as csv_file:
+with open('csvdata/coursestable-Ark1.csv', encoding='utf8', newline='') as csv_file:
   reader = csv.reader(csv_file, delimiter=',')
   next(reader)
   for row in reader:
