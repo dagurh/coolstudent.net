@@ -1064,6 +1064,7 @@ top: 19%;
   padding-left: 7px;
   color:#4e4e4e;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .videoimg{
