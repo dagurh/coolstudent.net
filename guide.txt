@@ -10,3 +10,7 @@ Accessing the database:
 open terminal and cd into the coolstudent folder
 terminal: sqlite3
 sqlite3: .open data.db
+
+Editing the database:
+open up the csv file and edit the rows you wish to edit.
+save the file and run: 'python dbconverter.py' in your terminal

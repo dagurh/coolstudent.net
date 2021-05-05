@@ -21,7 +21,7 @@ body{
 }
 
 .container {
-  margin-top: -7px;
+  margin-top: 70px;
   width: 100%;
   float: left;
   display: grid;
@@ -244,14 +244,17 @@ border-right: 0.1px solid #F4F4F4;
   .dropdown-content3 {
   display: none;
   background-color: #f1f1f1;
-  overflow: auto;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color:#727272;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1; 
   grid-column: 6;
   grid-row: 4/6;
   width: 5%;
-  height: 15%;
-  margin-top: 38%;
+  height: 5%;
+  margin-top: 36 %;
   margin-left:94.5%;
   position: fixed;
   }
@@ -264,7 +267,10 @@ border-right: 0.1px solid #F4F4F4;
   font-size: 15px;
   }
             
-  .dropdown3 a:hover {background-color: #ddd;}
+  .dropdown-content3:hover {
+    
+    background-color: #ddd;
+  }
             
   .show3 {display: block;}
 
@@ -345,19 +351,19 @@ border-right: 0.1px solid #F4F4F4;
     }
     
   .Chat1{
-   margin-top: 20%;
+   margin-top: 17%;
   }
           
   .Chat2{
-    margin-top: 25%;
+    margin-top: 22%;
     }
 
     .Chat3{
-      margin-top: 30%; 
+      margin-top: 27%; 
       }
 
 .Chat4{
-  margin-top: 35%;
+  margin-top: 32%;
 }
     
 
@@ -380,25 +386,125 @@ border-right: 0.1px solid #F4F4F4;
       }
     
 
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  left:70%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background-color: white;
+  height: 50%;
+  width: 22%;
+  bottom: 0%;
+border-radius: 25px;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color:#727272;
+ max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: white;
+  color: black;
+  border: 0.2px solid #6d6d6d;
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the Chat button */
+.form-container .cancel {
+top: 5%;
+position: absolute;
+font-size: x-large;
+}
+
+/* Add some hover effects to Chatbuttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.form-container .cancel:hover{
+  cursor: pointer;
+  
+} 
     
   
-
-
 /* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
-  margin-top: -60px;
-  margin-right: -45px;
+  font-weight: lighter;
+  margin-top: 40px;
+  margin-right: 30%;
+}
+.small-pop-up-closebox{
+  position: fixed;
+  top: 107px;
+  right: 31.5%;
+  height: 100px;
+  width: 7%;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
+.closebox{
+  position: fixed;
+  top: 70px;
+  right: 7.5%;
+  height: 100px;
+  width: 7%;
+  cursor: pointer;
+}
+
+.closebox:hover .close, .small-pop-up-closebox:hover .close{
+  color: rgb(70, 70, 70);
   text-decoration: none;
   cursor: pointer;
+  font-size: 58px;
+ 
+}
+.closebox:hover{
+  top: 65px; 
+  right: 7.4%;
+}
+.small-pop-up-closebox:hover{
+  top: 102px;
+  right: 31.4%;
+}
+
+form{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 0px;
 }
 
 .navbar{
@@ -485,7 +591,7 @@ border-right: 0.1px solid #F4F4F4;
  .groupsh1{
   right: 0; 
   position: fixed;
-  margin-top: 5.5%;
+  margin-top: 2%;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color:#727272;
@@ -497,20 +603,19 @@ border-right: 0.1px solid #F4F4F4;
     width: 100px;
     right: 0; 
     position: fixed;
-    margin-top: 7%;
+    margin-top: 4%;
     box-shadow: #000;
-    border:1px;
-    border-style: solid;
     text-align: center;
     justify-self: stretch;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
     color:#4e4e4e;
     font-size: 20px;
+    border: 0.2px solid #6d6d6d;
  }
 
  .Groups1{
-  margin-top: 12%;
+  margin-top: 10%;
   
  }
 
@@ -774,19 +879,30 @@ border-bottom-left-radius: 12px;
 }
 
 .docs{
-  margin-top: 3%;
-  height: 250px;
+  height: auto;
   width: 40%;
   margin-left: 20%;
   overflow:hidden;
+}
+.headlinedocs{
+  padding: 0px;
+  width: 80%;
+  position: relative;
+  margin-top: -80px;
+  font-size: 40px;
+  justify-self: stretch;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color:#4e4e4e;
 }
 
 .continue{
   background-color: #fdfdfd;
   height: 55px;
   width: 45%;
-  margin-top: 210px;
   margin-left: 29%;
+  margin-top: 30px;
+  margin-bottom: -50px;
   border-radius: 10px;
   border: 1px solid #888;
   text-align: center;
@@ -800,6 +916,7 @@ border-bottom-left-radius: 12px;
 }
 
 #yourBtn {
+  margin-top: -60px;
   position: relative;
   top: 75px;
   width: 50%;
@@ -847,11 +964,11 @@ border-bottom-left-radius: 12px;
 }
 
 .modal-content .information{
-  width: 50%;
+  width: 64%;
   height: auto;
   overflow: auto;
-  position: absolute;
-  top: 19%;
+  position: relative;
+  margin-top: -20px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color:#4e4e4e;
@@ -860,11 +977,11 @@ border-bottom-left-radius: 12px;
 }
 
 .docsinfo{
-  width: 40%;
+  width: 100%;
   height: auto;
   overflow: auto;
-  position: absolute;
-  top: 19%;
+  position: relative;
+  margin-top: -20px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color:#4e4e4e;
@@ -876,17 +993,17 @@ border-bottom-left-radius: 12px;
   font-size: 20px;
   font-family: Helvetica, Arial, sans-serif;
   width: 40%;
-  position: absolute;
-  top: 7%;
+  position: relative;
+  margin-top: -30px;
   opacity: 50%;
   font-weight: lighter;
   
 }
-.modal-content .headline{
+.headline{
   padding: 0px;
-  width: 40%;
-  position: absolute;
-  top: 8.2%;
+  width: 80%;
+  position: relative;
+  margin-top: -28px;
   font-size: 40px;
   justify-self: stretch;
   font-family: Helvetica, Arial, sans-serif;
