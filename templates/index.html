@@ -58,7 +58,7 @@
             {% if exsystø%}
             {% for row in exsystø %}
             <div class="basicbutton">
-                <div class="topinfo">
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[1]}}</h4>
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
@@ -72,6 +72,42 @@
                     <div class="BorderDoc"
                         data-data="{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal--{{row[0]}}" class="modal">
+                <!--Content in the modal-->
+                <div class="modal-content">
+                    <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
+                    <div class="small">
+                        <p>ComArk lecture </p>
+                    </div>
+                    <div class="headline">
+                        <p>{{row[5]}} </p>
+                    </div>
+                    <div class="information">
+                        <p>Placeholder text</p>
+                    </div>
+                    <div class="Resources files">
+                        <p>Resources:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
+                    </div>
+                    <div class="Slides files">
+                        <p> Slides:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
+                        </div>
+                    </div>
+                    <div class="Recordings files">
+                        <p>Recordings:</p>
+                        <div class="filecontainer">
+                            <div class="videoimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,7 +121,7 @@
             {% if comarktø%}
             {% for row in comarktø %}
             <div class="basicbutton">
-                <div class="topinfo">
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[1]}}</h4>
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
@@ -102,6 +138,42 @@
                     </div>
                 </div>
             </div>
+            <div id="modal--{{row[0]}}" class="modal">
+                <!--Content in the modal-->
+                <div class="modal-content">
+                    <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
+                    <div class="small">
+                        <p>ComArk lecture </p>
+                    </div>
+                    <div class="headline">
+                        <p>{{row[5]}} </p>
+                    </div>
+                    <div class="information">
+                        <p>Placeholder text</p>
+                    </div>
+                    <div class="Resources files">
+                        <p>Resources:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
+                    </div>
+                    <div class="Slides files">
+                        <p> Slides:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
+                        </div>
+                    </div>
+                    <div class="Recordings files">
+                        <p>Recordings:</p>
+                        <div class="filecontainer">
+                            <div class="videoimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {% endfor %}
             {% else %}
             <p>Bla</p>
@@ -112,7 +184,7 @@
             {% if stattø%}
             {% for row in stattø %}
             <div class="basicbutton">
-                <div class="topinfo">
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[1]}}</h4>
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
@@ -128,6 +200,42 @@
                     <div class="BorderDoc"
                         data-data="{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal--{{row[0]}}" class="modal">
+                <!--Content in the modal-->
+                <div class="modal-content">
+                    <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
+                    <div class="small">
+                        <p>ComArk lecture </p>
+                    </div>
+                    <div class="headline">
+                        <p>{{row[5]}} </p>
+                    </div>
+                    <div class="information">
+                        <p>Placeholder text</p>
+                    </div>
+                    <div class="Resources files">
+                        <p>Resources:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
+                    </div>
+                    <div class="Slides files">
+                        <p> Slides:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
+                        </div>
+                    </div>
+                    <div class="Recordings files">
+                        <p>Recordings:</p>
+                        <div class="filecontainer">
+                            <div class="videoimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,7 +266,7 @@
             {% if exsyslit%}
             {% for row in exsyslit %}
             <div class="basicbutton">
-                <div class="topinfo">
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[1]}}</h4>
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
@@ -169,6 +277,42 @@
                     <div class="BorderDoc lit"
                         data-data="{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal--{{row[0]}}" class="modal">
+                <!--Content in the modal-->
+                <div class="modal-content">
+                    <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
+                    <div class="small">
+                        <p>ComArk lecture </p>
+                    </div>
+                    <div class="headline">
+                        <p>{{row[5]}} </p>
+                    </div>
+                    <div class="information">
+                        <p>Placeholder text</p>
+                    </div>
+                    <div class="Resources files">
+                        <p>Resources:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
+                    </div>
+                    <div class="Slides files">
+                        <p> Slides:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
+                        </div>
+                    </div>
+                    <div class="Recordings files">
+                        <p>Recordings:</p>
+                        <div class="filecontainer">
+                            <div class="videoimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,7 +326,7 @@
             {% if comarklit%}
             {% for row in comarklit %}
             <div class="basicbutton">
-                <div class="topinfo">
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[1]}}</h4>
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
@@ -196,6 +340,42 @@
                     </div>
                 </div>
             </div>
+            <div id="modal--{{row[0]}}" class="modal">
+                <!--Content in the modal-->
+                <div class="modal-content">
+                    <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
+                    <div class="small">
+                        <p>ComArk lecture </p>
+                    </div>
+                    <div class="headline">
+                        <p>{{row[5]}} </p>
+                    </div>
+                    <div class="information">
+                        <p>Placeholder text</p>
+                    </div>
+                    <div class="Resources files">
+                        <p>Resources:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
+                    </div>
+                    <div class="Slides files">
+                        <p> Slides:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
+                        </div>
+                    </div>
+                    <div class="Recordings files">
+                        <p>Recordings:</p>
+                        <div class="filecontainer">
+                            <div class="videoimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {% endfor %}
             {% else %}
             <p>Bla</p>
@@ -206,7 +386,7 @@
             {% if statlit%}
             {% for row in statlit %}
             <div class="basicbutton">
-                <div class="topinfo">
+                <div id="{{row[0]}}" class="topinfo">
                     <h4>{{row[1]}}</h4>
                     <h3>{{row[3]}}</h3>
                     <p>{{row[4]}}</p>
@@ -217,6 +397,42 @@
                     <div class="BorderDoc lit"
                         data-data="{{row[1]}},{{row[2]}},{{row[3]}},{{row[4]}},{{row[5]}},{{row[0]}},{{row[12]}}">
                         <div class="documentbutton"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal--{{row[0]}}" class="modal">
+                <!--Content in the modal-->
+                <div class="modal-content">
+                    <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
+                    <div class="small">
+                        <p>ComArk lecture </p>
+                    </div>
+                    <div class="headline">
+                        <p>{{row[5]}} </p>
+                    </div>
+                    <div class="information">
+                        <p>Placeholder text</p>
+                    </div>
+                    <div class="Resources files">
+                        <p>Resources:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[7]}}</a>
+                        </div>
+                    </div>
+                    <div class="Slides files">
+                        <p> Slides:</p>
+                        <div class="filecontainer">
+                            <div class="pdfimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[8]}}</a>
+                        </div>
+                    </div>
+                    <div class="Recordings files">
+                        <p>Recordings:</p>
+                        <div class="filecontainer">
+                            <div class="videoimg"></div>
+                            <a class="link" target="_blank" href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[9]}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -433,10 +649,10 @@
             {% if list %}
             {% for row in list %}
             <div class="basicbutton space">
-                <div id="deadline--{{row[0]}}" class="topinfo">
-                    <h4 style="margin-top: 5px; font-size: 20px;">{{row[0]}}</h4>
-                    <h3 style="font-weight: 900; font-size: 15px;">{{row[1]}}</h3>
-                    <p style="margin-top: 5px; font-weight: 700; font-size: 12px;">Due: {{row[2]}}</p>
+                <div id="{{row[0]}}" class="topinfo">
+                    <h4 style="margin-top: 5px; font-size: 20px;">{{row[1]}}</h4>
+                    <h3 style="font-weight: 900; font-size: 15px;">{{row[2]}}</h3>
+                    <p style="margin-top: 5px; font-weight: 700; font-size: 12px;">Due: {{row[3]}}</p>
                 </div>
                 <div class="quicklinks">
                     <div class="BorderUp">
@@ -454,13 +670,13 @@
                 <div class="modal-content">
                     <div class="closebox"><span id="protoclose--{{row[0]}}" class="close">&times;</span></div>
                     <div class="small">
-                        <p>ExSys lecture </p>
+                        <p>{{row[1]}} Assignment</p>
                     </div>
                     <div class="headline">
-                        <p>{{row[5]}} </p>
+                        <p>{{row[2]}} </p>
                     </div>
                     <div class="information">
-                        <p>Placeholder text</p>
+                        <p>{{row[6]}}</p>
                     </div>
                     <div class="Resources files">
                         <p>Resources:</p>
