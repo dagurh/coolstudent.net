@@ -77,7 +77,11 @@ aborted; if RST is not accepted then the packet containing the RST flag is ignor
 20,EXSYS,Lectures,18,Benyon ,Wednesday,Benyon ,I'm going to talk about the text from Benyon (2014) and compare it to Sucmans text about situated action.,,BenyonSlides.pdf,uge18.mov,,FALSE
 21,COMARK,Lectures,18,IP        ,Tuesday,IP        ,All videos for this week is in the reocrding tap. i will be talking about IP protocols.,,IpprotocolSlides.pdf,https://cs.au.dk/~peyman/videos/carch/network/ip/ip.html,,FALSE
 22,COMARK,Lectures,18,Ethernet,Thursday,Ethernet,All videos for this week is in the reocrding tap. i will be talking about Ethernet protocols.,,EthernetSlides.pdf,https://cs.au.dk/~peyman/videos/carch/network/link/link.html,,FALSE
+<<<<<<< HEAD
 23,STAT,Lectures,18,G-testet,Thursday,G-testet,"Tirsdag gennemgik jeg G-testet og goodness of t test svarende til kapitel 3 frem til og med afsnit 3.5. P-værdien skulle beregnes gennem en χ 2 -fordeling, som vi kommer til at høre mere om i næste uge.",,week18slides1.pdf,uge18.mov,,FALSE
+=======
+23,STAT,Lectures,18,G-test,Thursday,G-testet,"tirsdag gennemgik jeg G-testet og goodness of t test svarende til kapitel 3 frem til og med afsnit 3.5. P-værdien skulle beregnes gennem en χ 2 -fordeling, som vi kommer til at høre mere om i næste uge.",,week18slides1.pdf,uge18.mov,,FALSE
+>>>>>>> 7a88655c5a209274e1f818d3288c097473db399f
 24,STAT,Lectures,18,Homogeneity test,Friday,Homogenitetstestet,fredag genemgik jeg homogenitetstestet i afsnittene 3.6 og 3.7. Afsnit 3.8 kan I selv læse. Den anden time fredag lavede vi studiecafe. Det så ud til at fungere nt: jeg havde spørgsmål at svare på nogenlunde kontinuerligt gennem timen.,,week18slides2.pdf,uge18.mov,,FALSE
 25,EXSYS,Literature,19,Prototypes,Monday,Prototypes,"I denne uge skal vi læse om og diskutere hvad prototyper er i en design- og udviklingsprocess. Vi vil introducere en tekst der har en bred forståelse af prototype og nogle gode begreber til at snakke om og analysere prototyper og jeres systemer. Læringsmålene for forelæsningen er som følger:
 De studerende bliver introduceret til prototyper fra et teoretisk perspektiv
