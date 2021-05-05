@@ -273,7 +273,7 @@ border-right: 0.1px solid #F4F4F4;
   grid-column: 5;
   grid-row: 2/7;
   overflow: auto;
-  box-shadow: inset 0px -10px 20px -10px rgb(194, 194, 194);
+  /*box-shadow: inset 0px -10px 20px -10px rgb(194, 194, 194);*/
   }
 
   .deadlines h5{
@@ -282,6 +282,7 @@ border-right: 0.1px solid #F4F4F4;
     font-size: 25px;
     color: black;
     text-align: center;
+    margin-bottom: -13px;
   }
 
   .deadlines h4{
