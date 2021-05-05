@@ -15,12 +15,28 @@
 
         <div class="home" id="home" >
             <a href="/">
-                <img class="homeimg" src="{{ url_for('static', filename='/Bilder/home.svg') }}">
+                <img class="homeimg" src="{{ url_for('static', filename='/Bilder/homeHvid.svg') }}">
             </a>
         </div>
         <div class="exsys" onclick="window.location='/Exsys';" >
             <p>EXSYS</p>
         </div>
+
+        <style> 
+        .exsys{
+            background-color: #f9fcfc;;
+            color: #403F3F;
+
+        }
+        .topgab, .topgab1 , .topgab2 , .topgab3, .topgab4{
+            background-color: #f9fcfc;
+        }
+
+        .home{
+            background-color: #403F3F;
+        }
+
+        </style>
         <div class="comark" onclick="window.location='/ComArk';" >
             <p>COMARK</p>
         </div>
