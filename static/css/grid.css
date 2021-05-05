@@ -28,7 +28,7 @@ body{
   grid-template-columns: [first] 6% [line2] 21% [line3] 21% [line4] 21% [line5] 21% [line6] 30% [end];
   grid-template-rows: [row1-start] auto [row1-end] auto
    [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] auto [row4-start] auto [row4-end] auto 
-   [row5-start] auto [row5-end] 30% [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] auto [row8-end] auto [last-line];
+   [row5-start] auto [row5-end] 30% [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] auto [row8-end] auto [row9-start] auto [row9-end] auto  [last-line];
 }
 
 .exsys{
@@ -105,6 +105,13 @@ body{
 .topgab, .topgab2, .topgab3, .topgab4{
   height: 5px;
   background-color: #EAF4F4;
+}
+
+.relaviteLinks{
+  display: flex;
+  grid-column: 2/6;
+  grid-row: 7;
+  width: 100%;
 }
 
 .to { display: grid; grid-column: 1; grid-row: 4;}
@@ -1093,16 +1100,7 @@ margin-top: 10%;
 margin-left: 30%;
 }
 
-.relativeLinks{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  display: grid;
-  grid-column: 1 / 6;
-  grid-row: 8;
-}
-
 .linkItem{
-  padding-left: 10%;
   cursor: pointer;
 }
 
