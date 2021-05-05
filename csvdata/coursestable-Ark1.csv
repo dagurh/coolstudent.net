@@ -1,0 +1,128 @@
+id,course,category,week,title,weekday,infotitle,info,resources,slides,recordings,zoom,document
+1,EXSYS,Literature,17,Scenarios,Thursday,Scenarier og user stories,"
+Læsevejledning
+I denne uge skal vi kigge på hvordan vi binder praktiske observationer og indsigt fra interviews og workshops sammen og får dem beskrevet på en måde at de kan hjælpe os i udviklingsprocessen. Vi skal arbejde med hvordan vi kommer fra empiriske observationer (Lazar et al. 2017) til arbejdsmodeller (Beyer 2010) og forståelse af rutiner og patterns (Martin et al. 2001), til scenarier (Carol 1999), personaer (Beyer 2010) og sidst de user stories der skal drive udviklingsprocessen (Beyer 2010; Cohn 2004). Alle teksterne repræsenterer noget I skal arbejde aktivt med, så forsøg at læs den forud for forelæsningen én gang og så brug dem som reference når I skal lave opgaver omkring dem til TØ og i projektet.
+Hvis I af en eller anden årsag endnu ikke har fået læst Beyer, så gå tilbage til ugesedlen fra sidste uge og læs ""User-Centered Agile Methods"" -- I denne uge skal vi bruge metoder fra kapitel 5.
+Finding Patterns in the Fieldwork
+Martin, D., Rodden, T., Rouncefield, M., Sommerville, I., & Viller, S. (2001). Finding patterns in the fieldwork. In ECSCW 2001 (pp. 39-58). Springer, Dordrecht. (tilgængelig frea EUSSET Digital Library https://dl.eusset.eu/bitstream/20.500.12015/2462/1/00154.pdf )
+Henriks estimat: Omfang 17 sider; læsetid: 50 minutter; niveau: svær
+Denne tekst hænger primært sammen med Lazar et al. (2017) (og Heath and Luff 1991) og diskuterer hvordan vi kan arbejde opsummering og generalisering af empiriske observationer i form af beskrivelser af rutiner og patterns. Teksten tager udgangspunkt i idéen om patterns fra Alexander et al.'s (1977) arbejde med ‘A Pattern Language’. Alexander et al.'s idé om patterns har også give inspiration til de software patterns I kender fra Gang of Four og andre steder. I skal særligt lægge mærke til forskellen mellem design patterns og descriptive patters og fokusere på hvad de mener med og hvordan I kan udvikle descriptive patterns.
+Tænke og diskussionsøvelser
+Diskuter forskellen mellem design patterns og descriptive patterns som tekste opstiller det?
+Diskuter forskellen på descriptive patterns og software patterns?
+Hvilken rolle spiller spatially- og work oriented features i descriptive patterns?
+Hvordan passer spatially- og work oriented features sammen med Heath og Luff (1991) studiet?
+Forsøg at opstille descriptive patterns ud fra jeres case studier fra aflevering 2 ud fra de features der beskrives på side 50 og 51, samt figur 2.
+Scenarier i design
+Carrol, J. M. (1999, January). Five reasons for scenario-based design. In Proceedings of the 32nd Annual Hawaii International Conference on Systems Sciences. 1999. HICSS-32. (pp. 11-pp). IEEE. DOI: https://doi.org/10.1109/HICSS.1999.772890
+Henriks estimat: Omfang 10 sider; læsetid: 40 minutter; niveau: middel-svær
+Denne tekst er en grundlæggende gennemgang af scenarier. I skal læse den så I har forstået hvad scenarier er og kan. Start med at læse introduktionen og afsnit 2 omkring scenarier. Gå derefter de næste afsnit igennem to afsnit af gangen (et ‘challenge’ afsnit og det efterfølgende ""svar afsnit"") (3+4, 5+6, 7+8, 9+10, 11+12). For hvert par af afsnit forsøg at identificer hvad den konkrete udfordring er og hvordan scenarier kan hjælpe med at adressere den udfordring.",Carrol.pdf,,,,FALSE
+2,COMARK,Literature,17,Micro Programming,Tuesday,Micro Programming,SCO Chapter 4.3-4.4,SCO.pdf,,,,FALSE
+3,STAT,Literature,17,Analysis of varians,Monday,Variansanalyse,I skal læse kapitel 6 i webbogen hvis i ikke nåede det i sidste uge.,https://data.math.au.dk/interactive/istar/Bog400.html,,,,FALSE
+4,EXSYS,Exercises,17,Project status,Monday,Project status,"Fra nu er skal I arbejde på jeres projekter som det primære fokus for tiden udenfor forelæsninger, herunder øvelserne. Der vil være kursus- eller pensumrelaterede ting til øvelserne også, men I skal til at tænke det som et SCRUM møde hvor I skal redegøre for status på jeres projekt, nuværende fokus (backlog og sprint), behov og udfordringer. I den opsætning er jeres gruppe et produktteam der arbejder sammen med andre teams og står til ansvar over for dem i forhold til at holde alle opdateret på udfordringer, ressource deling mm. TAs mm. aggerer SCRUM masters etc.",,TØ17.pdf,,,FALSE
+5,COMARK,Exercises,17,Microarchitecture,Friday,Microarchitecture,See the attached exercises,,TØ17.pdf,,,FALSE
+6,STAT,Exercises,17,Analysis of varians,Friday,Variansanalyse,Øvelse 6 (Geologi/Biologi/IT) hørende til Kapitel 6: En- og tosidet variansanalyse. Efter øvelsen skal der laves en rapport over opgave 6.4.,,TØ17.pdf,,,FALSE
+7,EXSYS,Lectures,17,User stories,Monday,User stories,Vi glæder os til at ser jer!,,Uge17.pdf,uge17.mov,,FALSE
+8,EXSYS,Lectures,17,HTML kode,Wednesday,HTML kode,Vi glæder os til at ser jer!,,Uge17.pdf,uge17.mov,,FALSE
+9,COMARK,Lectures,17,Micro Programming,Tuesday,Micro Programming,"This week we are going to talk about micro programming, read the chapters in the book",,Uge17.pdf,uge17.mov,,FALSE
+10,COMARK,Lectures,17,Micro Programming,Thursday,Micro Programming,"This week we are going to talk about micro programming, read the chapters in the book",,Uge17.pdf,uge17.mov,,FALSE
+11,STAT,Lectures,17,Analysis of varians,Tuesday,Variansanalyse,"Tirsdag talte jeg om ensidet og tosidet variansanalyse. Jeg indførte faktor til at dele op i undergrupper, og indførte F-testet for en generel reduktion i en generel lineær model.Fredag omtalte jeg igen F-testet og tosidet variansanalyse. Derefter talte jeg om hvordan man i nogle situationer kan lave et test for en lineær sammenhæng. Jeg sluttede af med at ‘regne’ en opgave omkring ensidet variansanalyse. Det gennemgåede svarer til kapitel 6 i webbogen.I denne uge vil jeg tale om modeller med gruppebestemt regressionskoefficient. Multipel regression.",,Uge17.pdf,uge17.mov,,FALSE
+12,STAT,Lectures,17,Regression coefficient,Friday,Regressionskoefficient,Vi fortsætter med at tale om modeller med gruppebestemt regressionskoefficient. Multipel regression.,,Uge17.pdf,uge17.mov,,FALSE
+13,EXSYS,Literature,18,Situated Action,Wednesday,Situated Action,"Læsevejledning
+I denne uge skal vi fortsætte sporet omkring hvad der sker som en del af samarbejde (Schmidt og Bannon 1992) og relationer mellem aktiviteter (Bødker 2014), nu med et fokus på hvordan aktiviteter udfolder sig i samspil mellem aktører, ressourcer og betingelserne i det der sker nu og her.
+I skal læse uddrag fra Suchmans bog ""Plans and Situated Actions"" (1987) , eller rettere to kapitler fra originaludgaven som er en genudgivet i hendes ""Human-machine Reconfigurations"" (2006). Derudover skal vi læse en berømt vision for fremtidens teknologi-brug i Mark Weisers (1991)""Ubiqiotus computing"" idé. Selvom linket ikke er så eksplicit, så er Weisers teknologi-vision stærk inspireret af og bygger på idéer af Suchman (lidt på samme måde som Bardram (2009) arbejder med virksomhedsteori i Activity-Based Computing).
+Suchman' sammenligning mellem ""Plans"" og ""Situated Actions"" er vigtig på to måder for vores kursus. Først, så beskriver hun hvordan sammenspillet mellem planer (som materielle manifestationer, se også Schmidt og Bannon 1992) og handling på en måde som I skal bruge når I går i gang med at observere aktivitet og brug i feltarbejde. Derudover, så er skelnen mellem planer og hvad der så sker, og hele Suchmans diskussion deraf stærkt beslægtet med diskussionerne omkring forskellige projekt- og procesmodeller. Så, Suchman giver os også en teoretisk baggrund for diskussion om forskellen mellem softwareudvikling som enten en vandfalds model (plan-dreven) eller en agil model (forløbs-dreven). Forsøg at have det i mente når I læser teksten. De to perspektiver er også beslægtede med Benyons (2014) perspektiver i boks 1.1 (Ibid s.11).
+Før I går i gang med at læse er det en god idé at kigge på guiden til at læse akademiske tekster. Den er på Blackboard under Ressourcer i menuen til venstre. Den korte version af læseguiden er:
+Afsæt tid til at læse teksten
+Forvent at læse dele af teksten flere gang
+Tag noter
+Skriv en kort opsummering til egen brug i fremtiden
+Til hver tekst er der tænke- og diskussionsøvelser som kan guide jer i jeres bearbejdning af teksten. De er vejledende og vil ikke altid dække emnet, da vi som bekendt læser og fortolker tekster forskelligt. I bør forholde jer til inden teoretiske øvelser og være I stand til at diskuterer sammen på holdet.",Suchman.pdf,,,,FALSE
+14,COMARK,Literature,18,Ethernet,Friday,,"For this week you have to read: ICN (the first edition): 7.1-7.7, 7.9-7.11,9.1,9.2,9.5",ICN.pdf,,,,FALSE
+15,STAT,Literature,18,"Multinomial Models
+",Thursday,Multinomialmodellen,I skal læse kapital 4 i webbogen.,https://data.math.au.dk/interactive/istar/Bog400.html,,,,FALSE
+16,EXSYS,Exercises,18,User stories,Monday,Analyse af brugssituationer,"1. Analyse af brugssituationer
+Med udgangspunk i Suchman (2007) skal I udvælge en eller flere situationer som I så analyserer ud fra de to perspektiver. På grund af COVID19 kan det være svært at gå ud og observere brugssituationer in-the-wild, så start med at udvælge situationer I har adgang til eller kan bruge som fælles referenceramme. I kan eventuelt bruge billeder eller video fra nettet som reference. Her er et par forslag:
+Føtex self-checkout: Snak jeres egne oplevelser igennem og prøv at identificer en eller flere typiske situationer I har observeret i Føtex. Forsøg at find et par genkendelige eksempler og analyser en eller flere af disse. (se også https://youtu.be/78T043b-hMc?t=97 eller https://www.youtube.com/watch?v=Q6G7bN8zHLU (satire))
+IT-hjælp: Hvis I har været i en situation hvor I har skulle hjælpe et familiemedlem eller andre med at installere, opsætte, reparere eller på andre måde givet instruktion omkring IT/computer/apps/smartphones. Forsøg at find et par genkendelige eksempler og analyser en eller flere af disse.
+Vaskemaskine eller billetautomat: Forsøg om I kan gennemgå de trin og mulige situationer der opstår ved brugen af en vaskemaskine eller billetautomat. Forsøg at find et par genkendelige eksempler og analyser en eller flere af disse.
+Plan-perspektivet
+Forsøg at identificer indlejrede `planer' i teknologien -- forudsætninger, rækkefølger og mål (som udtrykt i brugergrænsefladen eller observerbar)
+Forsøg at kigge på kommunikationen omkring brugssituationen -- hvornår kunne der være tale om sproghandlinger hos brugeren eller indlejret i system (fx ""Jeg vil gerne X"" - ""For at gøre x skal du"")
+Forsøg at beskriv de scripts eller baggrundsviden der forudsættes af brugssituationen. Her kan det hjælpe at tage en forholdsvis naiv position
+Hvor kan I se plan-perspektivet i spil i jeres analyse af teknologien og brugssituationen (det kan også være omkring nedbrud)
+Situated action
+Forsøg at identificer ressourcerne i situationen -- hvilke elementer understøtter brugeren I at forstå teknologien og/eller brugen?
+Forsøg at identificer hvordan sproget (hvis der er flere) bruges til at forstå teknologien og/eller løse problematiske situationer og eller nedbrud.
+Hvis I har adgang til det, forsøg at undersøg eller forestil jer de steder der er behov for at arbejde med eller skabe gensidig forståelse i situationen.
+Hvor kan I se situated action i spil i jeres analyse af teknologien og brugssituationen?",Suchman.pdf,,,,FALSE
+17,COMARK,Exercises,18,Transport Layer,Friday,Transport Layer,"1 From ICN Book (the first edition)
+1.1 Chapter 11
+Exercises: 2.0, 1.0
+Ignore the experiments with python. Also, the experiments involving another machine is optional.
+While doing exercise 1.0 above, open wireshark and capture the packets that are being sent/received.
+Find out the source and destination IP addresses and ports. Do they match what you see from the program?
+How about the data? Does the data shown in wireshark match what is being sent/received?
+1.2 Chapter 12
+Exercises: 2.0, 4.0, 4.5, 5.0, 6.0, 7.0, 10.0, 12.0, 1.0
+The question 6.5 is also included but I have reworded it below as it was not very clear in the original
+description. In 12.3 TCP Connection Establishment , we noted that RST packets had to have a valid SEQ
+value, that is, their SEQ number should be within the accept window of the receiver, but RFC 793 “does
+not require the RST packet’s ACK value to match”. There is an exception for RST packets arriving at state
+SYN-SENT: “the RST is acceptable if the ACK field acknowledges the SYN”. Explain the reasoning behind this
+exception. Note that ”RST is acceptable“ means that the RST signal is accepted and thus the connection is
+aborted; if RST is not accepted then the packet containing the RST flag is ignored.",exercises.pdf,,,,FALSE
+18,STAT,Exercises,18,Multinomial Models,Thursday,Multinomialmodellen,Øvelse 3 (Geologi/Biologi/IT) hørende til Kapitel 3: Multinomialmodellen. Efter øvelsen skal der laves en rapport over opgave 3.6.,https://data.math.au.dk/interactive/istar/Bog4IT.html,,,,FALSE
+19,EXSYS,Lectures,18,Plans and Situated Actions,Monday,Plans and Situated Actions,"going through Suchmans text about ""Plans and Situated Actions”",link to Alexea-video,situatedActionSlides.pdf,uge18.mov,,FALSE
+20,EXSYS,Lectures,18,Benyon ,Wednesday,Benyon ,I'm going to talk about the text from Benyon (2014) and compare it to Sucmans text about situated action.,,BenyonSlides.pdf,uge18.mov,,FALSE
+21,COMARK,Lectures,18,IP        ,Tuesday,IP        ,All videos for this week is in the reocrding tap. i will be talking about IP protocols.,,IpprotocolSlides.pdf,https://cs.au.dk/~peyman/videos/carch/network/ip/ip.html,,FALSE
+22,COMARK,Lectures,18,Ethernet,Thursday,Ethernet,All videos for this week is in the reocrding tap. i will be talking about Ethernet protocols.,,EthernetSlides.pdf,https://cs.au.dk/~peyman/videos/carch/network/link/link.html,,FALSE
+23,STAT,Lectures,18,G-testet,Thursday,G-testet,"tirsdag gennemgik jeg G-testet og goodness of t test svarende til kapitel 3 frem til og med afsnit 3.5. P-værdien skulle beregnes gennem en χ 2 -fordeling, som vi kommer til at høre mere om i næste uge.",,week18slides1.pdf,uge18.mov,,FALSE
+24,STAT,Lectures,18,Homogeneity test,Friday,Homogenitetstestet,fredag genemgik jeg homogenitetstestet i afsnittene 3.6 og 3.7. Afsnit 3.8 kan I selv læse. Den anden time fredag lavede vi studiecafe. Det så ud til at fungere nt: jeg havde spørgsmål at svare på nogenlunde kontinuerligt gennem timen.,,week18slides2.pdf,uge18.mov,,FALSE
+25,EXSYS,Literature,19,Prototypes,Monday,Prototypes,"I denne uge skal vi læse om og diskutere hvad prototyper er i en design- og udviklingsprocess. Vi vil introducere en tekst der har en bred forståelse af prototype og nogle gode begreber til at snakke om og analysere prototyper og jeres systemer. Læringsmålene for forelæsningen er som følger:
+De studerende bliver introduceret til prototyper fra et teoretisk perspektiv
+De studerende bliver introduceret til principper for prototyping i design- og udviklingsprocesser
+De studerende vil blive introduceret til principper for udvælgelse af fokus områder for deres egne prototyper
+De studerende vil blive introduceret til eksempler hvorpå begreber omkring prototyper kan bruges analytisk til at forstå egne prototyper i systemudvikling
+
+The Anatomy of Prototypes
+Lim, Y. K., Stolterman, E., & Tenenberg, J. (2008). The anatomy of prototypes: Prototypes as filters, prototypes as manifestations of design ideas. ACM Transactions on Computer-Human Interaction (TOCHI), 15(2), 1-27. https://doi.org/10.1145/1375761.1375762 (tilgængelig indenfor AUs netværk eller au.library.dk)
+[Med udgangspunkt i evalueringer har jeg valgt at fjerne læseestimater for teksterne. De kan produceres efter forespørgsel]
+I skal læse hele teksten. Jeg vil foreslå at I læse introduktionen og afsnit 2 først, for derefter at læse introduktionen igen. Herefter fortsætter med afsnit 3 til 5.
+Læs afsnit 3 grundigt. Forsøg at forstå hvad teksten mener med prototype som filtre og hvordan kan vi arbejde med det som en aktiv strategi i systemudvikling?
+Læs afsnit 4 grundigt. Forsøg at forstå hvad der menes med prototyper som manifestationer af design idéer. Overvej, med udgangspunkt i deres diskussion omkring materiale, hvornår og hvordan en idé bliver `manifesteret', herunder fordele ved at udtrykke idéer i flere forskellige formater og materiale.
+Læs afsnit 5 grundig. Forsøg at forstå først ""filtering dimensions"" (afsnit 5.1 og tabel 2) og derefter ""manifestation dimension"" (afsnit 5.2 og tabel 3). Læs herefter afsnit 6 med de 2 cases.
+Læs afsnit 7 og 8 normalt.
+
+",Prototypes.pdf,,,,FALSE
+26,COMARK,Literature,19,The digital logic level,Tuesday,The digital logic level,SCO Chapter 3; Appendix A,SCO3.pdf,,,,FALSE
+27,STAT,Literature,19,Multiple regression,Wednesday,Multiple regression,l Kapitel 7: Multipel regression,https://data.math.au.dk/interactive/istar/Bog4IT.html,j,,,FALSE
+28,EXSYS,Exercises,19,Project status,Monday,Project status,"Fra nu er skal I arbejde på jeres projekter som det primære fokus for tiden udenfor forelæsninger, herunder øvelserne. Der vil være kursus- eller pensumrelaterede ting til øvelserne også, men I skal til at tænke det som et SCRUM møde hvor I skal redegøre for status på jeres projekt, nuværende fokus (backlog og sprint), behov og udfordringer. I den opsætning er jeres gruppe et produktteam der arbejder sammen med andre teams og står til ansvar over for dem i forhold til at holde alle opdateret på udfordringer, ressource deling mm. TAs mm. aggerer SCRUM masters etc.
+ 
+I skal kunne redegøre for:
+Hvad I arbejde på op til TØ?
+Hvad I skal arbejde med indtil næste TØ?
+Primære udfordringer:
+-          Er der noget der blokerer jer?
+-          Er der spørgsmål I skal have svar på?
+-          Er der tekniske udfordringer?
+-          Er der ressourcer I skal have afklaret?
+Hvordan påvirker ovenstående jeres plan og estimater?
+ 
+Baseret på gennemgangen ovenfor skal I efterfølgende revidere jeres plan (gem den gamle, så vi kan kigge på forskelle til sidst omkring læring). Husk, at selvom vi endnu ikke er i 2-ugers sprint strukturen, så skal I stadig være specifikke og evaluere både projektets status og teamets respons derpå.
+",,TØ19.pdf,,,FALSE
+29,COMARK,Exercises,19,Basic Competencies,Friday,Practicing Basic Competencies,PDF fra uge 6 ,,TØ19.pdf,,,FALSE
+30,STAT,Exercises,19,Multiple regression,Friday,Multiple regression,Øvelse 7 (Geologi/Biologi/IT) hørende til Kapitel 7: Multipel regression. Efter øvelsen skal der laves en rapport over opgave 7.3,,TØ19.pdf,,,FALSE
+31,EXSYS,Lectures,19,Writing technique,Monday,Writing technique,"Godmorgen alle,
+I dag vil der være en forelæsning om akademisk skriveteknik. Det vil være grundlaget for jeres næste aflevering og den endelig rapport i kurset. Vi skal snakke tilgang, struktur, referencer og meget mere. Det vil være en variant af det oplæg som IT-studerende allerede har set til ITPDP, men det er et emne som godt tåler gentagelse.
+Vi ses kl. 14.15 på zoom.
+Bedste hilsner,
+Henrik
+",,WritingTechniques.pdf,uge19.mov,,FALSE
+32,EXSYS,Lectures,19,No lecture today!,Wednesday,No lecture today!,Enjoy!,,,uge19.mov,,FALSE
+33,COMARK,Lectures,19,The digital logic level,Tuesday,The digital logic level,THE DIGITAL LOGIC LEVEL,,DigitalLogicLeves.pdf,uge19.mov,,FALSE
+34,COMARK,Lectures,19,The digital logic level,Thursday,The digital logic level,THE DIGITAL LOGIC LEVEL,,DigitalLogicLevel.pdf,uge19.mov,,FALSE
+35,STAT,Lectures,19,Multiple regression,Tuesday,Multiple regression,"Tirsdag talte jeg om regression med gruppebestemt regressionskoecient og om multipel regression med modelreduktion via backward og forward selektion. Fredag talte jeg om cross validation som måde til at skelne mellem forskellige modeller. Det gennemgåede svarer til kapitel 7 i webbogen.
+Tirsdag vil jeg lave afrunding. Hvis der bliver tid tilovers bruges denne som studiecafe. 
+",,MultipleRegression.pdf,uge19.mov,,FALSE
+36,STAT,Lectures,19,Study café,Friday,Study café,This friday there will be a double study cafe session!,,StudyExercises.pdf,uge19.mov,,FALSE
