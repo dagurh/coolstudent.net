@@ -35,9 +35,12 @@ body{
   float: left;
   width: 21%;
 }
-.exsys:hover, .comark:hover, .stat:hover{
+.exsys:hover, .comark:hover, .stat:hover, .home:hover{
   background-color: #f9fcfc;
   color: #403F3F;
+}
+.home:hover .homeimg{
+  background-image: url("/static/Bilder/home.svg");
 }
 
 .comark{
@@ -66,11 +69,7 @@ body{
   grid-row: 1;
   width: 35px;
   height: 35px;  
-<<<<<<< HEAD
-  padding-top: 5px;
-=======
-  padding-top: 6px;
->>>>>>> c3f011a458a71faba97ac1fca8b2a8419e2d8ae8
+  margin-top: 17px;
 }
 
 .exsys, .comark, .stat, .homeimg, .menuimg, .menu{
@@ -78,8 +77,8 @@ body{
   
 }
 
-.exsys p, .comark p, .stat p, .homeimg{
-  margin-top: 5%;
+.exsys p, .comark p, .stat p{
+  margin-top: 20px;
 }
 
 
