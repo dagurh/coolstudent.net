@@ -694,11 +694,23 @@
 
         </div>
 
-        <div class="Chat Chat1" style="background-image: url(/static/Bilder/Chat.png);">
+        <div class="chat-popup" id="myChat">
+            <form action="/action_page.php" class="form-container">
+              <h1>Chat</h1>
+          
+              <label for="msg"><b>Message</b></label>
+              <textarea placeholder="Type message.." name="msg" required></textarea>
+          
+              <button type="submit" class="btn">Send</button>
+              <span class="cancel" onclick="closeChat()">&times;</span>
+            </form>
+          </div>
+
+        <div class="Chat Chat1" onclick="openChat()" style="background-image: url(/static/Bilder/Chat.png);">
         </div>
-        <div class="Chat Chat2" style="background-image: url(/static/Bilder/Chat1.png);">
+        <div class="Chat Chat2" onclick="openChat()" style="background-image: url(/static/Bilder/Chat1.png);">
         </div>
-        <div class="Chat Chat3" style="background-image: url(/static/Bilder/Chat2.png);">
+        <div class="Chat Chat3"onclick="openChat()"  style="background-image: url(/static/Bilder/Chat2.png);">
         </div>
 
         <div class="Chat Chat4">
@@ -709,10 +721,10 @@
         </div>
 
         <p class="groupsh1">GROUPS </p>
-        <div class="Groups">
+        <div class="Groups" onclick="window.location='/Groups';">
             <p>STUDY <br> GROUP </p>
         </div>
-        <div class="Groups Groups1">
+        <div class="Groups Groups1" onclick="window.location='/Groups';">
             <p>TUTOR</p>
         </div>
 

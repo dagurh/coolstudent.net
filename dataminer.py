@@ -32,6 +32,10 @@ def Stat():
     return render_template('Stat.html')
 
 
+@app.route('/Groups')
+def Groups():
+  return render_template('Groups.html')
+
 @app.route('/kalender')
 def kalender():
     return render_template('kalender.html')
