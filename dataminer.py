@@ -43,7 +43,7 @@ def kalender():
 @app.route('/db/<int:id>', methods=['GET'])
 def my_link(id):
     db.changelink(id)
-    print("heeey")
+    db.changelinkDeadlines(id)
     return render_template('index.html', list=db.all_deadlines(),
                            exsyslit=db.exsysLit(globalWeek), comarklit=db.comarkLit(globalWeek),
                            statlit=db.statLit(globalWeek), exsystø=db.exsysTØ(globalWeek),
@@ -61,17 +61,27 @@ def earlier_week(week):
                            statlec=db.statLec(week))
 
 
-# @app.route('/reset')
-# def reset():
-#    print('I got clicked braaa!  ')
-#    db.resetLinks()
-#    return render_template('index.html', list=db.all_deadlines(),
-#                           exsyslit=db.exsysLit(), comarklit=db.comarkLit(),
-#                           statlit=db.statLit(), exsystø=db.exsysTØ(),
-#                           comarktø=db.comarkTØ(), stattø=db.statTØ(),
-#                           exsyslec=db.exsysLec(), comarklec=db.comarkLec(),
-#                           statlec=db.statLec())
+@app.route('/reset/<int:week>', methods=['GET'])
+def reset(week):
+    print('I got clicked braaa!  ')
+    db.resetLinks()
+    db.resetLinksDeadlines()
+    return render_template('index.html', list=db.all_deadlines(),
+                           exsyslit=db.exsysLit(week), comarklit=db.comarkLit(week),
+                           statlit=db.statLit(week), exsystø=db.exsysTØ(week),
+                           comarktø=db.comarkTØ(week), stattø=db.statTØ(week),
+                           exsyslec=db.exsysLec(week), comarklec=db.comarkLec(week),
+                           statlec=db.statLec(week))
 
+@app.route('/popUp/<int:week>', methods=['GET'])
+def popUp(week):
+    db.popUpOff()
+    return render_template('index.html', list=db.all_deadlines(),
+                           exsyslit=db.exsysLit(week), comarklit=db.comarkLit(week),
+                           statlit=db.statLit(week), exsystø=db.exsysTØ(week),
+                           comarktø=db.comarkTØ(week), stattø=db.statTØ(week),
+                           exsyslec=db.exsysLec(week), comarklec=db.comarkLec(week),
+                           statlec=db.statLec(week))
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
