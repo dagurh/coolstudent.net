@@ -16,7 +16,7 @@ Forsøg at opstille descriptive patterns ud fra jeres case studier fra afleverin
 Scenarier i design
 Carrol, J. M. (1999, January). Five reasons for scenario-based design. In Proceedings of the 32nd Annual Hawaii International Conference on Systems Sciences. 1999. HICSS-32. (pp. 11-pp). IEEE. DOI: https://doi.org/10.1109/HICSS.1999.772890
 Henriks estimat: Omfang 10 sider; læsetid: 40 minutter; niveau: middel-svær
-Denne tekst er en grundlæggende gennemgang af scenarier. I skal læse den så I har forstået hvad scenarier er og kan. Start med at læse introduktionen og afsnit 2 omkring scenarier. Gå derefter de næste afsnit igennem to afsnit af gangen (et ‘challenge’ afsnit og det efterfølgende ""svar afsnit"") (3+4, 5+6, 7+8, 9+10, 11+12). For hvert par af afsnit forsøg at identificer hvad den konkrete udfordring er og hvordan scenarier kan hjælpe med at adressere den udfordring.",Carrol.pdf,,,,FALSE
+Denne tekst er en grundlæggende gennemgang af scenarier. I skal læse den så I har forstået hvad scenarier er og kan. Start med at læse introduktionen og afsnit 2 omkring scenarier. Gå derefter de næste afsnit igennem to afsnit af gangen (et ‘challenge’ afsnit og det efterfølgende ""svar afsnit"") (3+4, 5+6, 7+8, 9+10, 11+12). For hvert par af afsnit forsøg at identificer hvad den konkrete udfordring er og hvordan scenarier kan hjælpe med at adressere den udfordring.",Carrol.pdf,,,FALSE,FALSE
 2,COMARK,Literature,17,Micro Programming,Tuesday,Micro Programming,SCO Chapter 4.3-4.4,SCO.pdf,,,,FALSE
 3,STAT,Literature,17,Analysis of varians,Monday,Variansanalyse,I skal læse kapitel 6 i webbogen hvis i ikke nåede det i sidste uge.,https://data.math.au.dk/interactive/istar/Bog400.html,,,,FALSE
 4,EXSYS,Exercises,17,Project status,Monday,Project status,"Fra nu er skal I arbejde på jeres projekter som det primære fokus for tiden udenfor forelæsninger, herunder øvelserne. Der vil være kursus- eller pensumrelaterede ting til øvelserne også, men I skal til at tænke det som et SCRUM møde hvor I skal redegøre for status på jeres projekt, nuværende fokus (backlog og sprint), behov og udfordringer. I den opsætning er jeres gruppe et produktteam der arbejder sammen med andre teams og står til ansvar over for dem i forhold til at holde alle opdateret på udfordringer, ressource deling mm. TAs mm. aggerer SCRUM masters etc.",,TØ17.pdf,,,FALSE
@@ -37,7 +37,7 @@ Afsæt tid til at læse teksten
 Forvent at læse dele af teksten flere gang
 Tag noter
 Skriv en kort opsummering til egen brug i fremtiden
-Til hver tekst er der tænke- og diskussionsøvelser som kan guide jer i jeres bearbejdning af teksten. De er vejledende og vil ikke altid dække emnet, da vi som bekendt læser og fortolker tekster forskelligt. I bør forholde jer til inden teoretiske øvelser og være I stand til at diskuterer sammen på holdet.",Suchman.pdf,,,,FALSE
+Til hver tekst er der tænke- og diskussionsøvelser som kan guide jer i jeres bearbejdning af teksten. De er vejledende og vil ikke altid dække emnet, da vi som bekendt læser og fortolker tekster forskelligt. I bør forholde jer til inden teoretiske øvelser og være I stand til at diskuterer sammen på holdet.",Suchman.pdf,,,FALSE,FALSE
 14,COMARK,Literature,18,Ethernet,Friday,,"For this week you have to read: ICN (the first edition): 7.1-7.7, 7.9-7.11,9.1,9.2,9.5",ICN.pdf,,,,FALSE
 15,STAT,Literature,18,"Multinomial Models
 ",Thursday,Multinomialmodellen,I skal læse kapital 4 i webbogen.,https://data.math.au.dk/interactive/istar/Bog400.html,,,,FALSE
@@ -73,7 +73,7 @@ SYN-SENT: “the RST is acceptable if the ACK field acknowledges the SYN”. Exp
 exception. Note that ”RST is acceptable“ means that the RST signal is accepted and thus the connection is
 aborted; if RST is not accepted then the packet containing the RST flag is ignored.",exercises.pdf,,,,FALSE
 18,STAT,Exercises,18,Multinomial Models,Thursday,Multinomialmodellen,Øvelse 3 (Geologi/Biologi/IT) hørende til Kapitel 3: Multinomialmodellen. Efter øvelsen skal der laves en rapport over opgave 3.6.,https://data.math.au.dk/interactive/istar/Bog4IT.html,,,,FALSE
-19,EXSYS,Lectures,18,Plans and Situated Actions,Monday,Plans and Situated Actions,"Going through Suchmans text about ""Plans and Situated Actions”",link to Alexea-video,situatedActionSlides.pdf,uge18.mov,,FALSE
+19,EXSYS,Lectures,18,Situated Actions,Monday,Situated Actions,"Going through Suchmans text about ""Plans and Situated Actions”",link to Alexa-video,situatedActionSlides.pdf,uge18.mov,,FALSE
 20,EXSYS,Lectures,18,Benyon ,Wednesday,Benyon ,I'm going to talk about the text from Benyon (2014) and compare it to Sucmans text about situated action.,,BenyonSlides.pdf,uge18.mov,,FALSE
 21,COMARK,Lectures,18,IP        ,Tuesday,IP        ,All videos for this week is in the reocrding tap. i will be talking about IP protocols.,,IpprotocolSlides.pdf,https://cs.au.dk/~peyman/videos/carch/network/ip/ip.html,,FALSE
 22,COMARK,Lectures,18,Ethernet,Thursday,Ethernet,All videos for this week is in the reocrding tap. i will be talking about Ethernet protocols.,,EthernetSlides.pdf,https://cs.au.dk/~peyman/videos/carch/network/link/link.html,,FALSE
@@ -94,7 +94,7 @@ Læs afsnit 4 grundigt. Forsøg at forstå hvad der menes med prototyper som man
 Læs afsnit 5 grundig. Forsøg at forstå først ""filtering dimensions"" (afsnit 5.1 og tabel 2) og derefter ""manifestation dimension"" (afsnit 5.2 og tabel 3). Læs herefter afsnit 6 med de 2 cases.
 Læs afsnit 7 og 8 normalt.
 
-",Prototypes.pdf,,,,FALSE
+",Prototypes.pdf,,,FALSE,FALSE
 26,COMARK,Literature,19,The digital logic level,Tuesday,The digital logic level,SCO Chapter 3; Appendix A,SCO3.pdf,,,,FALSE
 27,STAT,Literature,19,Multiple regression,Wednesday,Multiple regression,l Kapitel 7: Multipel regression,https://data.math.au.dk/interactive/istar/Bog4IT.html,j,,,FALSE
 28,EXSYS,Exercises,19,Project status,Monday,Project status,"Fra nu er skal I arbejde på jeres projekter som det primære fokus for tiden udenfor forelæsninger, herunder øvelserne. Der vil være kursus- eller pensumrelaterede ting til øvelserne også, men I skal til at tænke det som et SCRUM møde hvor I skal redegøre for status på jeres projekt, nuværende fokus (backlog og sprint), behov og udfordringer. I den opsætning er jeres gruppe et produktteam der arbejder sammen med andre teams og står til ansvar over for dem i forhold til at holde alle opdateret på udfordringer, ressource deling mm. TAs mm. aggerer SCRUM masters etc.

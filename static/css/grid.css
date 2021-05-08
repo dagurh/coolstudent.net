@@ -186,6 +186,7 @@ border-right: 0.1px solid #F4F4F4;
   .basicbutton h4{
     font-size: 17px;
     margin-top: 13px;
+    overflow: hidden;
   }
 
   .basicbutton p{
@@ -294,6 +295,7 @@ border-right: 0.1px solid #F4F4F4;
   /*box-shadow: inset 0px -10px 20px -10px rgb(194, 194, 194);*/
   }
 
+
   .deadlines h5{
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
@@ -303,21 +305,24 @@ border-right: 0.1px solid #F4F4F4;
     margin-bottom: -13px;
   }
 
-  .deadlines h4{
-    font-size: 10px;
+  .deadlineButton h4{
     margin: 0px;
+    margin-top: 9px; 
+    font-size: 12px;
   }
-  .deadlines h3{
-    font-size: 10px;
-    margin-top: 1px;
+  .deadlineButton h3{
+    margin-top: 2px;
     margin-bottom: 1px;
     margin: none;
+    font-weight: 200; 
+    font-size: 20px;
   }
-  .deadlines p{
+  .deadlineButton p{
     font-size: 10px;
-    margin-top: 1px;
+    margin-top: 4px;
     margin-bottom: 1px;
     margin: none;
+    margin-top: 5px; font-weight: 700; font-size: 12px;
   }
 
   .space{
@@ -483,10 +488,14 @@ font-size: x-large;
 }
 .small-pop-up-closebox{
   position: fixed;
-  top: 107px;
-  right: 31.5%;
+  top: 61px;
+  right: 29%;
   height: 100px;
   width: 7%;
+}
+.small-pop-up-closebox:hover{
+  top: 56px;
+  right: 28.9%;
 }
 
 .closebox{
@@ -509,10 +518,7 @@ font-size: x-large;
   top: 65px; 
   right: 7.4%;
 }
-.small-pop-up-closebox:hover{
-  top: 102px;
-  right: 31.4%;
-}
+
 
 form{
   margin-top: 0px;
@@ -858,7 +864,26 @@ border-bottom-left-radius: 12px;
     background-image: url("/static/Bilder/dokumentHVID.svg");
   }
 
+.contactButton{
+  top: 952px;
+  right: 7.9%;
+  position: fixed;
+  border-left-style: solid;
+  border-top-style: solid;
+  border-left-width: thin;
+  border-top-width: thin;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 22px;
+  background-color: #fafafa;
+  width: 10%;
+  text-align: center;
+}
 
+.contactButton:hover{
+  background-color:#6d6d6d;
+  cursor: pointer;
+  color: #fafafa;
+}
 
 /* The Modal (background) */
 .modal {
@@ -913,7 +938,7 @@ border-bottom-left-radius: 12px;
   background-color: #fdfdfd;
   height: 55px;
   width: 45%;
-  margin-left: 29%;
+  margin-left: 0%;
   margin-top: 30px;
   margin-bottom: -50px;
   border-radius: 10px;
@@ -924,6 +949,34 @@ border-bottom-left-radius: 12px;
   cursor: pointer;
   text-decoration: none;
 }
+
+#clickOffPopUp{
+  display: flex;
+  float: right;
+  margin-right: -15px;
+  margin-bottom: -50px;
+}
+#clickOffPopUp div{
+  flex: 1;
+  height: 16px;
+  width: 16px;
+  background-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(94, 94, 94);
+  margin-top: 27px;
+  margin-left: 14px;
+}
+#clickOffPopUp p{
+  margin-top: 27px;
+}
+#clickOffPopUp div:hover{
+  background-color: #A7D9B1;
+  cursor: pointer;
+}
+
+
+
 .choosefile{
   margin-left: 0%;
 }
@@ -1074,6 +1127,7 @@ top: 19%;
   padding-left: 7px;
   color:#4e4e4e;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .videoimg{

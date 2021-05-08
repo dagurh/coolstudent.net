@@ -153,13 +153,40 @@ def changelink(id):
       """, (id,))
         conn.commit()
 
+def changelinkDeadlines(id):
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """UPDATE deadlines
+      SET docstate = "true"
+      WHERE id = ?;
+      """, (id,))
+        conn.commit()
+
+def popUpOff():
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """UPDATE courses
+      SET Zoom = "popUp-Off";
+      """)
+        conn.commit()
 
 def resetLinks():
     with sqlite3.connect(__DEADLINES_DB) as conn:
         cur = conn.cursor()
         cur.execute(
             """UPDATE courses
-      SET Document = "false";
+      SET Document = "FALSE", Zoom = "popUp-On";
+      """)
+        conn.commit()
+
+def resetLinksDeadlines():
+    with sqlite3.connect(__DEADLINES_DB) as conn:
+        cur = conn.cursor()
+        cur.execute(
+            """UPDATE deadlines
+      SET docstate = "FALSE";
       """)
         conn.commit()
 
