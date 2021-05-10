@@ -12,14 +12,10 @@ let nameA;
 clickOffButton = document.getElementById("clickOffButton");
 clickOffTEXT = document.getElementById("clickOffTEXT");
 
-
 function turnOffPopUp(){
     clickOffButton.style.backgroundColor = "#A7D9B1";
     clickOffTEXT.innerHTML = "Cool!"
-    updataDatabaseForPopUp();
-}
-
-function updataDatabaseForPopUp(){
+    getDataFromClickedButton(documentButton[0]);
     window.location.href = '/popUp/' + info[2]; //send info to database
 }
 
@@ -49,14 +45,16 @@ goToLaterWeek.onclick = function () {
 
 const statusMap = new Map();
 for (i = 0; i < documentButton.length; i++) {
+  // update the document button status
   let infoString = documentButton[i].getAttribute("data-data");
   updateName(infoString); //updates the the name varible
-  docCreatedStatus = info[6]; // duer ikke for afleveringer da de ikke har et document status row i db'en
+  docCreatedStatus = info[6];
   statusMap.set(nameA, docCreatedStatus);
   if (docCreatedStatus == "true") {
     updateClickedButtons(documentButton[i]);
   }
 }
+
 
 const newDocumentMap = new Map();
 // link til EXSYS
@@ -251,11 +249,22 @@ const topinfoButton = document.getElementsByClassName("topinfo");
 for (i = 0; i < topinfoButton.length; i++) {
   topinfoButton[i].onclick = function () {
     modalID = parseInt(event.currentTarget.getAttribute("id"));
-    console.log(modalID);
     document.getElementById('modal--' + modalID).style.display = "block";
   }
 }
 
+//ad or remove recourses
+const resources = document.getElementsByClassName("files");
+
+for(i =0; i< resources.length; i++){
+  if(resources[i].childNodes[3].childNodes[3].innerHTML == ""){
+    resources[i].style.display = "none";
+    if(resources[i].getAttribute("data-activety") == "Lecture"){
+      resources[i+1].style.top ="19%";
+      resources[i+2].style.top = "33.5%";
+    }
+  }
+}
 
 //upload button
 const protomodalUpload = document.getElementById("protomodal--upload");
@@ -263,10 +272,21 @@ const uploadButton = document.getElementsByClassName('BorderUp');
 let targetUploadButton;
 
 for (i = 0; i < uploadButton.length; i++) {
+  // ADD CLICK event to button
   uploadButton[i].onclick = function () {
     protomodalUpload.style.display = 'block';
     targetUploadButton = event.currentTarget;
+    getDataFromClickedButton(targetUploadButton);
   };
+
+    // update the button status
+    infoString = uploadButton[i].getAttribute("data-data");
+    info = infoString.split(",");
+
+      if(info[3]== "true"){
+        uploadButton[i].classList.add('uploadclicked');
+        uploadButton[i].childNodes[1].classList.add('uploadclickedicon');
+      }
 }
 // file upload
 function getFile() {
@@ -282,10 +302,15 @@ function sub(obj) {
 
 // when clicking send
 document.getElementsByClassName('send')[0].onclick = function () {
+  uploadButtonClicked();
+};
+
+function uploadButtonClicked(){
   targetUploadButton.classList.add('uploadclicked');
   targetUploadButton.childNodes[1].classList.add('uploadclickedicon');
   protomodalUpload.style.display = 'none';
-};
+  window.location.href = '/uploadDone/' + info[5]; //send info to database
+}
 
 // when people clicks outside the modal it closes #1
 modalbag = document.getElementsByClassName("modal");

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/grid.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/Relevant-Buttons.css') }}">
     <script defer src="{{ url_for('static', filename='/javascript/Javascript.js') }}"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,53 +43,55 @@
 
 
     <div class="container">
-        <div class="relaviteLinks">
-            <div id="STADS">
-                <button class="STADSBut" onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'"
-                    type="button">
-                    STADS
-                    <p>Dine karakterer, undervisnings og eksamentilmelding </p>
-                </button>
 
+            <div id = "ResoursesHeadline">
+                <p>STUDENT RECOURSES</p>
+            </div>
+            <div id="STADS">
+                <button class="STADSBut LinksButtons" onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'"
+                    type="button">
+                    <p>GRADES</p>
+                    <div class = "pil"></div>
+                </button>
             </div>
 
             <div id="AULibrary">
-                <button class="AuLiBut" onclick="location.href='https://library.au.dk/'" type="button">
-                    AU Library
-                    <p>Bøger, artikler mm. </p>
+                <button class="AuLiBut LinksButtons" type="button">
+                    <p>LIBRARY</p>
+                    <form>
+                        <input type="text">
+                    </form>
                 </button>
             </div>
 
-            <div id="KursusKatalog">
-                <button class="KurKBut" onclick="location.href='http://www.example.com'" type="button">
-                    Kursus katalog
-                    <p>Se info om aktuelle kurser </p>
+            <div id="Contactbook">
+                <button class="KurKBut LinksButtons" type="button">
+                    <p>CONTACKBOOK</p>
+                    <div class = "pil"></div>
                 </button>
             </div>
 
-            <div id="DigitalExam">
-                <button class="DeExBut" onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'"
+            <div id="StudyCard">
+                <button class="DeExBut LinksButtons" onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'"
                     type="button">
-                    Digital eksamen
-                    <p>Digital aflevering af eksamensbesvarelser </p>
+                    <p>STUDYCARD RENEWALD</p>
                 </button>
             </div>
 
             <div id="MoveOn">
-                <button class="MoveBut"
+                <button class="MoveBut LinksButtons"
                     onclick="location.href='https://au.moveon4.de/form/5c7d0007587531e5508b4567/eng'" type="button">
-                    Move On
-                    <p>Udveksling og praktik i udlandet </p>
+                    <p>EXSTAINCE STUDENT INFO</p>
                 </button>
             </div>
 
             <div id="ExamRegistration">
-                <button class="ExReBut" onclick="location.href='http://www.example.com'" type="button">
-                    Eksamen registration
-                    <p>??? </p>
+                <button class="ExReBut LinksButtons" onclick="location.href='http://www.example.com'" type="button">
+                    <p>EKSAM REGISTRATION</p>
+                    <p id ="eksamRegDeadline">Next deadline: 24/04 2021</p>
                 </button>
             </div>
-        </div>
+
 
 
         <div class="topgab"></div>
@@ -143,22 +144,6 @@
                             <div class="pdfimg"></div>
                             <a class="link" target="_blank"
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
-                        </div>
-                    </div>
-                    <div class="Slides files">
-                        <p> Slides:</p>
-                        <div class="filecontainer">
-                            <div class="pdfimg"></div>
-                            <a class="link" target="_blank"
-                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
-                        </div>
-                    </div>
-                    <div class="Recordings files">
-                        <p>Recordings:</p>
-                        <div class="filecontainer">
-                            <div class="videoimg"></div>
-                            <a class="link" target="_blank"
-                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
                     <div class = "contactButton" onclick="openChat()">
@@ -214,22 +199,6 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class="Slides files">
-                        <p> Slides:</p>
-                        <div class="filecontainer">
-                            <div class="pdfimg"></div>
-                            <a class="link" target="_blank"
-                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
-                        </div>
-                    </div>
-                    <div class="Recordings files">
-                        <p>Recordings:</p>
-                        <div class="filecontainer">
-                            <div class="videoimg"></div>
-                            <a class="link" target="_blank"
-                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
-                        </div>
-                    </div>
                     <div class = "contactButton" onclick="openChat()">
                         <p>Contact TA</p>
                     </div>
@@ -283,22 +252,6 @@
                             <div class="pdfimg"></div>
                             <a class="link" target="_blank"
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
-                        </div>
-                    </div>
-                    <div class="Slides files">
-                        <p> Slides:</p>
-                        <div class="filecontainer">
-                            <div class="pdfimg"></div>
-                            <a class="link" target="_blank"
-                                href="https://drive.google.com/file/d/17h8xGqmRqHWl49RPaKMg8N6fbeK7ip5z/view?usp=sharing">{{row[9]}}</a>
-                        </div>
-                    </div>
-                    <div class="Recordings files">
-                        <p>Recordings:</p>
-                        <div class="filecontainer">
-                            <div class="videoimg"></div>
-                            <a class="link" target="_blank"
-                                href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
                     <div class = "contactButton" onclick="openChat()">
@@ -519,7 +472,7 @@
                     <div class="information">
                         <p>{{row[7]}}</p>
                     </div>
-                    <div class="Resources files">
+                    <div class="Resources files" data-activety="Lecture">
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
@@ -588,7 +541,7 @@
                     <div class="information">
                         <p>{{row[7]}}</p>
                     </div>
-                    <div class="Resources files">
+                    <div class="Resources files" data-activety="Lecture">
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
@@ -662,7 +615,7 @@
                     <div class="information">
                         <p>{{row[7]}}</p>
                     </div>
-                    <div class="Resources files">
+                    <div class="Resources files" data-activety="Lecture">
                         <p>Resources:</p>
                         <div class="filecontainer">
                             <div class="pdfimg"></div>
@@ -710,7 +663,7 @@
                     <p>Due: {{row[3]}}</p>
                 </div>
                 <div class="quicklinks">
-                    <div class="BorderUp">
+                    <div class="BorderUp" data-data="{{row[1]}},Assignment,{{row[2]}},{{row[5]}},{{row[6]}},{{row[0]}},{{row[4]}}">
                         <div class="UPbutton"></div>
                     </div>
                     <div class="border"></div>
