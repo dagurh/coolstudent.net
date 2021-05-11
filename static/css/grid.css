@@ -1,6 +1,7 @@
 body{
   background-color: #f9fcfc;
   margin: 0 auto;
+  height: 200vh;
 }
 
 .navbar{
@@ -21,14 +22,14 @@ body{
 }
 
 .container {
-  margin-top: 70px;
+  margin-top: 62px;
   width: 100%;
   float: left;
   display: grid;
   grid-template-columns: [first] 6% [line2] 21% [line3] 21% [line4] 21% [line5] 21% [line6] 30% [end];
   grid-template-rows: [row1-start] auto [row1-end] auto
    [row2-start] auto [row2-end] auto [row3-start] auto [row3-end] auto [row4-start] auto [row4-end] auto 
-   [row5-start] auto [row5-end] 30% [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] auto [row8-end] auto [row9-start] auto [row9-end] auto  [last-line];
+   [row5-start] auto [row5-end] auto [row6-start] auto [row6-end] auto [row7-start] auto [row7-end] auto [row8-start] auto [row8-end] auto [row9-start] auto [row9-end] auto  [last-line];
 }
 
 .exsys{
@@ -73,8 +74,7 @@ body{
 }
 
 .exsys, .comark, .stat, .homeimg, .menuimg, .menu{
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
 
 .exsys p, .comark p, .stat p{
@@ -111,13 +111,126 @@ body{
   height: 5px;
   background-color: #EAF4F4;
 }
-
+/*
 .relaviteLinks{
   display: flex;
   grid-column: 2/6;
   grid-row: 7;
   width: 100%;
 }
+*/
+
+#ResoursesHeadline{
+  grid-column: 2/5;
+  grid-row: 7;
+  width: 100%;
+}
+
+#ResoursesHeadline p{
+  margin-top: 75px;
+  margin-bottom: 8px;
+  font-size: 40px;
+  justify-self: stretch;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    color:#999999;
+}
+
+#AULibrary{
+  grid-column: 2/5;
+  grid-row: 8;
+  width: 100%;
+}
+
+#AULibrary input{
+  position: relative;
+  width: 50%;
+  float: right;
+  height: 35px;
+  border-radius: 15px;
+  margin-top: 12px;
+  margin-right: 12px;
+  font-size: 20px;
+}
+#ExamRegistration{
+  grid-column: 2/5;
+  grid-row: 9;
+  width: 100%;
+}
+
+#ExamRegistration #eksamRegDeadline{
+  float: right;
+  font-size: 16px;
+  margin-top: 36px;
+  margin-right: 12px;
+}
+
+#STADS{
+  grid-column: 2/5;
+  grid-row: 10;
+  width: 100%;
+}
+
+#MoveOn{
+  grid-column: 2/5;
+  grid-row: 13;
+  width: 100%;
+}
+
+#StudyCard{
+  grid-column: 2/5;
+  grid-row: 12;
+  width: 100%;
+}
+
+#Contactbook{
+  grid-column: 2/5;
+  grid-row: 11;
+  width: 100%;
+}
+
+
+.LinksButtons{
+  margin-top: 25px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 18px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #6d6d6d;
+  height: 72px;
+  box-shadow: 0px 5px 6px rgba(49, 49, 49, 0.2);
+  cursor: pointer;
+}
+
+.LinksButtons:hover{
+  background-color: #ffffff;
+}
+
+.LinksButtons p {
+  float: left;
+  margin-left: 30px;
+  margin-top: 18px;
+  font-size: 25px;
+  justify-self: stretch;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    color:#4e4e4e;
+}
+
+.pil{
+  background-image: url("/static/Bilder/pil.svg");
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 20px;
+  margin-top: 17px;
+  margin-right: 12px;
+  background-size: 15px;
+
+  float: right;
+}
+
+
 
 .to { display: grid; grid-column: 1; grid-row: 4;}
 
@@ -156,7 +269,7 @@ body{
 }
 
 .forelæsningStat, .forelæsningCom, .forelæsningEks, .forelæsning, .litteratur, .litteraturCom, .litteraturEks, .litteraturStat, .to, .toCom, .toEks, .toStat, .exsys, .comark, .stat, .home{
-border-right: 0.1px solid #F4F4F4;
+border-right: 0.1px solid #b1b1b1;
 }
 
   .basicbutton{
@@ -164,7 +277,7 @@ border-right: 0.1px solid #F4F4F4;
     margin-bottom: 31px;
     background-color: inherit;
     z-index: 2;
-    font-family: 'Roboto', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
     height: 150px;
     width: 90%;
@@ -865,7 +978,7 @@ border-bottom-left-radius: 12px;
   }
 
 .contactButton{
-  top: 952px;
+  top: 92.1%;
   right: 7.9%;
   position: fixed;
   border-left-style: solid;
