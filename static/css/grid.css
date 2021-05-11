@@ -978,15 +978,15 @@ border-bottom-left-radius: 12px;
   }
 
 .contactButton{
-  top: 92.1%;
-  right: 7.9%;
-  position: fixed;
+  position: relative;
+  top: 89.5%;
+  left: 96.6%;
   border-left-style: solid;
   border-top-style: solid;
   border-left-width: thin;
   border-top-width: thin;
   border-top-left-radius: 25px;
-  border-bottom-right-radius: 22px;
+  border-bottom-right-radius: 22px; 
   background-color: #fafafa;
   width: 10%;
   text-align: center;
@@ -1019,7 +1019,7 @@ border-bottom-left-radius: 12px;
   background-color: #fdfdfd;
   margin-top: 25px;
   margin-left: 7%;
-  height: 70%;
+  height: 60vh;
   padding: 5%;
  border-radius: 25px;
   border: 1px solid #888;
