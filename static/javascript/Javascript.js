@@ -23,16 +23,21 @@ function updateWeekToLaterWeek() {
   let infoString = documentButton[0].getAttribute("data-data");
   info = infoString.split(",");
   let currentWeek = info[2]; //håber det er week
-  let incrementedWeek = parseInt(currentWeek) + 1;
-  window.location.href = '/week/' + incrementedWeek; //send info to database
+  if(currentWeek != "19"){
+    let incrementedWeek = parseInt(currentWeek) + 1;
+    window.location.href = '/week/' + incrementedWeek; //send info to database
+  }
 }
 
 function updateWeekToEarlierWeek() {
+  
   let infoString = documentButton[0].getAttribute("data-data");
   info = infoString.split(",");
   let currentWeek = info[2]; //håber det er week
-  let decrementedWeek = parseInt(currentWeek) - 1;
-  window.location.href = '/week/' + decrementedWeek; //send info to database
+  if(currentWeek != "17"){
+    let decrementedWeek = parseInt(currentWeek) - 1;
+    window.location.href = '/week/' + decrementedWeek; //send info to database
+  }
 }
 
 goToEarlierWeek.onclick = function () {
