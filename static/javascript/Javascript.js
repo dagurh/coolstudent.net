@@ -4,11 +4,24 @@ const continueButton = document.getElementsByClassName('continue');
 const goToEarlierWeek = document.getElementsByClassName('back')[0];
 const goToLaterWeek = document.getElementsByClassName('front')[0];
 
-let first = true;
 let theTarget;
 let info;
 let linkStatus;
 let nameA;
+
+clickOffButton = document.getElementById("clickOffButton");
+clickOffTEXT = document.getElementById("clickOffTEXT");
+
+
+function turnOffPopUp(){
+    clickOffButton.style.backgroundColor = "#A7D9B1";
+    clickOffTEXT.innerHTML = "Cool!"
+    updataDatabaseForPopUp();
+}
+
+function updataDatabaseForPopUp(){
+    window.location.href = '/popUp/' + info[2]; //send info to database
+}
 
 function updateWeekToLaterWeek() {
   let infoString = documentButton[0].getAttribute("data-data");
@@ -16,7 +29,6 @@ function updateWeekToLaterWeek() {
   let currentWeek = info[2]; //håber det er week
   let incrementedWeek = parseInt(currentWeek) + 1;
   window.location.href = '/week/' + incrementedWeek; //send info to database
-  console.log("clicked");
 }
 
 function updateWeekToEarlierWeek() {
@@ -25,7 +37,6 @@ function updateWeekToEarlierWeek() {
   let currentWeek = info[2]; //håber det er week
   let decrementedWeek = parseInt(currentWeek) - 1;
   window.location.href = '/week/' + decrementedWeek; //send info to database
-  console.log("clicked");
 }
 
 goToEarlierWeek.onclick = function () {
@@ -45,7 +56,6 @@ for (i = 0; i < documentButton.length; i++) {
   if (docCreatedStatus == "true") {
     updateClickedButtons(documentButton[i]);
   }
-  console.log(nameA);
 }
 
 const newDocumentMap = new Map();
@@ -60,10 +70,10 @@ newDocumentMap.set('EXSYSAssignment', { created: statusMap.get("EXSYSAssignment"
 newDocumentMap.set("COMARKLecturesTuesday", { created: statusMap.get("COMARKLecturesTuesday"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1D9lpavkVkqKOdzLfyYkO8GTjWfZVFb-k", mappe: "https://drive.google.com/drive/folders/1D9lpavkVkqKOdzLfyYkO8GTjWfZVFb-k?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 newDocumentMap.set("COMARKLecturesThursday", { created: statusMap.get("COMARKLecturesThursday"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1D9lpavkVkqKOdzLfyYkO8GTjWfZVFb-k", mappe: "https://drive.google.com/drive/folders/1D9lpavkVkqKOdzLfyYkO8GTjWfZVFb-k?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 newDocumentMap.set("COMARKLiterature", { created: statusMap.get("COMARKLiterature"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1Fp5uMLFxcEMI6UzTQlgtBOP0vam5-jvk", mappe: "https://drive.google.com/drive/folders/1Fp5uMLFxcEMI6UzTQlgtBOP0vam5-jvk?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
-newDocumentMap.set("COMARKExercises", { created: statusMap.get("COMARKExercises"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1ye6XUIeCWf3sUb23GaPSTjHZBavjavZG", mappe: "https://drive.google.com/drive/folders/1LmjXOWBjQ5Ck6gWq4L-zQsVfNUcyshjI?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
+newDocumentMap.set("COMARKExercises", { created: statusMap.get("COMARKExercises"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1ye6XUIeCWf3sUb23GaPSTjHZBavjavZG", mappe: "https://drive.google.com/drive/folders/1ye6XUIeCWf3sUb23GaPSTjHZBavjavZG?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 newDocumentMap.set("COMARKAssignment", { created: statusMap.get("COMARKAssignment"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1cKHRRkIzeqIbZKAKU7WeZ079Um7UeA2F", mappe: "https://drive.google.com/drive/folders/1cKHRRkIzeqIbZKAKU7WeZ079Um7UeA2F?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 // links til STAT
-newDocumentMap.set("STATLecturesTuesday", { created: statusMap.get("STATLecturesTuesday"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_", mappe: "https://drive.google.com/drive/folders/1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
+newDocumentMap.set("STATLecturesThursday", { created: statusMap.get("STATLecturesThursday"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_", mappe: "https://drive.google.com/drive/folders/1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 newDocumentMap.set("STATLecturesFriday", { created: statusMap.get("STATLecturesFriday"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_", mappe: "https://drive.google.com/drive/folders/1VpDgm2BQ8o_67gHIHbLxpmbeh37NlF8_?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 newDocumentMap.set("STATLiterature", { created: statusMap.get("STATLiterature"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=156QXc7eCQZ0Xhjl-IY2rf7wnowajNc4t", mappe: "https://drive.google.com/drive/folders/156QXc7eCQZ0Xhjl-IY2rf7wnowajNc4t?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 newDocumentMap.set("STATExercises", { created: statusMap.get("STATExercises"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1MlreAjMvM6LgX5qM2xVgIlV5BKlRcS_v", mappe: "https://drive.google.com/drive/folders/1MlreAjMvM6LgX5qM2xVgIlV5BKlRcS_v?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
@@ -80,15 +90,16 @@ function copyToClipboard(str) {
 }
 
 function getDataFromClickedButton(event) {
-  infoString = event.currentTarget.getAttribute("data-data");
+  infoString = event.getAttribute("data-data");
   updateLinkStatus(infoString);
-  theTarget = event.currentTarget;
+  theTarget = event;
 }
 
 function updateLinkStatus(infoString) {
   info = infoString.split(",");
   updateName(infoString);
   linkStatus = newDocumentMap.get(nameA);
+  console.log(info[7]);
 }
 
 function updateName(infoString) {
@@ -107,10 +118,9 @@ const protomodaldoc = document.getElementById("protomodal--doc");
 function addClickEventToDocumentButton() {
   for (i = 0; i < documentButton.length; i++) {
     documentButton[i].onclick = function () {
-      getDataFromClickedButton(event);
-      console.log(linkStatus.created);
+      getDataFromClickedButton(event.currentTarget);
       if (linkStatus.created == "FALSE") {
-        if (first) {
+        if (info[7] != "popUp-Off") {
           document.getElementsByClassName('docs-popup-info')[0].innerHTML
             = "You are creating a shared google docs document in the folder:  studygroup/" + info[0] + "/" + info[1] + ". <br> <br> This command also copies a recomended name for the document to your clipboard, for this document it's:    " + createClipboardString(info[1]);
           protomodaldoc.style.display = 'block';
@@ -224,6 +234,15 @@ for (i = 0; i < closeButtons.length; i++) {
     event.currentTarget.parentElement.parentElement.style.display = "none";
   }
 }
+// close button for docs-pop-up og upload-pop-up
+docPopUp = document.getElementById("protomodal--upload");
+uploadPopUp = document.getElementById("protomodal--doc");
+
+function closePopUp(){
+  docPopUp.style.display ="none";
+  uploadPopUp.style.display ="none";
+}
+
 
 // When the user clicks the button, open the modal
 const modals = document.getElementsByClassName("modal");
