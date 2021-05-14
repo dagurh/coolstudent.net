@@ -9,6 +9,8 @@ let info;
 let linkStatus;
 let nameA;
 
+
+
 clickOffButton = document.getElementById("clickOffButton");
 clickOffTEXT = document.getElementById("clickOffTEXT");
 
@@ -83,7 +85,8 @@ newDocumentMap.set("STATExercises", { created: statusMap.get("STATExercises"), n
 newDocumentMap.set("STATAssignment", { created: statusMap.get("STATAssignment"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1SlU2QKyvDkD0GkaU_4PhIujAwIBUE7wr", mappe: "https://drive.google.com/drive/folders/1SlU2QKyvDkD0GkaU_4PhIujAwIBUE7wr?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 
 
-function copyToClipboard(str) {
+function copyToClipboard() {
+  str = createClipboardString(info[1])
   const el = document.createElement('textarea');
   el.value = str;
   document.body.appendChild(el);
@@ -114,6 +117,13 @@ function updateName(infoString) {
   }
 }
 
+const input = document.getElementById('RecomendedTitle');
+
+function selectText() {
+  input.focus();
+  input.select();
+}
+
 // ADDING CLICK EVENTS TO BUTTONS
 addClickEventToDocumentButton(); //document Button
 const protomodaldoc = document.getElementById("protomodal--doc");
@@ -124,10 +134,10 @@ function addClickEventToDocumentButton() {
       getDataFromClickedButton(event.currentTarget);
       if (linkStatus.created == "FALSE") {
         if (info[7] != "popUp-Off") {
-          document.getElementsByClassName('docs-popup-info')[0].innerHTML
-            = "You are creating a shared google docs document in the folder:  studygroup/" + info[0] + "/" + info[1] + ". <br> <br> This command also copies a recomended name for the document to your clipboard, for this document it's:    " + createClipboardString(info[1]);
+          document.getElementsByClassName('folders')[0].innerHTML = "studygroup/" + info[0] + "/" + info[1] + "/";        
+          input.setAttribute("value", createClipboardString(info[1]));
           protomodaldoc.style.display = 'block';
-          
+          selectText();
         } else {
           addocument();
         }
@@ -140,7 +150,7 @@ function addClickEventToDocumentButton() {
 
 function addocument() {
   updateClickedButtons(theTarget);
-  copyToClipboard(createClipboardString(info[1]));
+  ///copyToClipboard(createClipboardString(info[1]));
   window.open(linkStatus.new, '_blank').focus();
   linkStatus.created = "true";
   window.location.href = '/db/' + info[5]; //send info to database

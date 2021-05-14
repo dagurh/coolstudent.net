@@ -763,15 +763,18 @@
                 <div class="small-pop-up-closebox"><span id="protoclose--doc" class="close"
                         onclick="closePopUp()">&times;</span></div>
                 <div class="headlinedocs">
-                    <p>Create document</p>
+                    <p>Recomended Title for the document:</p>
                 </div>
-                <div class="docsinfo">
-                    <p class="docs-popup-info"></p>
+                <div class="flex">
+                    <input type="text" id="RecomendedTitle" value="Hello world!">
+                    <button class="StandardButton copyTitle" onclick="copyToClipboard()">COPY TITLE</button>
                 </div>
-                <div class="continue">CONTINUE</div>
-                <div id="clickOffPopUp">
-                    <p id="clickOffTEXT">Dont want to see this pop-up anymore?</p>
-                    <div id="clickOffButton" onclick="turnOffPopUp()"></div>
+                <p>Copy the title and paste it the created document</p>
+                <p id="folderinfo">In folder:</p>
+
+                <div class="flex">
+                    <p class="folders"></p>
+                    <div class="StandardButton continue">CREATE DOCUMENT</div>
                 </div>
             </div>
         </div>
@@ -797,8 +800,13 @@
         </div>
     </div>
 
-
-
+    <!-- Click off button rester:
+   <div id="clickOffPopUp">
+        <p id="clickOffTEXT">Dont want to see this pop-up anymore?</p>
+        <div id="clickOffButton" onclick="turnOffPopUp()"></div>
+    </div>
+-->
+ 
 </body>
 
 </html>

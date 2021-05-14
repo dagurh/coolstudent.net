@@ -1,3 +1,7 @@
+html{
+  font-size: 100%;
+}
+
 body{
   background-color: #f9fcfc;
   margin: 0 auto;
@@ -1040,27 +1044,81 @@ border-bottom-left-radius: 12px;
   width: 80%;
   position: relative;
   margin-top: -80px;
-  font-size: 40px;
+  font-size: 25px;
   justify-self: stretch;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
-  color:#4e4e4e;
+  color:#777777;
 }
 
-.continue{
+.StandardButton{
   background-color: #fdfdfd;
-  height: 55px;
-  width: 45%;
-  margin-left: 0%;
-  margin-top: 30px;
-  margin-bottom: -50px;
   border-radius: 10px;
   border: 1px solid #888;
   text-align: center;
-  font-size: x-large;
-  line-height: 55px;
   cursor: pointer;
   text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #646464;
+}
+
+.continue{
+  height: 55px;
+  width: 45%;
+  font-size: x-large;
+  line-height: 55px;
+  float: right;
+  margin-top: -15px;
+  margin-bottom: -30px;
+}
+
+.copyTitle{
+  height: 63px;
+  width: 25%;
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.folders{
+  margin-top: -3px;
+  font-size: 1.7rem;
+  flex: 1;
+  margin-bottom: -50px;
+}
+
+#folderinfo{
+  margin-top: 60px;
+}
+.flex{
+  display: flex;
+}
+
+#RecomendedTitle{
+  width: 70%;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 21px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  border: 1px solid #888;
+  color: #403F3F;
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+.docsinfo{
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  margin-top: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color:#4e4e4e;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 #clickOffPopUp{
@@ -1126,7 +1184,7 @@ border-bottom-left-radius: 12px;
   margin-left: 0px;
 }
 
-.continue:hover{
+.StandardButton:hover{
   color: white;
   background-color: #888;
 }
@@ -1155,18 +1213,6 @@ border-bottom-left-radius: 12px;
   line-height: 1.4;
 }
 
-.docsinfo{
-  width: 100%;
-  height: auto;
-  overflow: auto;
-  position: relative;
-  margin-top: -20px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  color:#4e4e4e;
-  font-size: 18px;
-  line-height: 1.4;
-}
 
 .modal-content .small{
   font-size: 20px;
