@@ -1049,7 +1049,7 @@ border-bottom-left-radius: 12px;
   padding: 0px;
   width: 80%;
   position: relative;
-  margin-top: -40px;
+  margin-top: -28px;
   font-size: 16.75px;
   justify-self: stretch;
   font-family: Helvetica, Arial, sans-serif;
@@ -1075,7 +1075,7 @@ border-bottom-left-radius: 12px;
   line-height: 37px;
   float: right;
   margin-top: -10px;
-  margin-bottom: -30px;
+  margin-bottom: -10px;
 }
 
 .copyTitle{
@@ -1095,7 +1095,8 @@ border-bottom-left-radius: 12px;
 
 #folderinfo{
   margin-top: 40px;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: lighter;
 }
 .flex{
   display: flex;
@@ -1163,16 +1164,16 @@ border-bottom-left-radius: 12px;
   margin-top: -40px;
   position: relative;
   top: 50px;
-  width: 50%;
-  padding: 10px;
+  width: 70%;
+  padding-top: 50px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border: 1px dashed #BBB;
   text-align: center;
   background-color: #DDD;
   cursor: pointer;
-  height: 53px;
-  line-height: 53px;
+  height: 80px;
+  line-height: 21px;
 }
 #yourBtn:hover{
   background-color: #fdfdfd;
@@ -1189,6 +1190,7 @@ border-bottom-left-radius: 12px;
   text-decoration: none;
   color: #4e4e4e;
   margin-left: 0px;
+  margin-bottom: 0px;
 }
 
 .StandardButton:hover{
