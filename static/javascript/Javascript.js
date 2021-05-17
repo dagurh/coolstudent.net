@@ -55,7 +55,11 @@ for (i = 0; i < documentButton.length; i++) {
   // update the document button status
   let infoString = documentButton[i].getAttribute("data-data");
   updateName(infoString); //updates the the name varible
-  docCreatedStatus = info[6];
+  if(info[1] != "Assignment"){
+    docCreatedStatus = info[6];
+  }else{
+    docCreatedStatus = info[0];
+  }
   statusMap.set(nameA, docCreatedStatus);
   if (docCreatedStatus == "true") {
     updateClickedButtons(documentButton[i]);
@@ -292,6 +296,13 @@ for (i = 0; i < uploadButton.length; i++) {
     protomodalUpload.style.display = 'block';
     targetUploadButton = event.currentTarget;
     getDataFromClickedButton(targetUploadButton);
+    console.log(info[0]);
+    console.log(info[1]);
+    console.log(info[2]);
+    console.log(info[3]);
+    console.log(info[4]);
+    console.log(info[5]);
+    console.log(info[6]);
   };
 
     // update the button status
@@ -324,7 +335,7 @@ function uploadButtonClicked(){
   targetUploadButton.classList.add('uploadclicked');
   targetUploadButton.childNodes[1].classList.add('uploadclickedicon');
   protomodalUpload.style.display = 'none';
-  window.location.href = '/uploadDone/' + info[5]; //send info to database
+  window.location.href = '/uploadDone/' + info[6]; //send info to database
 }
 
 // when people clicks outside the modal it closes #1
