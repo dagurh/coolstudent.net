@@ -69,12 +69,16 @@ body{
   align-items: center;
 }
 
+
 .homeimg{
+  background-image: url("/static/Bilder/home.svg");
   grid-column: 1;
   grid-row: 1;
-  width: 35px;
+  width: 27px;
   height: 23.5px;  
   margin-top: 11.4px;
+  background-repeat: no-repeat;
+  margin-left: 2%;
 }
 
 .exsys, .comark, .stat, .homeimg, .menuimg, .menu{
@@ -822,7 +826,7 @@ form{
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -982,7 +986,7 @@ border-bottom-left-radius: 12px;
 .contactButton{
   position: absolute;
   right: 7.95%;
-  top: 51.7vh;
+  bottom: 16.4vh;
   border-left-style: solid;
   border-top-style: solid;
   border-left-width: thin;
@@ -993,7 +997,7 @@ border-bottom-left-radius: 12px;
   width: 15%;
   text-align: center;
   font-size: 13px;
-  margin-top: 157.75px;
+
 }
 
 .contactButton:hover{
@@ -1022,13 +1026,13 @@ border-bottom-left-radius: 12px;
 .modal-content {
   position: absolute;
   background-color: #fdfdfd;
-  margin-top: 16.75px;
+  margin-top: 2.5vh;
   margin-left: 7%;
-  height: 58vh;
+  height: 67vh;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
  border-radius: 25px;
   border: 1px solid #888;
   width: 75%;
@@ -1203,8 +1207,8 @@ border-bottom-left-radius: 12px;
 }
 
 .modal-content .information{
-  width: 64%;
-  height: 421px;
+  width: 70%;
+  height: 60vh;
   overflow: auto;
   position: relative;
   margin-top: -13.4px;
@@ -1213,9 +1217,7 @@ border-bottom-left-radius: 12px;
   color:#4e4e4e;
   font-size: 12px;
   line-height: 1.4;
-  overflow: auto; /* Enable scroll if needed */
-
-
+  padding-right: 5%;
 }
 
 

@@ -14,9 +14,7 @@
     <div class="navbar">
 
         <div class="home" id="home">
-            <a href="/">
-                <img class="homeimg" src="{{ url_for('static', filename='/Bilder/home.svg') }}">
-            </a>
+            <img class="homeimg">
         </div>
         <div class="exsys" onclick="window.location='/Exsys';">
             <p>EXSYS</p>
@@ -129,15 +127,15 @@
                 <!--Content in the modal-->
                 <div class="modal-content">
                     <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
-                    <div class="small">
-                        <p>ComArk lecture </p>
-                    </div>
-                    <div class="headline">
-                        <p>{{row[6]}} </p>
-                    </div>
-                    <div class="information">
-                        <p>{{row[7]}}</p>
-                    </div>
+                        <div class="small">
+                            <p>ComArk lecture </p>
+                        </div>
+                        <div class="headline">
+                            <p>{{row[6]}} </p>
+                        </div>
+                        <div class="information">
+                            <p>{{row[7]}}</p>
+                        </div>
                     <div class="Resources files">
                         <p>Resources:</p>
                         <div class="filecontainer">
@@ -200,9 +198,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class="contactButton" onclick="openChat()">
-                        <p>Contact TA</p>
-                    </div>
+                   
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact TA</p>
                 </div>
             </div>
             {% endfor %}
@@ -255,9 +254,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class="contactButton" onclick="openChat()">
-                        <p>Contact TA</p>
-                    </div>
+                   
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact TA</p>
                 </div>
             </div>
             {% endfor %}
@@ -322,9 +322,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class="contactButton" onclick="openChat()">
-                        <p>Litteratur Questions</p>
-                    </div>
+                  
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Litteratur Questions</p>
                 </div>
             </div>
             {% endfor %}
@@ -373,11 +374,11 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class="contactButton" onclick="openChat()">
-                        <p>Litteratur Questions</p>
-                    </div>
+                  
                 </div>
-
+                <div class="contactButton" onclick="openChat()">
+                    <p>Litteratur Questions</p>
+                </div>
             </div>
             {% endfor %}
             {% else %}
@@ -424,9 +425,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class="contactButton" onclick="openChat()">
-                        <p>Litteratur Questions</p>
-                    </div>
+                   
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Litteratur Questions</p>
                 </div>
             </div>
             {% endfor %}
@@ -499,9 +501,10 @@
                                 href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
-                    <div class="contactButton" onclick="openChat()">
-                        <p>Contact Professor</p>
-                    </div>
+
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact Professor</p>
                 </div>
             </div>
             {% endfor %}
@@ -568,9 +571,10 @@
                                 href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
-                    <div class="contactButton" onclick="openChat()">
-                        <p>Contact Professor</p>
-                    </div>
+
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact Professor</p>
                 </div>
             </div>
             {% endfor %}
@@ -642,9 +646,10 @@
                                 href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
-                    <div class="contactButton" onclick="openChat()">
-                        <p>Contact Professor</p>
-                    </div>
+
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact Professor</p>
                 </div>
             </div>
             {% endfor %}

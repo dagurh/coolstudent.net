@@ -55,11 +55,8 @@ for (i = 0; i < documentButton.length; i++) {
   // update the document button status
   let infoString = documentButton[i].getAttribute("data-data");
   updateName(infoString); //updates the the name varible
-  if(info[1] != "Assignment"){
-    docCreatedStatus = info[6];
-  }else{
-    docCreatedStatus = info[0];
-  }
+  console.log(nameA);
+  docCreatedStatus = info[6];
   statusMap.set(nameA, docCreatedStatus);
   if (docCreatedStatus == "true") {
     updateClickedButtons(documentButton[i]);
@@ -136,15 +133,13 @@ function addClickEventToDocumentButton() {
   for (i = 0; i < documentButton.length; i++) {
     documentButton[i].onclick = function () {
       getDataFromClickedButton(event.currentTarget);
-      if (linkStatus.created == "FALSE") {
-        if (info[7] != "popUp-Off") {
+      if (linkStatus.created != "true") {
           document.getElementsByClassName('folders')[0].innerHTML = "studygroup/" + info[0] + "/" + info[1] + "/";        
           input.setAttribute("value", createClipboardString(info[1]));
           protomodaldoc.style.display = 'block';
           selectText();
-        } else {
-          addocument();
-        }
+          console.log(info[6]);
+          console.log(info)
       } else {
         window.open(linkStatus.mappe, '_blank').focus();
       }
@@ -157,7 +152,11 @@ function addocument() {
   ///copyToClipboard(createClipboardString(info[1]));
   window.open(linkStatus.new, '_blank').focus();
   linkStatus.created = "true";
-  window.location.href = '/db/' + info[5]; //send info to database
+  if(info[1] !="Assignment"){
+    window.location.href = '/db/' + info[5]; //send info to database
+  }else{
+    window.location.href = '/db/' + info[6]; //send info to database
+  }
 }
 
 // video Button
@@ -180,7 +179,7 @@ function updateClickedButtons(element) {
 
 function createClipboardString(kind) {
   let string;
-  if (kind == "Assignment") {
+  if (info[1] == "Assignment") {
     string = info[0] + " - " + info[2];
   } else {
     string = info[0] + " " + info[1] + " - Week " + info[2] + ' - ' + info[3];
@@ -302,7 +301,7 @@ for (i = 0; i < uploadButton.length; i++) {
     console.log(info[3]);
     console.log(info[4]);
     console.log(info[5]);
-    console.log(info[6]);
+    console.log(info[6]); //id
   };
 
     // update the button status
