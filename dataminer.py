@@ -83,5 +83,17 @@ def popUp(week):
                            exsyslec=db.exsysLec(week), comarklec=db.comarkLec(week),
                            statlec=db.statLec(week))
 
+@app.route('/uploadDone/<int:id>', methods=['GET'])
+def uploadDone(id):
+    db.uploadDone(id)
+    return render_template('index.html', list=db.all_deadlines(),
+                           exsyslit=db.exsysLit(globalWeek), comarklit=db.comarkLit(globalWeek),
+                           statlit=db.statLit(globalWeek), exsystø=db.exsysTØ(globalWeek),
+                           comarktø=db.comarkTØ(globalWeek), stattø=db.statTØ(globalWeek),
+                           exsyslec=db.exsysLec(globalWeek), comarklec=db.comarkLec(globalWeek),
+                           statlec=db.statLec(globalWeek))                           
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+
+
