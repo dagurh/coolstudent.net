@@ -9,6 +9,8 @@ let info;
 let linkStatus;
 let nameA;
 
+
+
 clickOffButton = document.getElementById("clickOffButton");
 clickOffTEXT = document.getElementById("clickOffTEXT");
 
@@ -23,16 +25,21 @@ function updateWeekToLaterWeek() {
   let infoString = documentButton[0].getAttribute("data-data");
   info = infoString.split(",");
   let currentWeek = info[2]; //håber det er week
-  let incrementedWeek = parseInt(currentWeek) + 1;
-  window.location.href = '/week/' + incrementedWeek; //send info to database
+  if(currentWeek != "19"){
+    let incrementedWeek = parseInt(currentWeek) + 1;
+    window.location.href = '/week/' + incrementedWeek; //send info to database
+  }
 }
 
 function updateWeekToEarlierWeek() {
+  
   let infoString = documentButton[0].getAttribute("data-data");
   info = infoString.split(",");
   let currentWeek = info[2]; //håber det er week
-  let decrementedWeek = parseInt(currentWeek) - 1;
-  window.location.href = '/week/' + decrementedWeek; //send info to database
+  if(currentWeek != "17"){
+    let decrementedWeek = parseInt(currentWeek) - 1;
+    window.location.href = '/week/' + decrementedWeek; //send info to database
+  }
 }
 
 goToEarlierWeek.onclick = function () {
@@ -48,6 +55,7 @@ for (i = 0; i < documentButton.length; i++) {
   // update the document button status
   let infoString = documentButton[i].getAttribute("data-data");
   updateName(infoString); //updates the the name varible
+  console.log(nameA);
   docCreatedStatus = info[6];
   statusMap.set(nameA, docCreatedStatus);
   if (docCreatedStatus == "true") {
@@ -78,7 +86,8 @@ newDocumentMap.set("STATExercises", { created: statusMap.get("STATExercises"), n
 newDocumentMap.set("STATAssignment", { created: statusMap.get("STATAssignment"), new: "https://docs.google.com/document/create?usp=drive_web&ouid=101355925897086537378&folder=1SlU2QKyvDkD0GkaU_4PhIujAwIBUE7wr", mappe: "https://drive.google.com/drive/folders/1SlU2QKyvDkD0GkaU_4PhIujAwIBUE7wr?fbclid=IwAR3l7kP-8EfsrdLluJ4g2E5qmTk6ahig1DZCLBmitU3wQ1MNLhqy3JJAJpk" });
 
 
-function copyToClipboard(str) {
+function copyToClipboard() {
+  str = createClipboardString(info[1])
   const el = document.createElement('textarea');
   el.value = str;
   document.body.appendChild(el);
@@ -109,6 +118,13 @@ function updateName(infoString) {
   }
 }
 
+const input = document.getElementById('RecomendedTitle');
+
+function selectText() {
+  input.focus();
+  input.select();
+}
+
 // ADDING CLICK EVENTS TO BUTTONS
 addClickEventToDocumentButton(); //document Button
 const protomodaldoc = document.getElementById("protomodal--doc");
@@ -117,15 +133,13 @@ function addClickEventToDocumentButton() {
   for (i = 0; i < documentButton.length; i++) {
     documentButton[i].onclick = function () {
       getDataFromClickedButton(event.currentTarget);
-      if (linkStatus.created == "FALSE") {
-        if (info[7] != "popUp-Off") {
-          document.getElementsByClassName('docs-popup-info')[0].innerHTML
-            = "You are creating a shared google docs document in the folder:  studygroup/" + info[0] + "/" + info[1] + ". <br> <br> This command also copies a recomended name for the document to your clipboard, for this document it's:    " + createClipboardString(info[1]);
+      if (linkStatus.created != "true") {
+          document.getElementsByClassName('folders')[0].innerHTML = "studygroup/" + info[0] + "/" + info[1] + "/";        
+          input.setAttribute("value", createClipboardString(info[1]));
           protomodaldoc.style.display = 'block';
-          
-        } else {
-          addocument();
-        }
+          selectText();
+          console.log(info[6]);
+          console.log(info)
       } else {
         window.open(linkStatus.mappe, '_blank').focus();
       }
@@ -135,10 +149,14 @@ function addClickEventToDocumentButton() {
 
 function addocument() {
   updateClickedButtons(theTarget);
-  copyToClipboard(createClipboardString(info[1]));
+  ///copyToClipboard(createClipboardString(info[1]));
   window.open(linkStatus.new, '_blank').focus();
   linkStatus.created = "true";
-  window.location.href = '/db/' + info[5]; //send info to database
+  if(info[1] !="Assignment"){
+    window.location.href = '/db/' + info[5]; //send info to database
+  }else{
+    window.location.href = '/db/' + info[6]; //send info to database
+  }
 }
 
 // video Button
@@ -161,7 +179,7 @@ function updateClickedButtons(element) {
 
 function createClipboardString(kind) {
   let string;
-  if (kind == "Assignment") {
+  if (info[1] == "Assignment") {
     string = info[0] + " - " + info[2];
   } else {
     string = info[0] + " " + info[1] + " - Week " + info[2] + ' - ' + info[3];
@@ -277,6 +295,13 @@ for (i = 0; i < uploadButton.length; i++) {
     protomodalUpload.style.display = 'block';
     targetUploadButton = event.currentTarget;
     getDataFromClickedButton(targetUploadButton);
+    console.log(info[0]);
+    console.log(info[1]);
+    console.log(info[2]);
+    console.log(info[3]);
+    console.log(info[4]);
+    console.log(info[5]);
+    console.log(info[6]); //id
   };
 
     // update the button status
@@ -309,7 +334,7 @@ function uploadButtonClicked(){
   targetUploadButton.classList.add('uploadclicked');
   targetUploadButton.childNodes[1].classList.add('uploadclickedicon');
   protomodalUpload.style.display = 'none';
-  window.location.href = '/uploadDone/' + info[5]; //send info to database
+  window.location.href = '/uploadDone/' + info[6]; //send info to database
 }
 
 // when people clicks outside the modal it closes #1

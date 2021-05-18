@@ -1,3 +1,7 @@
+html{
+  font-size: 100%;
+}
+
 body{
   background-color: #f9fcfc;
   margin: 0 auto;
@@ -7,22 +11,22 @@ body{
 .navbar{
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 47px;
   background-color: #403F3F;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 16.75px;
   color: white;
   text-align: center;
   z-index: +5;
 }
 
 .navbar div{
-  height: 70px;
+  height: 47px;
 }
 
 .container {
-  margin-top: 62px;
+  margin-top: 41.5px;
   width: 100%;
   float: left;
   display: grid;
@@ -61,16 +65,20 @@ body{
   background-color: #f9fcfc;
   float: left;
   width:5.9%;
-  height: 70px;
+  height: 47px;
   align-items: center;
 }
 
+
 .homeimg{
+  background-image: url("/static/Bilder/home.svg");
   grid-column: 1;
   grid-row: 1;
-  width: 35px;
-  height: 35px;  
-  margin-top: 17px;
+  width: 27px;
+  height: 23.5px;  
+  margin-top: 11.4px;
+  background-repeat: no-repeat;
+  margin-left: 2%;
 }
 
 .exsys, .comark, .stat, .homeimg, .menuimg, .menu{
@@ -78,7 +86,7 @@ body{
 }
 
 .exsys p, .comark p, .stat p{
-  margin-top: 20px;
+  margin-top: 13.4px;
 }
 
 
@@ -87,18 +95,18 @@ body{
   grid-column: 5;
   grid-row: 1;
   justify-self: end;
-  height: 35px;
-  width: 35px;
-  margin-top: 16px;
+  height: 23.5px;
+  width: 23.5px;
+  margin-top: 13px;
   margin-right: 50px;
 
 }
 
 
 .toLogo, .litteraturLogo, .forelæsningLogo{
-  height: 40px;
+  height: 18px;
   width: 40px;
-  margin-top: 75px;
+  margin-top: 50px;
   justify-self: center;
 
 }
@@ -108,7 +116,7 @@ body{
 .topgab3 { display: grid; grid-column: 3; grid-row: 2;}
 .topgab4 { display: grid; grid-column: 4; grid-row: 2;}
 .topgab, .topgab2, .topgab3, .topgab4{
-  height: 5px;
+  height: 2.2px;
   background-color: #EAF4F4;
 }
 /*
@@ -127,9 +135,9 @@ body{
 }
 
 #ResoursesHeadline p{
-  margin-top: 75px;
+  margin-top: 50px;
   margin-bottom: 8px;
-  font-size: 40px;
+  font-size: 26.8px;
   justify-self: stretch;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
@@ -144,13 +152,16 @@ body{
 
 #AULibrary input{
   position: relative;
-  width: 50%;
+  width: 53%;
   float: right;
-  height: 35px;
-  border-radius: 15px;
-  margin-top: 12px;
-  margin-right: 12px;
-  font-size: 20px;
+  height: 22px;
+  border-radius: 10px;
+  margin-top: 9px;
+  margin-right: 4px;
+  font-size: 13.4px;
+  border-color: #575757;
+  border-style: solid;
+  border-width: 1px;
 }
 #ExamRegistration{
   grid-column: 2/5;
@@ -160,8 +171,8 @@ body{
 
 #ExamRegistration #eksamRegDeadline{
   float: right;
-  font-size: 16px;
-  margin-top: 36px;
+  font-size: 10.7px;
+  margin-top: 24.12px;
   margin-right: 12px;
 }
 
@@ -191,14 +202,14 @@ body{
 
 
 .LinksButtons{
-  margin-top: 25px;
+  margin-top: 16.75px;
   width: 100%;
   background-color: #f5f5f5;
-  border-radius: 18px;
+  border-radius: 14px;
   border-style: solid;
   border-width: thin;
   border-color: #6d6d6d;
-  height: 72px;
+  height: 48px;
   box-shadow: 0px 5px 6px rgba(49, 49, 49, 0.2);
   cursor: pointer;
 }
@@ -210,8 +221,8 @@ body{
 .LinksButtons p {
   float: left;
   margin-left: 30px;
-  margin-top: 18px;
-  font-size: 25px;
+  margin-top: 12px;
+  font-size: 16.75px;
   justify-self: stretch;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
@@ -221,11 +232,11 @@ body{
 .pil{
   background-image: url("/static/Bilder/pil.svg");
   background-repeat: no-repeat;
-  height: 45px;
-  width: 20px;
-  margin-top: 17px;
+  height: 30px;
+  width: 13.4px;
+  margin-top: 11.4px;
   margin-right: 12px;
-  background-size: 15px;
+  background-size: 10px;
 
   float: right;
 }
@@ -273,13 +284,13 @@ border-right: 0.1px solid #b1b1b1;
 }
 
   .basicbutton{
-    margin-top: 31px;
-    margin-bottom: 31px;
+    margin-top: 20.8px;
+    margin-bottom: 20.8px;
     background-color: inherit;
     z-index: 2;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    height: 150px;
+    font-size: 10px;
+    height: 100px;
     width: 90%;
     text-align: center;
     }
@@ -292,25 +303,20 @@ border-right: 0.1px solid #b1b1b1;
   }  
 
   .basicbutton h3{
-    font-size: 30px;
-    margin-top: -17px;
+    font-size: 20px;
+    margin-top: -11.4px;
   }
 
   .basicbutton h4{
-    font-size: 17px;
-    margin-top: 13px;
+    font-size: 11.4px;
+    margin-top: 8.7px;
     overflow: hidden;
   }
 
   .basicbutton p{
-    font-size: 15px;
-    margin-top: -20px;
+    font-size: 10px;
+    margin-top: -13.4px;
   }
-    
-.scroll{
-  height: 1000px;
-  display: grid; grid-column: 2; grid-row: 6; justify-items: center;
-}
 
 .dropdown {
   display: inline-block;
@@ -320,7 +326,7 @@ border-right: 0.1px solid #b1b1b1;
             
   .dropdown-content {
   display: none;
-  margin-top: 50px;
+  margin-top: 33.5px;
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
@@ -348,7 +354,7 @@ border-right: 0.1px solid #b1b1b1;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 50px;
+  margin-top: 33.5px;
   }
             
   .dropdown-content2 a {
@@ -379,7 +385,7 @@ border-right: 0.1px solid #b1b1b1;
   grid-column: 6;
   grid-row: 4/6;
   width: 5%;
-  height: 5%;
+  height: 3.35%;
   margin-top: 36%;
   margin-left:94.5%;
   position: fixed;
@@ -390,7 +396,7 @@ border-right: 0.1px solid #b1b1b1;
   border: 1px;
   text-decoration: none;
   display: block;
-  font-size: 15px;
+  font-size: 10px;
   }
             
   .dropdown-content3:hover {
@@ -412,7 +418,7 @@ border-right: 0.1px solid #b1b1b1;
   .deadlines h5{
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 16.75px;
     color: black;
     text-align: center;
     margin-bottom: -13px;
@@ -420,28 +426,29 @@ border-right: 0.1px solid #b1b1b1;
 
   .deadlineButton h4{
     margin: 0px;
-    margin-top: 9px; 
-    font-size: 12px;
+    margin-top: 6px; 
+    font-size: 8px;
   }
   .deadlineButton h3{
-    margin-top: 2px;
+    margin-top: 1.3px;
     margin-bottom: 1px;
     margin: none;
     font-weight: 200; 
-    font-size: 20px;
+    font-size: 13.4px;
   }
   .deadlineButton p{
-    font-size: 10px;
-    margin-top: 4px;
+    font-size: 8px;
+    margin-top: 2.6px;
     margin-bottom: 1px;
     margin: none;
-    margin-top: 5px; font-weight: 700; font-size: 12px;
+    margin-top: 3.3px; 
+    font-weight: 700;
   }
 
   .space{
-    height: 100px;
+    height: 67px;
     width: 75%;
-    padding-top: 5px;
+    padding-top: 3.3px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -451,11 +458,10 @@ border-right: 0.1px solid #b1b1b1;
 
   .rest{
     margin: 0px;
-    margin-top: 3px;
-    height: 80%;
+    margin-top: 2px;
+    height: 53.6%;
     width: 80%;
   }
-  */
 
   .bund{
     grid-column: 1/5;
@@ -467,8 +473,8 @@ border-right: 0.1px solid #b1b1b1;
     display: grid;
     background-size: cover;
     border-radius: 50px;
-    height: 55px;
-    width: 55px;
+    height: 37px;
+    width: 37px;
     float: right;
     position: fixed;
     right: 0;
@@ -499,16 +505,15 @@ border-right: 0.1px solid #b1b1b1;
     
 
     .ChatButton{
-    line-height: 0.8em;
+    line-height: 1.4em;
     color: black;
     border:0px;
     border-style: solid;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     font-family: 'Roboto', sans-serif;
     border-radius: 25px;
-    font-size: 15px;
-    height: 50px;
-    width: 50px;
+    font-size: 10px;
+    height: 37px;
+    width: 37px;
     }
 
     .ChatButton:hover{
@@ -525,7 +530,7 @@ border-right: 0.1px solid #b1b1b1;
   border: 3px solid #f1f1f1;
   z-index: 9;
   background-color: white;
-  height: 50%;
+  height: 33.5%;
   width: 22%;
   bottom: 0%;
 border-radius: 25px;
@@ -550,7 +555,7 @@ border-radius: 25px;
   border: none;
   background: #f1f1f1;
   resize: none;
-  min-height: 200px;
+  min-height: 134px;
 }
 
 /* When the textarea gets focus, do something */
@@ -575,7 +580,7 @@ border-radius: 25px;
 .form-container .cancel {
 top: 5%;
 position: absolute;
-font-size: x-large;
+font-size: 16px;
 }
 
 /* Add some hover effects to Chatbuttons */
@@ -593,29 +598,29 @@ font-size: x-large;
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 50px;
+  font-size: 33.5px;
   font-weight: bold;
   font-weight: lighter;
-  margin-top: 40px;
+  margin-top: 27px;
   margin-right: 30%;
 }
 .small-pop-up-closebox{
   position: fixed;
-  top: 61px;
+  top: 41px;
   right: 29%;
-  height: 100px;
+  height: 67px;
   width: 7%;
 }
 .small-pop-up-closebox:hover{
-  top: 56px;
+  top: 37.5px;
   right: 28.9%;
 }
 
 .closebox{
   position: fixed;
-  top: 70px;
+  top: 47px;
   right: 7.5%;
-  height: 100px;
+  height: 67px;
   width: 7%;
   cursor: pointer;
 }
@@ -624,11 +629,11 @@ font-size: x-large;
   color: rgb(70, 70, 70);
   text-decoration: none;
   cursor: pointer;
-  font-size: 58px;
+  font-size: 39px;
  
 }
 .closebox:hover{
-  top: 65px; 
+  top: 43.5px; 
   right: 7.4%;
 }
 
@@ -642,22 +647,22 @@ form{
 .navbar{
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 47px;
   background-color: #403F3F;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 16.75px;
   color: white;
   text-align: center;
   z-index: +5;
  }
   
  .navbar div{
-  height: 70px;
+  height: 47px;
  }
   
  .menubox{
-  margin-top: 70px;
+  margin-top: 47px;
   position: fixed;
   background-color: #403F3F;
   height: 100%;
@@ -674,12 +679,12 @@ form{
  }
   
  .menubox p{
-  font-size: 25px;
+  font-size: 16.75px;
   color: rgb(255, 255, 255);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 20px;
   white-space: nowrap;
  }
   
@@ -688,10 +693,10 @@ form{
  }
 
  .menuimg{
-  width: 42px;
-  height: 42px; 
+  width: 28px;
+  height: 28px; 
   justify-self: end;
-  margin-top: 10px;
+  margin-top: 6.7px;
   margin-right: 15px;
   content:url("/static/Bilder/menu.svg");
   transition: opacity 0.2 ease;
@@ -706,8 +711,8 @@ form{
   float: right;
   background-size: cover;
   background-position-x: center;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   margin-right: 25%;
  }
 
@@ -715,8 +720,8 @@ form{
   float: left;
   background-size: cover;
   background-position-x: center;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   margin-left: 25%;
  }
 
@@ -728,26 +733,27 @@ form{
   font-weight: lighter;
   color:#727272;
   margin-right: 15px;
+  font-size: 10px;
  }
  .Groups{
     background-size: cover;
     height: auto;
-    width: 100px;
+    width: 67px;
     right: 0; 
     position: fixed;
-    margin-top: 4%;
+    margin-top: 47px;
     box-shadow: #000;
     text-align: center;
     justify-self: stretch;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
     color:#4e4e4e;
-    font-size: 20px;
+    font-size: 13.4px;
     border: 0.2px solid #6d6d6d;
  }
 
  .Groups1{
-  margin-top: 10%;
+  margin-top: 112px;
   
  }
 
@@ -761,7 +767,7 @@ form{
  .kalenderfremogtilbage{
   justify-self: center;
   text-align: center;
-  height: 35px;
+  height: 23.5px;
   grid-row: 6;
   border: 0.2px solid #6d6d6d;
   width: 100%;
@@ -782,10 +788,10 @@ form{
  }
 
  .kalenderfremogtilbage p{
-  font-size: 19px;
+  font-size: 12.7px;
   font-family: Helvetica, Arial, sans-serif;
   color: #4e4e4e;
-  margin-top: 6px;
+  margin-top: 4px;
  }
 
  .weeknumber{
@@ -799,12 +805,12 @@ form{
   }
    
  .arrowIcon{
-  height: 22px;
-  width: 22px;
+  height: 14.7px;
+  width: 14.7px;
   background-image: url("/static/Bilder/next.svg"); 
   background-repeat: no-repeat;
   margin-left: 48%;
-  margin-top: 6px;
+  margin-top: 4px;
   transform: rotate(180deg);
  } 
  .right{
@@ -822,11 +828,11 @@ form{
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  margin-top: 20px;
+  margin-top: 13.4px;
   background-color: white;
   border-radius: 10px;
 }
@@ -857,7 +863,10 @@ form{
 
 .topinfo:hover{
   background-color: #ffffff;
+  box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.2);
+  z-index: 7;
 }
+
 
 .quicklinks{
   background-color: #fafafa;
@@ -929,8 +938,8 @@ background-image: url("/static/Bilder/video-icon.svg");
   margin: 0 auto;  
   margin-top: 4%;
   background-image: url("/static/Bilder/upload-iconSort.svg");  
-  height: 23px;
-  width: 20px;
+  height: 15.5px;
+  width: 13.5px;
 }
 
 .documentbutton{
@@ -964,7 +973,7 @@ border-bottom-left-radius: 12px;
           .BorderUp:hover .UPbutton{
             background-image: url("/static/Bilder/upload-iconWhite.svg");
             background-repeat:no-repeat;
-            background-size: 20px
+            cursor: pointer;
               }
 
 .BorderDoc:hover{
@@ -975,21 +984,24 @@ border-bottom-left-radius: 12px;
 
   .BorderDoc:hover .documentbutton{
     background-image: url("/static/Bilder/dokumentHVID.svg");
+    cursor: pointer;
   }
 
 .contactButton{
-  top: 92.1%;
-  right: 7.9%;
-  position: fixed;
+  position: absolute;
+  right: 7.95%;
+  bottom: 16.4vh;
   border-left-style: solid;
   border-top-style: solid;
   border-left-width: thin;
   border-top-width: thin;
   border-top-left-radius: 25px;
-  border-bottom-right-radius: 22px;
+  border-bottom-right-radius: 22px; 
   background-color: #fafafa;
-  width: 10%;
+  width: 12%;
   text-align: center;
+  font-size: 13px;
+
 }
 
 .contactButton:hover{
@@ -1004,7 +1016,7 @@ border-bottom-left-radius: 12px;
   position: fixed; /* Stay in place */
   z-index: 5; /* Sit on top */
   left: 0%;
-  top: 70px;
+  top: 47px;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   background-size: auto;
@@ -1016,16 +1028,18 @@ border-bottom-left-radius: 12px;
 
 /* Modal Content */
 .modal-content {
+  position: absolute;
   background-color: #fdfdfd;
-  margin-top: 25px;
+  margin-top: 2.5vh;
   margin-left: 7%;
-  height: 70%;
-  padding: 5%;
+  height: 67vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
  border-radius: 25px;
   border: 1px solid #888;
   width: 75%;
-  overflow: auto; /* Enable scroll if needed */
-  font-size: 18px;
   color: rgb(94, 94, 94);
 }
 
@@ -1039,28 +1053,84 @@ border-bottom-left-radius: 12px;
   padding: 0px;
   width: 80%;
   position: relative;
-  margin-top: -80px;
-  font-size: 40px;
+  margin-top: -28px;
+  font-size: 16.75px;
   justify-self: stretch;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
-  color:#4e4e4e;
+  color:#777777;
 }
 
-.continue{
+.StandardButton{
   background-color: #fdfdfd;
-  height: 55px;
-  width: 45%;
-  margin-left: 0%;
-  margin-top: 30px;
-  margin-bottom: -50px;
   border-radius: 10px;
   border: 1px solid #888;
   text-align: center;
-  font-size: x-large;
-  line-height: 55px;
   cursor: pointer;
   text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #646464;
+}
+
+.continue{
+  height: 37px;
+  width: 45%;
+  font-size: 17;
+  line-height: 37px;
+  float: right;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.copyTitle{
+  height: 42px;
+  width: 25%;
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.folders{
+  margin-top: -2px;
+  font-size: 18px;
+  flex: 1;
+  margin-bottom: -50px;
+}
+
+#folderinfo{
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.flex{
+  display: flex;
+}
+
+#RecomendedTitle{
+  width: 70%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  border: 1px solid #888;
+  color: #403F3F;
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+.docsinfo{
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  margin-top: 33.5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color:#4e4e4e;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 #clickOffPopUp{
@@ -1071,17 +1141,17 @@ border-bottom-left-radius: 12px;
 }
 #clickOffPopUp div{
   flex: 1;
-  height: 16px;
+  height: 11px;
   width: 16px;
   background-color: inherit;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(94, 94, 94);
-  margin-top: 27px;
+  margin-top: 18px;
   margin-left: 14px;
 }
 #clickOffPopUp p{
-  margin-top: 27px;
+  margin-top: 18px;
 }
 #clickOffPopUp div:hover{
   background-color: #A7D9B1;
@@ -1095,11 +1165,11 @@ border-bottom-left-radius: 12px;
 }
 
 #yourBtn {
-  margin-top: -60px;
+  margin-top: -40px;
   position: relative;
-  top: 75px;
-  width: 50%;
-  padding: 10px;
+  top: 50px;
+  width: 70%;
+  padding-top: 50px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border: 1px dashed #BBB;
@@ -1107,7 +1177,7 @@ border-bottom-left-radius: 12px;
   background-color: #DDD;
   cursor: pointer;
   height: 80px;
-  line-height: 80px;
+  line-height: 21px;
 }
 #yourBtn:hover{
   background-color: #fdfdfd;
@@ -1116,17 +1186,18 @@ border-bottom-left-radius: 12px;
 
 .send{
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  margin-top: 120px;
+  font-size: 13px;
+  margin-top: 80px;
   position: relative;
   width: 20%;
   float:left;
   text-decoration: none;
   color: #4e4e4e;
   margin-left: 0px;
+  margin-bottom: 0px;
 }
 
-.continue:hover{
+.StandardButton:hover{
   color: white;
   background-color: #888;
 }
@@ -1139,41 +1210,29 @@ border-bottom-left-radius: 12px;
 .uploadclickedicon{
   background-image: url("/static/Bilder/uploadCheck.svg");
   background-repeat: no-repeat;
-  background-size: 20px;
 }
 
 .modal-content .information{
-  width: 64%;
-  height: auto;
+  width: 70%;
+  height: 60vh;
   overflow: auto;
   position: relative;
-  margin-top: -20px;
+  margin-top: -13.4px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color:#4e4e4e;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.4;
+  padding-right: 5%;
 }
 
-.docsinfo{
-  width: 100%;
-  height: auto;
-  overflow: auto;
-  position: relative;
-  margin-top: -20px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  color:#4e4e4e;
-  font-size: 18px;
-  line-height: 1.4;
-}
 
 .modal-content .small{
-  font-size: 20px;
+  font-size: 13.4px;
   font-family: Helvetica, Arial, sans-serif;
   width: 40%;
   position: relative;
-  margin-top: -30px;
+  margin-top: -20px;
   opacity: 50%;
   font-weight: lighter;
   
@@ -1182,8 +1241,8 @@ border-bottom-left-radius: 12px;
   padding: 0px;
   width: 80%;
   position: relative;
-  margin-top: -28px;
-  font-size: 40px;
+  margin-top: -18.7px;
+  font-size: 26.8px;
   justify-self: stretch;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
@@ -1194,9 +1253,10 @@ border-bottom-left-radius: 12px;
 height: 15%;
 width: 14%;
 margin-right:1px;
-left: 72.5%;
+left: 78.5%;
 position: absolute;
 color:#4e4e4e;
+font-size: 13px;
 }
 
 .Resources{
@@ -1214,10 +1274,10 @@ top: 19%;
   border-top: 1px;
   border-top-color: rgb(94, 94, 94);
   border-top-style: solid;
-  padding-top: 15px;
+  padding-top: 10px;
   display: flex;
-  height: 35px;
-  margin-top: -8px;
+  height: 23.5px;
+  margin-top: -5.3px;
 }
 
 .filecontainer:hover{
@@ -1246,7 +1306,7 @@ top: 19%;
 .videoimg{
   background-image: url("/static/Bilder/play-button.png");
   background-size: 80%;
-  height: 31px;
+  height: 20.7px;
   width: 10%;
   background-repeat:no-repeat;
   margin-left: 7px;
@@ -1255,7 +1315,7 @@ top: 19%;
 .pdfimg{
   background-image: url("/static/Bilder/pdf1.png");
   background-size: 80%;
-  height: 31px;
+  height: 20.7px;
   width: 10%;
   background-repeat:no-repeat;
   margin-left: 7px;
@@ -1265,6 +1325,7 @@ top: 19%;
   position: fixed;
   left: 97%;
   top: 97%;
+  font-size: 10px;
 }
 
 .WIP{

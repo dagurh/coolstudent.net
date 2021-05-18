@@ -20,7 +20,7 @@ with open('csvdata/coursestable-Ark1.csv', encoding='utf8', newline='') as csv_f
                   row[8], row[9], row[10], row[11], row[12]))
       conn.commit()
 
-with open('csvdata/deadlines.csv', newline='') as csv_file:
+with open('csvdata/assignmentsdb.csv', newline='') as csv_file:
   reader = csv.reader(csv_file, delimiter=',')
   next(reader)
   for row in reader:

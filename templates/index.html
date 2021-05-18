@@ -14,9 +14,7 @@
     <div class="navbar">
 
         <div class="home" id="home">
-            <a href="/">
-                <img class="homeimg" src="{{ url_for('static', filename='/Bilder/home.svg') }}">
-            </a>
+            <img class="homeimg">
         </div>
         <div class="exsys" onclick="window.location='/Exsys';">
             <p>EXSYS</p>
@@ -44,53 +42,53 @@
 
     <div class="container">
 
-            <div id = "ResoursesHeadline">
-                <p>STUDENT RECOURSES</p>
-            </div>
-            <div id="STADS">
-                <button class="STADSBut LinksButtons" onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'"
-                    type="button">
-                    <p>GRADES</p>
-                    <div class = "pil"></div>
-                </button>
-            </div>
+        <div id="ResoursesHeadline">
+            <p>STUDENT RECOURSES</p>
+        </div>
+        <div id="STADS">
+            <button class="STADSBut LinksButtons"
+                onclick="location.href='https://sbstads.au.dk/sb_STAP/sb/common/velkommen.jsp'" type="button">
+                <p>GRADES</p>
+                <div class="pil"></div>
+            </button>
+        </div>
 
-            <div id="AULibrary">
-                <button class="AuLiBut LinksButtons" type="button">
-                    <p>LIBRARY</p>
-                    <form>
-                        <input type="text">
-                    </form>
-                </button>
-            </div>
+        <div id="AULibrary">
+            <button class="AuLiBut LinksButtons" type="button">
+                <p>LIBRARY</p>
+                <form>
+                    <input type="text">
+                </form>
+            </button>
+        </div>
 
-            <div id="Contactbook">
-                <button class="KurKBut LinksButtons" type="button">
-                    <p>CONTACKBOOK</p>
-                    <div class = "pil"></div>
-                </button>
-            </div>
+        <div id="Contactbook">
+            <button class="KurKBut LinksButtons" type="button">
+                <p>CONTACKBOOK</p>
+                <div class="pil"></div>
+            </button>
+        </div>
 
-            <div id="StudyCard">
-                <button class="DeExBut LinksButtons" onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'"
-                    type="button">
-                    <p>STUDYCARD RENEWALD</p>
-                </button>
-            </div>
+        <div id="StudyCard">
+            <button class="DeExBut LinksButtons"
+                onclick="location.href='https://eksamen.au.dk/studerende?authReference=WAYF'" type="button">
+                <p>STUDYCARD RENEWALD</p>
+            </button>
+        </div>
 
-            <div id="MoveOn">
-                <button class="MoveBut LinksButtons"
-                    onclick="location.href='https://au.moveon4.de/form/5c7d0007587531e5508b4567/eng'" type="button">
-                    <p>EXSTAINCE STUDENT INFO</p>
-                </button>
-            </div>
+        <div id="MoveOn">
+            <button class="MoveBut LinksButtons"
+                onclick="location.href='https://au.moveon4.de/form/5c7d0007587531e5508b4567/eng'" type="button">
+                <p>EXSTAINCE STUDENT INFO</p>
+            </button>
+        </div>
 
-            <div id="ExamRegistration">
-                <button class="ExReBut LinksButtons" onclick="location.href='http://www.example.com'" type="button">
-                    <p>EKSAM REGISTRATION</p>
-                    <p id ="eksamRegDeadline">Next deadline: 24/04 2021</p>
-                </button>
-            </div>
+        <div id="ExamRegistration">
+            <button class="ExReBut LinksButtons" onclick="location.href='http://www.example.com'" type="button">
+                <p>EKSAM REGISTRATION</p>
+                <p id="eksamRegDeadline">Next deadline: 24/04 2021</p>
+            </button>
+        </div>
 
 
 
@@ -129,15 +127,15 @@
                 <!--Content in the modal-->
                 <div class="modal-content">
                     <div class="closebox"><span id="conclose--{{row[0]}}" class="close">&times;</span></div>
-                    <div class="small">
-                        <p>ComArk lecture </p>
-                    </div>
-                    <div class="headline">
-                        <p>{{row[6]}} </p>
-                    </div>
-                    <div class="information">
-                        <p>{{row[7]}}</p>
-                    </div>
+                        <div class="small">
+                            <p>ComArk lecture </p>
+                        </div>
+                        <div class="headline">
+                            <p>{{row[6]}} </p>
+                        </div>
+                        <div class="information">
+                            <p>{{row[7]}}</p>
+                        </div>
                     <div class="Resources files">
                         <p>Resources:</p>
                         <div class="filecontainer">
@@ -146,11 +144,12 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Contact TA</p>
-                    </div>
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact TA</p>
                 </div>
             </div>
+            
             {% endfor %}
             {% else %}
             <p>Bla</p>
@@ -199,9 +198,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Contact TA</p>
-                    </div>
+                   
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact TA</p>
                 </div>
             </div>
             {% endfor %}
@@ -254,9 +254,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Contact TA</p>
-                    </div>
+                   
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact TA</p>
                 </div>
             </div>
             {% endfor %}
@@ -321,9 +322,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Litteratur Questions</p>
-                    </div>
+                  
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Litteratur Questions</p>
                 </div>
             </div>
             {% endfor %}
@@ -363,6 +365,7 @@
                     <div class="information">
                         <p>{{row[7]}}</p>
                     </div>
+
                     <div class="Resources files">
                         <p>Resources:</p>
                         <div class="filecontainer">
@@ -371,9 +374,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Litteratur Questions</p>
-                    </div>
+                  
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Litteratur Questions</p>
                 </div>
             </div>
             {% endfor %}
@@ -421,9 +425,10 @@
                                 href="https://drive.google.com/file/d/1Zp4iDP9wg7miOwzkxR8hiKuGVlNKOzkT/view?usp=sharing">{{row[8]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Litteratur Questions</p>
-                    </div>
+                   
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Litteratur Questions</p>
                 </div>
             </div>
             {% endfor %}
@@ -496,9 +501,10 @@
                                 href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Contact Professor</p>
-                    </div>
+
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact Professor</p>
                 </div>
             </div>
             {% endfor %}
@@ -565,9 +571,10 @@
                                 href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Contact Professor</p>
-                    </div>
+
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact Professor</p>
                 </div>
             </div>
             {% endfor %}
@@ -639,9 +646,10 @@
                                 href="https://drive.google.com/file/d/1vo4inmqPPPLmx8_WhIgdAFegu-DDl4Kf/view?usp=sharing">{{row[10]}}</a>
                         </div>
                     </div>
-                    <div class = "contactButton" onclick="openChat()">
-                        <p>Contact Professor</p>
-                    </div>
+
+                </div>
+                <div class="contactButton" onclick="openChat()">
+                    <p>Contact Professor</p>
                 </div>
             </div>
             {% endfor %}
@@ -663,11 +671,13 @@
                     <p>Due: {{row[3]}}</p>
                 </div>
                 <div class="quicklinks">
-                    <div class="BorderUp" data-data="{{row[1]}},Assignment,{{row[2]}},{{row[5]}},{{row[6]}},{{row[0]}},{{row[4]}}">
+                    <div class="BorderUp"
+                        data-data="{{row[1]}},Assignment,{{row[2]}},{{row[5]}},{{row[6]}},{{row[0]}},{{row[4]}}">
                         <div class="UPbutton"></div>
                     </div>
                     <div class="border"></div>
-                    <div class="BorderDoc" data-data="{{row[1]}},Assignment,{{row[2]}},{{row[5]}},{{row[6]}},{{row[0]}},{{row[4]}}">
+                    <div class="BorderDoc"
+                        data-data="{{row[1]}},Assignment,{{row[2]}},{{row[5]}},{{row[6]}},{{row[0]}},{{row[4]}}">
                         <div class="documentbutton"></div>
                     </div>
                 </div>
@@ -756,17 +766,21 @@
         <div id="protomodal--doc" class="modal">
             <!--Content in the modal-->
             <div class="modal-content docs">
-                <div class="small-pop-up-closebox"><span id="protoclose--doc" class="close" onclick="closePopUp()">&times;</span></div>
+                <div class="small-pop-up-closebox"><span id="protoclose--doc" class="close"
+                        onclick="closePopUp()">&times;</span></div>
                 <div class="headlinedocs">
-                    <p>Create document</p>
+                    <p>Recomended Title for the document:</p>
                 </div>
-                <div class="docsinfo">
-                    <p class="docs-popup-info"></p>
+                <div class="flex">
+                    <input type="text" id="RecomendedTitle" value="Hello world!">
+                    <button class="StandardButton copyTitle" onclick="copyToClipboard()">COPY TITLE</button>
                 </div>
-                <div class="continue">CONTINUE</div>
-                <div id = "clickOffPopUp">
-                    <p id = "clickOffTEXT">Dont want to see this pop-up anymore?</p>
-                    <div id = "clickOffButton" onclick="turnOffPopUp()"></div>
+                <p>Copy the title and paste it the created document</p>
+                <p id="folderinfo">In folder:</p>
+
+                <div class="flex">
+                    <p class="folders"></p>
+                    <div class="StandardButton continue">CREATE DOCUMENT</div>
                 </div>
             </div>
         </div>
@@ -775,7 +789,8 @@
     <div id="protomodal--upload" class="modal">
         <!--Content in the modal-->
         <div class="modal-content docs">
-            <div class="small-pop-up-closebox"><span id="protoclose--upload" class="close" onclick="closePopUp()">&times;</span></div>
+            <div class="small-pop-up-closebox"><span id="protoclose--upload" class="close"
+                    onclick="closePopUp()">&times;</span></div>
             <div class="headlinedocs">
                 <p>Upload document</p>
             </div>
@@ -786,13 +801,18 @@
                 <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" type="file" value="upload"
                         onchange="sub(this)" /></div>
                 <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
-                <div class="continue send" type="submit">SEND</div>
+                <div class="continue send StandardButton">SEND</div>
             </form>
         </div>
     </div>
 
-
-
+    <!-- Click off button rester:
+   <div id="clickOffPopUp">
+        <p id="clickOffTEXT">Dont want to see this pop-up anymore?</p>
+        <div id="clickOffButton" onclick="turnOffPopUp()"></div>
+    </div>
+-->
+ 
 </body>
 
 </html>
