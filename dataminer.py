@@ -73,15 +73,6 @@ def reset(week):
                            exsyslec=db.exsysLec(week), comarklec=db.comarkLec(week),
                            statlec=db.statLec(week))
 
-@app.route('/popUp/<int:week>', methods=['GET'])
-def popUp(week):
-    db.popUpOff()
-    return render_template('index.html', list=db.all_deadlines(),
-                           exsyslit=db.exsysLit(week), comarklit=db.comarkLit(week),
-                           statlit=db.statLit(week), exsystø=db.exsysTØ(week),
-                           comarktø=db.comarkTØ(week), stattø=db.statTØ(week),
-                           exsyslec=db.exsysLec(week), comarklec=db.comarkLec(week),
-                           statlec=db.statLec(week))
 
 @app.route('/uploadDone/<int:id>', methods=['GET'])
 def uploadDone(id):
