@@ -539,7 +539,7 @@ border-right: 0.1px solid #b1b1b1;
   border: 3px solid #f1f1f1;
   z-index: 9;
   background-color: white;
-  height: 45%;
+  height: 370px;
   width: 20%;
   bottom: 0%;
 }
@@ -693,6 +693,11 @@ form{
   margin-left: 50px;
   margin-top: 20px;
   white-space: nowrap;
+  cursor: pointer;
+ }
+
+ .menubox p:first-of-type{
+   margin-top:50px;
  }
   
  .menubox.menuexpand {
