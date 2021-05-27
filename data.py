@@ -173,14 +173,6 @@ def uploadDone(id):
       """, (id,))
         conn.commit()
 
-def popUpOff():
-    with sqlite3.connect(__DEADLINES_DB) as conn:
-        cur = conn.cursor()
-        cur.execute(
-            """UPDATE courses
-      SET Zoom = "popUp-Off";
-      """)
-        conn.commit()
 
 def resetLinks():
     with sqlite3.connect(__DEADLINES_DB) as conn:

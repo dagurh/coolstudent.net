@@ -14,12 +14,6 @@ let nameA;
 clickOffButton = document.getElementById("clickOffButton");
 clickOffTEXT = document.getElementById("clickOffTEXT");
 
-function turnOffPopUp(){
-    clickOffButton.style.backgroundColor = "#A7D9B1";
-    clickOffTEXT.innerHTML = "Cool!"
-    getDataFromClickedButton(documentButton[0]);
-    window.location.href = '/popUp/' + info[2]; //send info to database
-}
 
 function updateWeekToLaterWeek() {
   let infoString = documentButton[0].getAttribute("data-data");
@@ -321,7 +315,6 @@ function sub(obj) {
   var file = obj.value;
   var fileName = file.split("\\");
   document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
-  //document.myForm.submit();
   event.preventDefault();
 }
 
@@ -334,7 +327,7 @@ function uploadButtonClicked(){
   targetUploadButton.classList.add('uploadclicked');
   targetUploadButton.childNodes[1].classList.add('uploadclickedicon');
   protomodalUpload.style.display = 'none';
-  window.location.href = '/uploadDone/' + info[6]; //send info to database
+  window.location.href = '/uploadDone/' + info[5]; //send info to database
 }
 
 // when people clicks outside the modal it closes #1
